@@ -22,7 +22,7 @@ function AppHeader() {
           <img
             src="https://raw.githubusercontent.com/winterofcode/winterofcode2020/master/src/Assets/org-logo.png"
             style={{ height: 40, width: 40 }}
-            data-aos="slide-up"
+            data-aos="zoom-in"
             alt="winter of code"
           />
           <a href="https://winterofcode.com">Winter Of Code</a>
