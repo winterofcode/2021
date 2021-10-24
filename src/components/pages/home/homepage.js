@@ -1,8 +1,6 @@
 import React from "react";
 import { Button } from "antd";
-
 import { Carousel } from "antd";
-
 const items = [
   {
     key: "1",
@@ -34,11 +32,11 @@ function AppHero() {
         {items.map((item) => {
           return (
             <div key={item.key} className="container-fluid">
-              <div className="content">
-                <h3>{item.title}</h3>
-                <p>{item.content}</p>
+              <div className="content" >
+                <h3 data-aos="fade-right">{item.title}</h3>
+                <p data-aos="fade-left">{item.content}</p>
                 <div className="btnHolder">
-                  <Button type="primary" size="large">
+                  <Button type="primary" size="large"data-aos="fade-down-left" >
                     Get Started
                   </Button>
                   <Button size="large">

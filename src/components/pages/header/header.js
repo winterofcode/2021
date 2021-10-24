@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import { Anchor, Drawer, Button } from "antd";
 
-import './header.css';
+import "./header.css";
 const { Link } = Anchor;
 function AppHeader() {
   const [visible, setVisible] = useState(false);
@@ -17,13 +17,13 @@ function AppHeader() {
 
   return (
     <div className="container-fluid">
-     
       <div className="header">
         <div className="logo">
           <img
             src="https://raw.githubusercontent.com/winterofcode/winterofcode2020/master/src/Assets/org-logo.png"
             style={{ height: 40, width: 40 }}
-            alt=""
+            data-aos="slide-up"
+            alt="winter of code"
           />
           <a href="https://winterofcode.com">Winter Of Code</a>
         </div>

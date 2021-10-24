@@ -218,12 +218,13 @@ p {
 }
 
 .heroBlock h3 {
-  font-size: 30px;
+  font-size: 35px;
   line-height: 1.2;
   margin: 0 0 30px;
 }
 
 .heroBlock p {
+  font-size: 17px;
   margin: 0 0 30px;
 }
 
