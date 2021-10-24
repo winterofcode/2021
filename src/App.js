@@ -1,9 +1,25 @@
 import './App.css';
+import SplashScreen from './components/splashscreen/splashscreen';
+import React, {useState, useEffect} from 'react';
 
 function App() {
+
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+  }, []);
+
+
   return (
     <div className="App">
-      <h1>Hello World !</h1>
+      <div className="container">
+        {loading ?
+        <SplashScreen/>
+        :
+        <h1>hello world</h1>}
+      </div>
     </div>
   );
 }

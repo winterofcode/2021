@@ -1,0 +1,106 @@
+body {
+    background-color: #001D3D;
+}
+
+#yellowlogo {
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    left: 50%;
+    /* left: 50%;
+    top: 44%; */
+
+    animation: slideinyellow ease-in-out 3s;
+}
+
+#redlogo {
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    left: 92%;
+    top: 44%;
+    /* left: 51.7%;
+    top: 48%; */
+
+    animation: slideinred ease-in-out 3s;
+}
+
+#greenlogo {
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    left: 50%;
+    top: 84%;
+    /* left:50%;
+    top: 51.5%; */
+
+    animation: slideingreen ease-in-out 3s;
+}
+
+#bluelogo {
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    top: 44%;
+    right: 92%;
+    /* left: 48.2%;
+    top: 48%; */
+
+    animation: slideinblue ease-in-out 3s;
+}
+
+.logoparts {
+    position: relative;
+}
+
+@keyframes slideinyellow {
+    from {
+        left: 50%;
+        top: 0%;
+        opacity: 0;
+    }
+    to {
+        left: 50%;
+        top: 44%;
+        opacity: 1;
+    }
+}
+
+@keyframes slideinred {
+    from {
+        left: 92%;
+        top: 44%;
+        opacity: 0;
+    }
+    to {
+        left: 51.7%;
+        top: 48%;
+        opacity: 1;
+    }
+}
+
+@keyframes slideingreen {
+    from {
+        left: 50%;
+        top: 84%;
+        opacity: 0;
+    }
+    to {
+        left: 50%;
+        top: 51.5%;
+        opacity: 1;
+    }
+}
+
+@keyframes slideinblue {
+    from {
+        top: 44%;
+        left: 0%;
+        opacity: 0;
+    }
+    to {
+        left: 48.2%;
+        top: 48%;
+        opacity: 1;
+    }
+}
