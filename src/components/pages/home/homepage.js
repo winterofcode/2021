@@ -36,7 +36,7 @@ function AppHero() {
                 <h3 data-aos="fade-right">{item.title}</h3>
                 <p data-aos="fade-left">{item.content}</p>
                 <div className="btnHolder">
-                  <Button type="primary" size="large"data-aos="fade-down-left" >
+                  <Button type="primary" size="large"data-aos="zoom-in" >
                     Get Started
                   </Button>
                   <Button size="large">

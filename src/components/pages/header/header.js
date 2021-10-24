@@ -16,22 +16,28 @@ function AppHeader() {
   };
 
   return (
-    <div className="container-fluid">
+    <div className="container-fluid" >
       <div className="header">
         <div className="logo">
           <img
             src="https://raw.githubusercontent.com/winterofcode/winterofcode2020/master/src/Assets/org-logo.png"
-            style={{ height: 40, width: 40 }}
+            style={{
+              height: 40,
+              width: 40,
+            }}
             data-aos="zoom-in"
             alt="winter of code"
           />
           <a href="https://winterofcode.com">Winter Of Code</a>
         </div>
-        <div className="mobileHidden">
-          <Anchor targetOffset="65">
-            <Link href="https://dscnsec.com" title="DSC NSEC" />
+        <div className="mobileHidden" data-aos="slide-left">
+          <Anchor targetOffset="65" >
+            <Link
+              href="https://dscnsec.com"
+              title="DSC NSEC"
+            />
             <Link href="#about" title="About" />
-            <Link href="#organisations" title="Organisations" />
+            <Link href="#organisations"  title="Organisations" />
             <Link href="#organisers" title="Organisers" />
             <Link href="#faq" title="FAQ" />
             <Link href="#reports" title="Student Reports" />

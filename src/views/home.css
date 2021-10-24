@@ -17,6 +17,7 @@ body {
 
 .mainLayout .ant-layout-header {
   background: #f8f8f8;
+  
   padding: 0;
   height: auto;
   line-height: 1.6;
@@ -139,7 +140,7 @@ p {
 
 .header .ant-menu li.ant-menu-item {
   position: relative;
-  color: #333;
+  color: #fff;
 }
 
 .header .ant-menu li.ant-menu-item:before,
@@ -184,10 +185,14 @@ p {
 }
 
 .heroBlock {
-  background: url("https://cdn.pixabay.com/photo/2021/09/01/08/23/winter-6590863__480.png")
-    no-repeat;
-  background-position: 50% 100%;
+  /* background: url("https://cdn.pixabay.com/photo/2021/09/01/08/23/winter-6590863__480.png") */
+  /* no-repeat; */
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), */
+    /* url("https://cdn.pixabay.com/photo/2021/09/01/08/23/winter-6590863__480.png"); */
+    background-color: #001d3d;
+    background-position: 50% 100%;
   background-size: cover;
+  opacity: 1.5;
   height: 100vh;
   opacity: 2;
 }
@@ -221,11 +226,15 @@ p {
   font-size: 35px;
   line-height: 1.2;
   margin: 0 0 30px;
+  font-family: "Ubuntu", sans-serif;
+  color: white;
 }
 
 .heroBlock p {
   font-size: 17px;
   margin: 0 0 30px;
+  font-family: "Ubuntu", sans-serif;
+  color: white;
 }
 
 .heroBlock .btnHolder {
@@ -260,7 +269,6 @@ p {
   .pricingBlock .ant-row > div:nth-child(2) .ant-list-item {
     transform: scale(1);
   }
-
   .mobileVisible {
     display: block;
   }
