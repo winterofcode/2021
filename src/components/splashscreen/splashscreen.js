@@ -13,10 +13,10 @@ export default function SplashScreen() {
     return (
         <div className='container'>
             <div className="logoParts">
-                <motion.img animate={{y:"calc(50vh - 115px)"}} src={yellowlogo} id="yellowlogo" alt="yellowlogo"/>
-                <motion.img animate={{x:"calc(-50vw + 115px)"}} src={redlogo} id="redlogo" alt="redlogo"/>
-                <motion.img animate={{y:"calc(-50vh + 115px)"}} src={greenlogo} id="greenlogo" alt="greenlogo"/>
-                <motion.img animate={{x: "calc(50vw - 115px)"}} src={bluelogo} id="bluelogo" alt="bluelogo"/>
+                <motion.img initial={{opacity: 0}} animate={{y:"calc(50vh - 106px)", opacity: 1}} transition={{ease: "backOut", duration: 2}} src={yellowlogo} id="yellowlogo" alt="yellowlogo"/>
+                <motion.img initial={{opacity: 0}} animate={{x:"calc(-50vw + 106px)", opacity: 1}} transition={{ease: "backOut", duration: 2}} src={redlogo} id="redlogo" alt="redlogo"/>
+                <motion.img initial={{opacity: 0}} animate={{y:"calc(-50vh + 106px)", opacity: 1}} transition={{ease: "backOut", duration: 2}} src={greenlogo} id="greenlogo" alt="greenlogo"/>
+                <motion.img initial={{opacity: 0}} animate={{x: "calc(50vw - 106px)", opacity: 1}} transition={{ease: "backOut", duration: 2}} src={bluelogo} id="bluelogo" alt="bluelogo"/>
             </div>
         </div>
     )

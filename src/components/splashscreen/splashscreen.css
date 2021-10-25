@@ -2,12 +2,15 @@ body {
     background-color: #001D3D;
 }
 
+.logoparts {
+    position: relative;
+}
+
 #yellowlogo {
     width: 140px;
     height: 140px;
     position: absolute;
     left: calc(50% - 70px);
-    
 }
 
 #redlogo {
@@ -16,7 +19,6 @@ body {
     position: absolute;
     left: calc(100% - 140px);
     top: calc(50% - 70px);
-    
 }
 
 #greenlogo {
@@ -25,7 +27,6 @@ body {
     position: absolute;
     left: calc(50% - 70px);
     top: calc(100% - 140px);
-   
 }
 
 #bluelogo {
@@ -34,10 +35,4 @@ body {
     position: absolute;
     top: calc(50% - 70px);
     right: calc(100% - 140px);
-   
 }
-
-.logoparts {
-    position: relative;
-}
-
