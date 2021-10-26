@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "antd";
 import { Carousel } from "antd";
-import logo from "../../../assets/images/logo.jpg";
+// import logo from "../../../assets/images/logo.jpg";
 const items = [
   {
     key: "1",
@@ -45,7 +45,7 @@ function AppHero() {
                     <i className="fas fa-video"></i> Watch a Demo
                   </Button>
                 </div>
-                 {/* <img className="con" style={{ height:400,width:500}} src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="" /> */}
+                 <img className="con" style={{ height:400,width:500}} src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="" />
               </div>
               
               

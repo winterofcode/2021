@@ -1,6 +1,6 @@
 import React from "react";
 import "antd/dist/antd.css";
-import AppHeader from "./components/pages/header/header";
+import AppHeader from "./components/header/header";
 import AppHome from "./views/home";
 
 import { Layout } from "antd";

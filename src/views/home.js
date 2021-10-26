@@ -1,10 +1,13 @@
 import React from "react";
-import AppHero from "../components/pages/home/homepage";
+import AppFaq from "../components/Faq/Faq";
+import AppHero from "../components/home/homepage";
 import './home.css'
 function AppHome() {
   return (
     <div className="main">
       <AppHero />
+      <AppFaq/>
+
     </div>
   );
 }

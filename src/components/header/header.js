@@ -24,6 +24,7 @@ function AppHeader() {
             style={{
               height: 40,
               width: 40,
+              marginRight:5
             }}
             data-aos="zoom-in"
             alt="winter of code"
