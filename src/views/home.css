@@ -17,7 +17,7 @@ body {
 
 .mainLayout .ant-layout-header {
   background: #f8f8f8;
-  
+
   padding: 0;
   height: auto;
   line-height: 1.6;
@@ -188,9 +188,9 @@ p {
   /* background: url("https://cdn.pixabay.com/photo/2021/09/01/08/23/winter-6590863__480.png") */
   /* no-repeat; */
   /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), */
-    /* url("https://cdn.pixabay.com/photo/2021/09/01/08/23/winter-6590863__480.png"); */
-    background-color: #001d3d;
-    background-position: 50% 100%;
+  /* url("https://cdn.pixabay.com/photo/2021/09/01/08/23/winter-6590863__480.png"); */
+  background-color: #001d3d;
+  background-position: 50% 100%;
   background-size: cover;
   opacity: 1.5;
   height: 100vh;
@@ -198,6 +198,7 @@ p {
 }
 
 .heroBlock .container-fluid {
+  max-width: 100%;
   display: block !important;
 }
 
@@ -215,13 +216,24 @@ p {
 }
 
 .heroBlock .content {
-  max-width: 640px;
+  max-width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0 0 70px;
+  margin: 0;
+  float: left;
 }
-
+.heroBlock .con {
+  max-width: 100%;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0 70px;
+  margin: 0;
+  float: left;
+}
 .heroBlock h3 {
   font-size: 35px;
   line-height: 1.2;
@@ -275,5 +287,58 @@ p {
 
   .mobileHidden {
     display: none;
+  }
+}
+
+@media (max-width: 1500px) and (min-width: 1000px) {
+  .heroBlock .con {
+    margin-left: 800px;
+  }
+  .heroBlock .content {
+    margin-top: 75px;
+  }
+}
+
+
+@media (max-width: 1300px) and (min-width: 800px) {
+  .heroBlock .con {
+    margin-left: 500px;
+    /* margin-top: 85px; */
+  }
+  .heroBlock .content {
+    margin-top: 105px;
+  }
+}
+
+@media (max-width: 1080px) and (min-width:810px) {
+  .heroBlock .con {
+    margin-left: 800px;
+    margin: 15px;
+  }
+  .heroBlock .content {
+    margin-top: 75px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .heroBlock .content {
+    max-width: 100%;
+    /* height: 100vh; */
+    /* display: flex; */
+    margin-top: 75px;
+  }
+  .heroBlock .con {
+    margin-top: 55px;
+    
+  }
+}
+
+@media (max-width: 667px) and (min-width: 375px) {
+  /* .heroBlock .con { */
+    /* margin-left: 800px; */
+  /* } */
+  .heroBlock .content {
+    margin-top: 127px;
   }
 }
