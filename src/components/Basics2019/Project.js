@@ -15,7 +15,7 @@ const uniqueList = [
 
 console.log(uniqueList);
 
-const Project = () => {
+const Project_2019 = () => {
   const [menuData, setMenuData] = useState(Menu);
   const [menuList, setMenuList] = useState(uniqueList);
 
@@ -34,11 +34,11 @@ const Project = () => {
 
   return (
     <div id="organisations">
-      <h1 style={{textAlign: "center", marginTop:40,fontSize:40}}>Organisations 2021</h1>
+      <h1 style={{textAlign: "center", marginTop:40,fontSize:40}}>Organisations 2019</h1>
       <Navbar filterItem={filterItem} menuList={menuList} />
       <MenuCard menuData={menuData} />
     </div>
   );
 };
 
-export default Project;
+export default Project_2019;

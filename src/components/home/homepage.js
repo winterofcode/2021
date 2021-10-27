@@ -1,24 +1,9 @@
 import React from "react";
 import { Button } from "antd";
-import { Carousel } from "antd";
 // import logo from "../../../assets/images/logo.jpg";
 const items = [
   {
     key: "1",
-    title:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, rem!",
-    content:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia unde excepturi, id cumque tempora molestiae numquam natus ducimus itaque voluptatum.",
-  },
-  {
-    key: "2",
-    title:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, rem!",
-    content:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia unde excepturi, id cumque tempora molestiae numquam natus ducimus itaque voluptatum.",
-  },
-  {
-    key: "3",
     title:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, rem!",
     content:
@@ -29,7 +14,7 @@ const items = [
 function AppHero() {
   return (
     <div id="hero" className="heroBlock">
-      <Carousel>
+     
 
         {items.map((item) => {
           return (
@@ -47,13 +32,11 @@ function AppHero() {
                 </div>
                  <img className="con" style={{ height:400,width:500}} src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="" />
               </div>
-              
-              
             </div>
           );
         })}
 
-      </Carousel>
+  
     </div>
   );
 }

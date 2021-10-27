@@ -299,7 +299,6 @@ p {
   }
 }
 
-
 @media (max-width: 1300px) and (min-width: 800px) {
   .heroBlock .con {
     margin-left: 500px;
@@ -310,7 +309,7 @@ p {
   }
 }
 
-@media (max-width: 1080px) and (min-width:810px) {
+@media (max-width: 1080px) and (min-width: 810px) {
   .heroBlock .con {
     margin-left: 800px;
     margin: 15px;
@@ -319,7 +318,6 @@ p {
     margin-top: 75px;
   }
 }
-
 
 @media (max-width: 600px) {
   .heroBlock .content {
@@ -330,15 +328,24 @@ p {
   }
   .heroBlock .con {
     margin-top: 55px;
-    
   }
 }
 
 @media (max-width: 667px) and (min-width: 375px) {
   /* .heroBlock .con { */
-    /* margin-left: 800px; */
+  /* margin-left: 800px; */
   /* } */
   .heroBlock .content {
     margin-top: 127px;
+  }
+}
+
+@media (max-width: 380px) {
+  /* .heroBlock .con { */
+  /* margin-left: 800px; */
+  /* } */
+  .heroBlock .content {
+    margin-top: 130px;
+    font-size: 10px;
   }
 }
