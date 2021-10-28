@@ -1,96 +1,3 @@
-// import React from "react";
-// import {
-//   AppBar,
-//   Toolbar,
-//   CssBaseline,
-//   Typography,
-//   makeStyles,
-// } from "@material-ui/core";
-// import { Link } from "react-router-dom";
-
-// const useStyles = makeStyles((theme) => ({
-//   navlinks: {
-//     marginLeft: theme.spacing(10),
-//     display: "flex",
-//   },
-//  logo: {
-//     flexGrow: "1",
-//     cursor: "pointer",
-//   },
-//   link: {
-//     textDecoration: "none",
-//     color: "white",
-//     fontSize: "20px",
-//     marginLeft: theme.spacing(20),
-//     "&:hover": {
-//       color: "yellow",
-//       borderBottom: "1px solid white",
-//     },
-//   },
-// }));
-
-// export default function Navbar() {
-//   const classes = useStyles();
-
-//   return (
-//     <AppBar position="static">
-//       <CssBaseline />
-//       <Toolbar>
-//         <Typography variant="h4" className={classes.logo}>
-//           Navbar
-//         </Typography>
-//           <div className={classes.navlinks}>
-//             <Link to="/" className={classes.link}>
-//               Home
-//             </Link>
-//             <Link to="/about" className={classes.link}>
-//               About
-//             </Link>
-//             <Link to="/contact" className={classes.link}>
-//               Contact
-//             </Link>
-//             <Link to="/faq" className={classes.link}>
-//               FAQ
-//             </Link>
-//           </div>
-//       </Toolbar>
-//     </AppBar>
-//   );
-// }
-
-// import * as React from 'react';
-// import AppBar from '@mui/material/AppBar';
-// import Box from '@mui/material/Box';
-// import Toolbar from '@mui/material/Toolbar';
-// import Typography from '@mui/material/Typography';
-// import Button from '@mui/material/Button';
-// import IconButton from '@mui/material/IconButton';
-// // import MenuIcon from '@mui/icons-material/Menu';
-
-// export default function Navbar() {
-//   return (
-//     <Box sx={{ flexGrow: 1 }}>
-//       <AppBar position="static">
-//         <Toolbar>
-//           <IconButton
-//             size="large"
-//             edge="start"
-//             color="inherit"
-//             aria-label="menu"
-//             sx={{ mr: 2 }}
-//           >
-//             <MenuIcon />
-//           </IconButton>
-//           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-//             News
-//           </Typography>
-//           <Button color="inherit">Login</Button>
-//         </Toolbar>
-//       </AppBar>
-//     </Box>
-//   );
-// }
-
 import {
   AppBar,
   Toolbar,
@@ -103,7 +10,7 @@ import {
   MenuItem,
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
-import { height } from "@mui/system";
+// import { height } from "@mui/system";
 import React, { useState, useEffect } from "react";
 import { Link as RouterLink } from "react-router-dom";
 import logo from '../../images/org-logo.png';
@@ -135,7 +42,7 @@ const useStyles = makeStyles(() => ({
   header: {
     backgroundColor: "#001D3D",
     paddingRight: "79px",
-    paddingLeft: "118px",
+    paddingLeft: "250px",
     "@media (max-width: 900px)": {
       paddingLeft: 0,
     },
@@ -150,6 +57,17 @@ const useStyles = makeStyles(() => ({
     width: "45px",
     height: "45px",
   },
+  logoimgplace: {
+    marginRight: "0.5%",
+    float: "left",
+  },
+  logotextplace: {
+    marginRight: "0.5%",
+    float: "left",
+  },
+  menuplace: {
+    marginLeft: "30%",
+  },
   menuButton: {
     fontFamily: "Open Sans, sans-serif",
     fontWeight: 700,
@@ -158,7 +76,7 @@ const useStyles = makeStyles(() => ({
   },
   toolbar: {
     display: "flex",
-    justifyContent: "space-between",
+    // justifyContent: "space-between",
   },
   drawerContainer: {
     padding: "20px 30px",
@@ -166,7 +84,7 @@ const useStyles = makeStyles(() => ({
 }));
 
 export default function Navbar() {
-  const { header, logotext, logoimg, menuButton, toolbar, drawerContainer } = useStyles();
+  const { header, logotext, logoimg, logoimgplace, menuplace, logotextplace, menuButton, toolbar, drawerContainer } = useStyles();
 
   const [state, setState] = useState({
     mobileView: false,
@@ -194,9 +112,15 @@ export default function Navbar() {
   const displayDesktop = () => {
     return (
       <Toolbar className={toolbar}>
-        {WinterofCodeLogo}
-        {WinterofCode}
-        <div>{getMenuButtons()}</div>
+        <div className={logoimgplace}>
+          {WinterofCodeLogo}
+        </div>
+        <div className={logotextplace}>
+          {WinterofCode}
+        </div>
+        <div className={menuplace}>
+          {getMenuButtons()}
+        </div>
       </Toolbar>
     );
   };

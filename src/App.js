@@ -1,9 +1,7 @@
 import './App.css';
 import SplashScreen from './components/splashscreen/splashscreen';
 import React, {useState, useEffect} from 'react';
-import Routes from './components/router/router';
 import AppRouter from './components/router/router';
-// import Navbar from './components/landingpage/landingpage';
 
 function App() {
 
