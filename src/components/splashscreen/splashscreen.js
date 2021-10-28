@@ -11,7 +11,7 @@ import './splashscreen.css';
 export default function SplashScreen() {
 
     return (
-        <div className='container'>
+        <div className='screen'>
             <div className="logoParts">
                 <motion.img initial={{opacity: 0}} animate={{y:"calc(50vh - 106px)", opacity: 1}} transition={{ease: "backOut", duration: 2}} src={yellowlogo} id="yellowlogo" alt="yellowlogo"/>
                 <motion.img initial={{opacity: 0}} animate={{x:"calc(-50vw + 106px)", opacity: 1}} transition={{ease: "backOut", duration: 2}} src={redlogo} id="redlogo" alt="redlogo"/>
