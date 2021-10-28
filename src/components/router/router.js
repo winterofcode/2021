@@ -5,11 +5,14 @@ import LandingPage from '../landingpage/landingpage';
 
 export default function AppRouter() {
   return (
+    // <Router>
+    //   <Navbar />
+    //   <Switch>
+    //     <Route exact path="/" component={LandingPage} />
+    //   </Switch>
+    // </Router>
     <Router>
-      <Navbar />
-      <Switch>
-        <Route exact path="/" component={LandingPage} />
-      </Switch>
+      <LandingPage/>
     </Router>
   );
 }

@@ -23,35 +23,27 @@ export const headersData = [
     },
   ];
   
-export const useStyles = makeStyles(() => ({
-    header: {
-      backgroundColor: "#001D3D",
-      paddingRight: "79px",
-      paddingLeft: "250px",
-      "@media (max-width: 900px)": {
-        paddingLeft: 0,
-      },
+export const UseStyles = makeStyles((theme) => ({
+    appbar: {
+      background: 'none',
     },
-    logotext: {
-      fontFamily: "Work Sans, sans-serif",
-      fontWeight: 600,
-      color: "#FFF",
-      textAlign: "left",
+    toolbarWrapper: {
+      width: '80%',
+      margin: '0 auto',
+    },
+    logoTitle: {
+      fontFamily: "Open Sans, sans-serif",
+      color: '#fff',
+      flexGrow: '1',
+    },
+    icon: {
+      color: '#fff',
+      fontSize: '2rem',
     },
     logoimg: {
       width: "45px",
       height: "45px",
-    },
-    logoimgplace: {
-      marginRight: "0.5%",
-      float: "left",
-    },
-    logotextplace: {
-      marginRight: "0.5%",
-      float: "left",
-    },
-    menuplace: {
-      marginLeft: "30%",
+      padding: "5px",
     },
     menuButton: {
       fontFamily: "Open Sans, sans-serif",
@@ -59,11 +51,7 @@ export const useStyles = makeStyles(() => ({
       size: "18px",
       marginLeft: "38px",
     },
-    toolbar: {
-      display: "flex",
-      // justifyContent: "space-between",
-    },
     drawerContainer: {
       padding: "20px 30px",
     },
-  }));
+  }))

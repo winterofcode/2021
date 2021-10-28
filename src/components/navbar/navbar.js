@@ -1,21 +1,21 @@
+import React, {useState, useEffect} from 'react'
 import {
   AppBar,
   Toolbar,
-  Typography,
   Button,
   IconButton,
   Drawer,
   Link,
   MenuItem,
 } from "@material-ui/core";
-import MenuIcon from "@material-ui/icons/Menu";
-import React, { useState, useEffect } from "react";
+import SortIcon from '@mui/icons-material/Sort';
 import { Link as RouterLink } from "react-router-dom";
 import logo from '../../images/org-logo.png';
-import { headersData, useStyles } from "./navbardata";
+import { headersData, UseStyles } from "./navbardata";
+
 
 export default function Navbar() {
-  const { header, logotext, logoimg, logoimgplace, menuplace, logotextplace, menuButton, toolbar, drawerContainer } = useStyles();
+  const {appbar, icon, logoTitle, logoimg, toolbarWrapper, menuButton, drawerContainer} = UseStyles();
 
   const [state, setState] = useState({
     mobileView: false,
@@ -42,16 +42,10 @@ export default function Navbar() {
 
   const displayDesktop = () => {
     return (
-      <Toolbar className={toolbar}>
-        <div className={logoimgplace}>
-          {WinterofCodeLogo}
-        </div>
-        <div className={logotextplace}>
-          {WinterofCode}
-        </div>
-        <div className={menuplace}>
-          {getMenuButtons()}
-        </div>
+      <Toolbar className={toolbarWrapper}>
+        <img src={logo} className={logoimg} alt="winter of code logo" />
+        <h1 className={logoTitle}>Winter of Code</h1>
+        <div>{getMenuButtons()}</div>
       </Toolbar>
     );
   };
@@ -64,17 +58,17 @@ export default function Navbar() {
 
     return (
       <Toolbar>
+        <img src={logo} className={logoimg} alt="winter of code logo" />
+        <h1 className={logoTitle}>Winter of Code</h1>
         <IconButton 
           {...{
-            
-            edge: "start",
             color: "inherit",
             "aria-label": "menu",
             "aria-haspopup": "true",
             onClick: handleDrawerOpen,
           }}
         >
-          <MenuIcon />
+          <SortIcon className={icon}/>
         </IconButton>
 
         <Drawer
@@ -86,8 +80,6 @@ export default function Navbar() {
         >
           <div className={drawerContainer}>{getDrawerChoices()}</div>
         </Drawer>
-        <div>{WinterofCodeLogo}</div>
-        <div>{WinterofCode}</div>
       </Toolbar>
     );
   };
@@ -110,19 +102,6 @@ export default function Navbar() {
     });
   };
 
-  const WinterofCodeLogo = (
-    <div>
-      <img src={logo} className={logoimg} alt="winter of code logo" />
-    </div>
-  )
-
-  const WinterofCode = (
-    <Typography variant="h6" component="h1" className={logotext}>
-      Winter of Code
-    </Typography>
-  );
-
-
   const getMenuButtons = () => {
     return headersData.map(({ label, href }) => {
       return (
@@ -142,10 +121,8 @@ export default function Navbar() {
   };
 
   return (
-    <header>
-      <AppBar className={header}>
-        {mobileView ? displayMobile() : displayDesktop()}
-      </AppBar>
-    </header>
-  );
+    <AppBar className={appbar} elevation={0}>
+      {mobileView ? displayMobile() : displayDesktop()}  
+    </AppBar>
+  )
 }
