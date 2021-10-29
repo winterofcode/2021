@@ -1,15 +1,8 @@
 import React from 'react'
 import { CssBaseline, makeStyles } from '@material-ui/core'
 import Navbar from '../navbar/navbar';
-
-const UseStyles = makeStyles(() => ({
-    root: {
-        minHeight: '100vh',
-        backgroundColor: '#001D3D',
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
-    },
-}));
+import WelcomePage from '../welcomepage/welcomepage';
+import { UseStyles } from '../landingpage/landingpagedata';
 
 export default function landingPage() {
     const {root} = UseStyles();
@@ -18,6 +11,7 @@ export default function landingPage() {
         <div className={root}>
             <CssBaseline/>
             <Navbar/>
+            <WelcomePage/>
         </div>
     )
 }
