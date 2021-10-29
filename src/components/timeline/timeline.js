@@ -3,249 +3,310 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import 'react-vertical-timeline-component/style.min.css';
 import "./timeline.css";
 import {CircleStarFull, StarFull, StarEmpty, CircleStarEmpty } from "../../icon/icon";
-import { makeStyles } from '@material-ui/core';
-
-
-
-export const UseStyles = makeStyles((theme) => ({
-    root: {
-        backgroundColor: "%fff",
-        // justifyContent: "center",
-        // alignItems: "center",
-    },
-    // timelineTitle: {
-    //     justifyContent: "center",
-    //     alignItems: "center",
-    // }
-}))
+import { UseStyles } from '../timeline/timelinedata';
 
 export default function Timeline() {
 
     const {root, timelineTitle} = UseStyles();
-
 
     const [state, setState] = useState({
         mobileView: false,
         drawerOpen: false,
       });
     
-      const { mobileView, drawerOpen } = state;
+    const { mobileView, drawerOpen } = state;
+
+    useEffect(() => {
+    const setResponsiveness = () => {
+        return window.innerWidth < 900
+        ? setState((prevState) => ({ ...prevState, mobileView: true }))
+        : setState((prevState) => ({ ...prevState, mobileView: false }));
+    };
+
+    setResponsiveness();
+
+    window.addEventListener("resize", () => setResponsiveness());
+
+    return () => {
+        window.removeEventListener("resize", () => setResponsiveness());
+    };
+    }, []);
     
-      useEffect(() => {
-        const setResponsiveness = () => {
-          return window.innerWidth < 900
-            ? setState((prevState) => ({ ...prevState, mobileView: true }))
-            : setState((prevState) => ({ ...prevState, mobileView: false }));
-        };
-    
-        setResponsiveness();
-    
-        window.addEventListener("resize", () => setResponsiveness());
-    
-        return () => {
-          window.removeEventListener("resize", () => setResponsiveness());
-        };
-      }, []);
-    
-      const displayDesktop = () => {
-        return (
-            <div>
-                <h1 className={timelineTitle}>Timeline</h1>
-                <VerticalTimeline>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                    contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-                    date="2011 - present"
-                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    icon={<CircleStarFull/>}
-                >
-                    <h3 className="vertical-timeline-element-title">Creative Director</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-                    <p>
-                    Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-                    </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                    date="2010 - 2011"
-                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    icon={<CircleStarFull/>}
-                >
-                    <h3 className="vertical-timeline-element-title">Art Director</h3>
-                    <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-                    <p>
-                    Creative Direction, User Experience, Visual Design, SEO, Online Marketing
-                    </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                    date="2008 - 2010"
-                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    icon={<CircleStarFull/>}
-                >
-                    <h3 className="vertical-timeline-element-title">Web Designer</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
-                    <p>
-                    User Experience, Visual Design
-                    </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                    date="2006 - 2008"
-                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    icon={<CircleStarFull/>}
-                >
-                    <h3 className="vertical-timeline-element-title">Web Designer</h3>
-                    <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-                    <p>
-                    User Experience, Visual Design
-                    </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--education"
-                    date="April 2013"
-                    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                    icon={<CircleStarFull/>}
-                >
-                    <h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social Media</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-                    <p>
-                    Strategy, Social Media
-                    </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--education"
-                    date="November 2012"
-                    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                    icon={<CircleStarFull/>}
-                >
-                    <h3 className="vertical-timeline-element-title">Agile Development Scrum Master</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Certification</h4>
-                    <p>
-                    Creative Direction, User Experience, Visual Design
-                    </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--education"
-                    date="2002 - 2006"
-                    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                    icon={<CircleStarFull/>}
-                >
-                    <h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media Visual Imaging</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
-                    <p>
-                    Creative Direction, Visual Design
-                    </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-                    icon={<CircleStarFull/>}
-                />
-            </VerticalTimeline>
-        </div>
-        );
-      };
-    
-      const displayMobile = () => {
-        return (
-            <div>
-                <h1 className={timelineTitle}>Timeline</h1>
-                <VerticalTimeline>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                    contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-                    date="2011 - present"
-                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    icon={<CircleStarFull/>}
-                >
-                    <h3 className="vertical-timeline-element-title">Creative Director</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-                    <p>
-                    Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-                    </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                    date="2010 - 2011"
-                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    icon={<CircleStarFull/>}
-                >
-                    <h3 className="vertical-timeline-element-title">Art Director</h3>
-                    <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-                    <p>
-                    Creative Direction, User Experience, Visual Design, SEO, Online Marketing
-                    </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                    date="2008 - 2010"
-                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    icon={<CircleStarFull/>}
-                >
-                    <h3 className="vertical-timeline-element-title">Web Designer</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
-                    <p>
-                    User Experience, Visual Design
-                    </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                    date="2006 - 2008"
-                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    icon={<CircleStarFull/>}
-                >
-                    <h3 className="vertical-timeline-element-title">Web Designer</h3>
-                    <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-                    <p>
-                    User Experience, Visual Design
-                    </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--education"
-                    date="April 2013"
-                    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                    icon={<CircleStarFull/>}
-                >
-                    <h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social Media</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-                    <p>
-                    Strategy, Social Media
-                    </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--education"
-                    date="November 2012"
-                    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                    icon={<CircleStarFull/>}
-                >
-                    <h3 className="vertical-timeline-element-title">Agile Development Scrum Master</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Certification</h4>
-                    <p>
-                    Creative Direction, User Experience, Visual Design
-                    </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--education"
-                    date="2002 - 2006"
-                    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                    icon={<CircleStarFull/>}
-                >
-                    <h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media Visual Imaging</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
-                    <p>
-                    Creative Direction, Visual Design
-                    </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-                    icon={<CircleStarFull/>}
-                />
-            </VerticalTimeline>
-        </div>
-        );
-      };
+    const displayDesktop = () => {
+    return (
+        <div>
+            <div className={timelineTitle}>
+                <h1>Timeline</h1>
+            </div>
+            <VerticalTimeline>
+            <VerticalTimelineElement
+                className="vertical-timeline-element--work"
+                // contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}    // dont delete this, will be needed to update.
+                // contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}  // dont delete this, will be needed to update.
+                date="10th November, 2021"
+                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                icon={<StarEmpty/>}
+            >
+                <h3 className="vertical-timeline-element-title">Project Application Starts</h3>
+                <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4>
+                <p>
+                Within this period various organizations submit their project proposal.
+                </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+                className="vertical-timeline-element--work"
+                date="23rd November, 2021"
+                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                icon={<StarEmpty/>}
+            >
+                <h3 className="vertical-timeline-element-title">Organisations Announced</h3>
+                <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4>
+                <p>
+                The Organisations selected for the event will be announced.
+                </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+                className="vertical-timeline-element--work"
+                date="23rd November - 4th December, 2021"
+                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                icon={<StarEmpty/>}
+            >
+                <h3 className="vertical-timeline-element-title">Student Application Starts</h3>
+                <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4>
+                <p>
+                Students select their organizations and apply to them during this period.
+                </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+                className="vertical-timeline-element--work"
+                date="6th December, 2021"
+                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                icon={<StarEmpty/>}
+            >
+                <h3 className="vertical-timeline-element-title">Students announced, projects matched by organizations</h3>
+                <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4>
+                <p>
+                Students receive an email regarding their selection and are assigned projects by their respective organisation.
+                </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+                className="vertical-timeline-element--education"
+                date="6th December - 8th December, 2021"
+                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                icon={<StarEmpty/>}
+            >
+                <h3 className="vertical-timeline-element-title">Community Bonding period</h3>
+                <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4>
+                <p>
+                Students come to know of their respective Organisations. Mentors are assigned. Strategies and approaches towards their project are discussed over platforms like slack.
+                </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+                className="vertical-timeline-element--education"
+                date="8th December - 21st December, 2021"
+                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                icon={<StarEmpty/>}
+            >
+                <h3 className="vertical-timeline-element-title">Phase 1</h3>
+                <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4>
+                <p>
+                The First round of tasks are handed out regarding the projects.
+                </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+                className="vertical-timeline-element--education"
+                date="22nd December - 23rd December, 2021"
+                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                icon={<StarEmpty/>}
+            >
+                <h3 className="vertical-timeline-element-title">First Evaluation</h3>
+                <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4>
+                <p>
+                The process of students is assessed.
+                </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+                className="vertical-timeline-element--education"
+                date="24th December - 3 January, 2022"
+                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                icon={<StarEmpty/>}
+            >
+                <h3 className="vertical-timeline-element-title">Phase 2</h3>
+                <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4>
+                <p>
+                Second round of tasks is assigned.
+                </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+                className="vertical-timeline-element--education"
+                date="4th January - 5th January, 2022"
+                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                icon={<StarEmpty/>}
+            >
+                <h3 className="vertical-timeline-element-title">Second Evaluation</h3>
+                <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4>
+                <p>
+                Final evaluation is done based on the outcome of the assigned tasks.
+                </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+                className="vertical-timeline-element--education"
+                date="10th January"
+                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                icon={<StarEmpty/>}
+            >
+                <h3 className="vertical-timeline-element-title">Successful Students Announced</h3>
+                <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4>
+                <p>
+                Name of students who have successfully completed the event will be announced.
+                </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                icon={<StarEmpty/>}
+            />
+        </VerticalTimeline>
+    </div>
+    );
+    };
+
+    const displayMobile = () => {
+    return (
+        <div>
+            <div className={timelineTitle}>
+                <h1>Timeline</h1>
+            </div>
+            <VerticalTimeline>
+            <VerticalTimelineElement
+                className="vertical-timeline-element--work"
+                // contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}    // dont delete this, will be needed to update.
+                // contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}  // dont delete this, will be needed to update.
+                date="10th November, 2021"
+                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                icon={<StarEmpty/>}
+            >
+                <h3 className="vertical-timeline-element-title">Project Application Starts</h3>
+                <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4>
+                <p>
+                Within this period various organizations submit their project proposal.
+                </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+                className="vertical-timeline-element--work"
+                date="23rd November, 2021"
+                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                icon={<StarEmpty/>}
+            >
+                <h3 className="vertical-timeline-element-title">Organisations Announced</h3>
+                <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4>
+                <p>
+                The Organisations selected for the event will be announced.
+                </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+                className="vertical-timeline-element--work"
+                date="23rd November - 4th December, 2021"
+                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                icon={<StarEmpty/>}
+            >
+                <h3 className="vertical-timeline-element-title">Student Application Starts</h3>
+                <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4>
+                <p>
+                Students select their organizations and apply to them during this period.
+                </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+                className="vertical-timeline-element--work"
+                date="6th December, 2021"
+                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                icon={<StarEmpty/>}
+            >
+                <h3 className="vertical-timeline-element-title">Students announced, projects matched by organizations</h3>
+                <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4>
+                <p>
+                Students receive an email regarding their selection and are assigned projects by their respective organisation.
+                </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+                className="vertical-timeline-element--education"
+                date="6th December - 8th December, 2021"
+                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                icon={<StarEmpty/>}
+            >
+                <h3 className="vertical-timeline-element-title">Community Bonding period</h3>
+                <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4>
+                <p>
+                Students come to know of their respective Organisations. Mentors are assigned. Strategies and approaches towards their project are discussed over platforms like slack.
+                </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+                className="vertical-timeline-element--education"
+                date="8th December - 21st December, 2021"
+                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                icon={<StarEmpty/>}
+            >
+                <h3 className="vertical-timeline-element-title">Phase 1</h3>
+                <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4>
+                <p>
+                The First round of tasks are handed out regarding the projects.
+                </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+                className="vertical-timeline-element--education"
+                date="22nd December - 23rd December, 2021"
+                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                icon={<StarEmpty/>}
+            >
+                <h3 className="vertical-timeline-element-title">First Evaluation</h3>
+                <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4>
+                <p>
+                The process of students is assessed.
+                </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+                className="vertical-timeline-element--education"
+                date="24th December - 3 January, 2022"
+                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                icon={<StarEmpty/>}
+            >
+                <h3 className="vertical-timeline-element-title">Phase 2</h3>
+                <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4>
+                <p>
+                Second round of tasks is assigned.
+                </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+                className="vertical-timeline-element--education"
+                date="4th January - 5th January, 2022"
+                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                icon={<StarEmpty/>}
+            >
+                <h3 className="vertical-timeline-element-title">Second Evaluation</h3>
+                <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4>
+                <p>
+                Final evaluation is done based on the outcome of the assigned tasks.
+                </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+                className="vertical-timeline-element--education"
+                date="10th January"
+                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                icon={<StarEmpty/>}
+            >
+                <h3 className="vertical-timeline-element-title">Successful Students Announced</h3>
+                <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4>
+                <p>
+                Name of students who have successfully completed the event will be announced.
+                </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                icon={<StarEmpty/>}
+            />
+        </VerticalTimeline>
+    </div>
+    );
+    };
 
     return (
         <div className={root}>
