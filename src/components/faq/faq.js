@@ -51,12 +51,11 @@ export default function CustomizedAccordions() {
 
   const [state, setState] = useState({
     mobileView: false,
-    drawerOpen: false,
   });
 
   const { root, sectionHeading}= UseStyles();
 
-  const { mobileView, drawerOpen } = state;
+  const { mobileView } = state;
 
   useEffect(() => {
     const setResponsiveness = () => {
@@ -190,10 +189,6 @@ export default function CustomizedAccordions() {
   };
 
   const displayMobile = () => {
-    const handleDrawerOpen = () =>
-      setState((prevState) => ({ ...prevState, drawerOpen: true }));
-    const handleDrawerClose = () =>
-      setState((prevState) => ({ ...prevState, drawerOpen: false }));
 
     return (
         <div>

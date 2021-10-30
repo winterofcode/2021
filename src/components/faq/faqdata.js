@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core';
 export const UseStyles = makeStyles((theme) => ({
     
     root: {
-        // minHeight: '100vh',
+        minHeight: '100vh',
         backgroundColor: '#000814',
         // backgroundRepeat: 'no-repeat',
         // backgroundSize: 'cover',
@@ -12,7 +12,7 @@ export const UseStyles = makeStyles((theme) => ({
         paddingLeft: '5%',
         paddingRight: '5%',
         paddingTop: '1%',
-        paddingBottom: '1%',
+        paddingBottom: '5%',
     },
 
     sectionHeading: {
