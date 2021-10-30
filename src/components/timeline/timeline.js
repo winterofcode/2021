@@ -4,6 +4,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import "./timeline.css";
 import {CircleStarFull, StarFull, StarEmpty, CircleStarEmpty } from "../../icon/icon";
 import { UseStyles } from '../timeline/timelinedata';
+import { Typography } from '@mui/material';
 
 export default function Timeline() {
 
@@ -35,9 +36,11 @@ export default function Timeline() {
     const displayDesktop = () => {
     return (
         <div>
+            <Typography>
             <div className={timelineTitle}>
-                <h1>Timeline</h1>
+                <h1 align="center">Timeline</h1>
             </div>
+            </Typography>
             <VerticalTimeline>
             <VerticalTimelineElement
                 className="vertical-timeline-element--work"
