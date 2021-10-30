@@ -55,7 +55,7 @@ export const UseStyles = makeStyles((theme) => ({
         fontSize: "20px",
         color: "#fff",
     },
-    resourcesLink: {
+    resourceslink: {
         fontSize: "15px",
         textDecoration: "none",
         color: "#fff",
@@ -64,7 +64,7 @@ export const UseStyles = makeStyles((theme) => ({
         fontSize: "20px",
         color: "#fff",
     },
-    handleLinks: {
+    handlesLink: {
         fontSize: "15px",
         textDecoration: "none",
         color: "#fff",
