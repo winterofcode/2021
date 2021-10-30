@@ -19,8 +19,6 @@ const Accordion = styled((props) => (
     display: 'none',
   },
   backgroundColor: '#000814',
-  // paddingRight: '3%',
-  // paddingLeft: '3%',
   color: '#fff',
 }));
 
