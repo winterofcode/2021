@@ -26,7 +26,7 @@ export const headersData = [
 export const UseStyles = makeStyles((theme) => ({
     appbar: {
       backgroundColor: '#000814',
-      height: '8%'
+      // height: '12%',
     },
     toolbarWrapper: {
       width: '80%',

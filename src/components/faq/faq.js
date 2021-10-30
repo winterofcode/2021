@@ -28,7 +28,7 @@ const AccordionSummary = styled((props) => (
     {...props}
   />
 ))(({ theme }) => ({
-  backgroundColor: '#003566',
+  backgroundColor: '#001D3D',
   flexDirection: 'row',
   color: '#fff',
   '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {

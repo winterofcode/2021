@@ -2,7 +2,7 @@ import { makeStyles } from '@material-ui/core';
 
 export const UseStyles = makeStyles((theme) => ({
     root: {
-        background: "#000814",
+        background: "#001D3D",
         minHeight: "30vh",
     },
     footerWrapper: {
