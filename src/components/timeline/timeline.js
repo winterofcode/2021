@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import "./timeline.css";
+// import "./timeline.css";
 import {CircleStarFull, StarFull, StarEmpty, CircleStarEmpty } from "../../icon/icon";
 import { UseStyles } from '../timeline/timelinedata';
 import { Typography } from '@mui/material';
@@ -176,9 +176,11 @@ export default function Timeline() {
     const displayMobile = () => {
     return (
         <div>
+            <Typography>
             <div className={timelineTitle}>
-                <h1>Timeline</h1>
+                <h1 align="center">Timeline</h1>
             </div>
+            </Typography>
             <VerticalTimeline>
             <VerticalTimelineElement
                 className="vertical-timeline-element--work"

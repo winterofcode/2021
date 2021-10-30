@@ -3,11 +3,12 @@ import { makeStyles } from '@material-ui/core';
 export const UseStyles = makeStyles((theme) => ({
     root: {
         background: "#001D3D",
-        minHeight: "40vh",
+        minHeight: "30vh",
         // minWidth: "20vh",
         display: "flex",
         justifyContent: "center",
-        alignItems: "center",
+        // alignItems: "center",
+        paddingBottom: "9%",
     },
     ApplyTitle: {
         fontFamily: "Open Sans, sans-serif",
