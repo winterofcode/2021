@@ -1,5 +1,4 @@
 import React from 'react'
-import Orgs from '../orgs'
 
 export default function Orgs2021() {
     return (

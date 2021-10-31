@@ -3,7 +3,6 @@ import { UseStyles } from './footerdata';
 import logo from "../../images/org-logo.png";
 import {ExternalLink}  from "react-external-link"
 import {Instagram,Facebook,Twitter} from "../../icon/icon"
-import { Typography } from '@material-ui/core';
 
 export default function Footer() {
     const {
@@ -24,9 +23,6 @@ export default function Footer() {
         handlesLink,
         footerWrapperMobile,
         footerColumnMobile,
-        footerColumnMobile1,
-        footerColumnMobile2,
-        footerColumnMobile3,
         logoflexRowMobile,
         logoTitleMobile,
         socialLinkRowMobile,
@@ -139,15 +135,6 @@ export default function Footer() {
         return (
             <div className={footerWrapperMobile}>
                 <div className={footerColumnMobile}>
-                    {/* <div className={footerColumnMobile1}>
-                        <h1>hello world</h1>
-                    </div>
-                    <div className={footerColumnMobile2}>
-                    <h1>hello world</h1>
-                    </div>
-                    <div className={footerColumnMobile3}>
-                    <h1>hello world</h1> 
-                    </div>*/}
                     <div className={logoflexRowMobile}>
                         <img src={logo} className={logoimg} alt="logo" />
                         <p className={logoTitleMobile}>Winter of Code</p>
@@ -166,9 +153,7 @@ export default function Footer() {
                     <div className={wocTitleMobile}>
                         <p>The Winter of Code is a program aimed to increase participation for the Google Summer of Code program among students in colleges and universities.</p>
                     </div>
-                    <div className={wocCopyrightMobile}>
-                        <p>&copy; Winter of Code 2020</p>
-                    </div>
+    
                     <div className={resourcesTitleMobile}>
                         <p>Resources</p>
                     </div>
@@ -208,6 +193,9 @@ export default function Footer() {
                         <ExternalLink className={handlesLinkMobile} href="https://www.facebook.com/dscnsec/">
                             <p>Facebook</p>
                         </ExternalLink>
+                    </div>
+                    <div className={wocCopyrightMobile}>
+                        <p>&copy; Winter of Code 2020</p>
                     </div>
                 </div>
             </div>

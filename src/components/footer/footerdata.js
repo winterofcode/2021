@@ -11,7 +11,6 @@ export const UseStyles = makeStyles((theme) => ({
         alignItems: "center",
         width: "80%",
         margin: "0 auto",
-        // color: "#fff",
     },
     footerColumn1: {
         flex: "0 0 200px",
@@ -19,7 +18,6 @@ export const UseStyles = makeStyles((theme) => ({
     },
     footerColumn2: {
         flex: "0 0 200px",
-        // marginTop: "20px",
     },
     footerColumn3: {
         flex: "0 0 200px"
@@ -76,20 +74,8 @@ export const UseStyles = makeStyles((theme) => ({
         color: "#fff",
     },
     footerColumnMobile: {
-        // display: "flex",
-        // flexDirection: "column",
-        // width: "20%",
         margin: "0 auto"
     },
-    // footerColumnMobile1: {
-    //     color: "%fff",
-    // },
-    // footerColumnMobile2: {
-    //     color: "%fff",
-    // },
-    // footerColumnMobile3: {
-    //     color: "%fff",
-    // }
     logoflexRowMobile: {
         display: "flex",
         justifyContent: "center",
@@ -106,21 +92,20 @@ export const UseStyles = makeStyles((theme) => ({
         margin: "0 auto"
     },
     wocTitleMobile: {
-        width:"40%",
-        margin: "0 auto"   
+        padding: "15px",
+        display: "flex", 
+        justifyContent: "center",
+        alignItems: "center",  
     },
     wocCopyrightMobile: {
-        width:"45%",
-        margin: "0 auto"   
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",   
     },
     resourcesTitleMobile: {
-        // width: "30%",
-        // margin: "0 auto",
         display: "flex",
-        // flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-
         fontSize: "20px"
     },
     resourceslinkMobile: {
@@ -132,9 +117,10 @@ export const UseStyles = makeStyles((theme) => ({
         color: "#fff"   
     },
     DSCNSECTitleMobile: {
-        width: "30%",
-        margin: "0 auto",
-        fontSize: "20px"
+        fontSize: "20px",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
     },
     handlesLinkMobile: {
         display: "flex",

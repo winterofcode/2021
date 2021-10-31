@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react'
 import { UseStyles } from './orgsdata';
 import { Stack, Button } from '@mui/material';
-import Orgs2019 from './orgscards/orgs2019';
-import Orgs2020 from './orgscards/orgs2020';
-import Orgs2021 from './orgscards/orgs2021';
+import Orgs2019 from './orgscards/orgs2019/orgs2019';
+import Orgs2020 from './orgscards/orgs2020/orgs2020';
+import Orgs2021 from './orgscards/orgs2021/orgs2021';
 
 export default function Orgs() {
     const {root, orgsTitle, ApplyButton} = UseStyles();
@@ -86,10 +86,16 @@ export default function Orgs() {
                 </div>
                 <div className={ApplyButton}>
                     <Stack spacing={2} direction="row">
-                        <Button style={{borderRadius: '50px'}} variant="outlined">Apply as Organization</Button>
-                        <Button style={{borderRadius: '50px'}} variant="outlined">Apply as Mentor</Button>
-                        <Button style={{borderRadius: '50px'}} variant="outlined">Apply as Student</Button>
+                        <Button value="2019" onClick={Toggle} style={{borderRadius: '50px'}} variant={isContained2019 ? 'contained' : "outlined"}>2019</Button>
+                        <Button value='2020' onClick={Toggle} style={{borderRadius: '50px'}} variant={isContained2020 ? 'contained' : "outlined"}>2020</Button>
+                        <Button value='2021' onClick={Toggle} style={{borderRadius: '50px'}} variant={isContained2021 ? 'contained' : "outlined"}>2021</Button>
                     </Stack>
+                </div>
+                <div>
+                    {active==="2019" && <Orgs2019/>}
+                    {active==="2020" && <Orgs2020/>}
+                    {active==="2021" && <Orgs2021/>}
+                 
                 </div>
             </div>
         );
