@@ -39,13 +39,15 @@ export const Organisations2019 = [
       logo: require("../../images/orgimages/dscnsec.png"),
       class: "dsc-logo",
       link: "https://2019.winterofcode.com/dsc-nsec.html",
-      openInNewPage: true
+      openInNewPage: true,
+      text: "5 Projects"
     },
     {
       name: "The Code Foundation",
       logo: require("../../images/orgimages/tcf.jpg"),
       link: "https://2019.winterofcode.com/the-code-foundation.html",
-      openInNewPage: true
+      openInNewPage: true,
+      text: "2 Projects"
     },
   ];
 export const Organisations2020 = [

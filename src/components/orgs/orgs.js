@@ -1,10 +1,9 @@
 import React, {useState, useEffect} from 'react'
 import { UseStyles } from './orgsdata';
 import { Stack, Button } from '@mui/material';
-import Orgs2019 from './orgs2019';
-import Orgs2020 from './orgs2020';
-import Orgs2021 from './orgs2021';
-import { useCallback } from 'react';
+import Orgs2019 from './orgscards/orgs2019';
+import Orgs2020 from './orgscards/orgs2020';
+import Orgs2021 from './orgscards/orgs2021';
 
 export default function Orgs() {
     const {root, orgsTitle, ApplyButton} = UseStyles();
@@ -13,13 +12,6 @@ export default function Orgs() {
     const [isContained2019, setisContained2019] = useState(false);
     const [isContained2020, setisContained2020] = useState(false);
     const [isContained2021, setisContained2021] = useState(true);
-
-    // const Toggle = useCallback(
-    //     () => {
-    //         setActive(prevActive => !prevActive)
-    //     },
-    //     [],
-    // )
 
     const Toggle = (e) => {
         setActive(e.target.value)
