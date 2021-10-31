@@ -211,7 +211,7 @@ export default function About() {
                 <div align='center' className={subSectionMobile}>
                     <Typography>
                         <p align='center' className={statsText}>40+</p>
-                        <p align='center' className={statsText}>Organizations</p>
+                        <p align='center' className={statsText}>Mentors</p>
                     </Typography>
                 </div>
             </div>
