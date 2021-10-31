@@ -6,7 +6,7 @@ import Orgs2020 from './orgscards/orgs2020/orgs2020';
 import Orgs2021 from './orgscards/orgs2021/orgs2021';
 
 export default function Orgs() {
-    const {root, orgsTitle, ApplyButton} = UseStyles();
+    const {root, orgsTitle, ApplyButton, cardStyle} = UseStyles();
 
     const [active, setActive] = useState('2019');
     const [isContained2019, setisContained2019] = useState(false);
@@ -72,7 +72,6 @@ export default function Orgs() {
                     {active==="2019" && <Orgs2019/>}
                     {active==="2020" && <Orgs2020/>}
                     {active==="2021" && <Orgs2021/>}
-                 
                 </div>
             </div>
         );
@@ -95,7 +94,6 @@ export default function Orgs() {
                     {active==="2019" && <Orgs2019/>}
                     {active==="2020" && <Orgs2020/>}
                     {active==="2021" && <Orgs2021/>}
-                 
                 </div>
             </div>
         );

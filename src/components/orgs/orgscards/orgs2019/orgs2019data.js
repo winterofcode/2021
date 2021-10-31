@@ -33,27 +33,40 @@ export const UseStyles = makeStyles((theme) => ({
     //     margin: "0 auto",
     // }
     root: {
-        background: "#001D3D",
-        minHeight: "30vh",
+        // background: "#001D3D",
+        // minHeight: "30vh",
         // display: "flex",
-        // justifyContent: "center"
+        // justifyContent: "center",
+        // alignItems: "center"
     },
-    cardWrapper: {
+    Card: {
         // display: "flex",
         // flexGrow: "1",
         // justifyContent: "space-between",
         // alignItems: "center",
         // width: "80%",
         // margin: "0 auto",
-        minWidth: "50%"
+        // minWidth: "50%"
+        // width: "300",
+        // margin: "auto",
+       
     },
     Media: {
-        height: "10",
-        width: "10%",
+        // height: "550",
+        // width: "100%",
+        // objectFit: "cover",
     },
     gridContainer: {
         // display: "flex",
         // justifyContent: "space-between",
+    },
+    cardWrapper: {
+      display: "flex",
+      justifyContent: "space-between",
+      alignItems: "center",
+    },
+    imageStyle: {
+      maxWidth: "50px",
     }
   }))
 
@@ -63,14 +76,13 @@ export const Organisations2019 = [
       logo: dscnseclogo,
       class: "dsc-logo",
       link: "https://2019.winterofcode.com/dsc-nsec.html",
-      openInNewPage: true,
       text: "5 Projects"
     },
     {
       name: "The Code Foundation",
       logo: tcflogo,
       link: "https://2019.winterofcode.com/the-code-foundation.html",
-      openInNewPage: true,
+ 
       text: "2 Projects"
     },
   ];
