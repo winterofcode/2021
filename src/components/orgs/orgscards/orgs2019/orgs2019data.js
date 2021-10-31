@@ -67,7 +67,13 @@ export const UseStyles = makeStyles((theme) => ({
     },
     imageStyle: {
       maxWidth: "50px",
-    }
+    },
+    cardSectionMobile:{
+       display: "flex",
+       flexDirection: "column",
+      //  justifyContent: "center",
+       alignItems: "center",
+    },
   }))
 
 export const Organisations2019 = [

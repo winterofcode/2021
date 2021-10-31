@@ -25,7 +25,7 @@ import { Button } from '@material-ui/core';
 import { Card } from 'react-bootstrap';
 
 export default function Orgs2020() {
-    const {root, cards, cardWrapper, Media, gridContainer} = UseStyles();
+    const {root, cards, cardWrapper, Media, gridContainer, cardSection} = UseStyles();
 
     const [state, setState] = useState({
         mobileView: false,
@@ -51,9 +51,12 @@ export default function Orgs2020() {
 
     const displayDesktop = () => {
         return (
-            <>
-                {/* {Organisations2020.map(orgs => (
-                    <Card 
+            <> 
+                {/* <div Style={{display: "grid"}} className={cardSection}> */}
+                <Grid container>
+                {Organisations2020.map(orgs => (
+                    <Grid item lg={4} md={6} xs={12}>
+                    <Card
                         style={
                             {
                                 margin: "80px", 
@@ -79,8 +82,8 @@ export default function Orgs2020() {
                                     display: "flex",
                                 
                                     justifyContent: "center",
-                                    alignItems: "center",
-                                    fontSize: "30px"
+                                    alignItems: "end",
+                                    fontSize: "25px"
                                          }}>
                                              {orgs.name}
                             </Card.Title>
@@ -95,6 +98,7 @@ export default function Orgs2020() {
                                 className="mb-2 text-muted">
                                 {orgs.text}
                             </Card.Subtitle>
+                            <br/><br/><br/>
                             <Button 
                                 style={{
                                     background: "#003566",
@@ -104,10 +108,14 @@ export default function Orgs2020() {
                                     borderRadius: "50px",
                                     padding: "5%"
                                 }}
-                            >View Projects</Button>
+                                >View Projects</Button>
                         </Card.Body>
                     </Card>
-                ))} */}
+                    </Grid>
+                ))}
+                </Grid>
+            {/* </div> */}
+
                 
             </>
 
@@ -117,35 +125,67 @@ export default function Orgs2020() {
     const displayMobile = () => {
         return (
             <div>
-                {/* {Organisations2020.map(orgs => (
-                    <Grid container spacing={6} className={gridContainer}>
-                        <Grid item xs={12} sm={6} md={12}>
-                        <Card className={cardWrapper}>
-                            <CardMedia
-
-                                component="picture"
-                                // width="45px"
-                                height="50"
-                                // width="100"
-                                className={Media}
-                                image={orgs.logo}
-                                alt=""
-                            />
-                            <CardHeader
-                            title={orgs.name}
-                            subheader={orgs.text}
-                            />
-                            <CardActions>
-                                <Button size="small" color="primary">
-                                Share
-                                </Button>
-                            </CardActions>
-                        </Card>
-                        </Grid>
-                        
+                <Grid container>
+                {Organisations2020.map(orgs => (
+                    <Grid item lg={4} md={6} xs={12}>
+                    <Card
+                        style={
+                            {
+                                margin: "80px", 
+                                background: "white", 
+                                width: "70%", 
+                                height: "80%",
+                                border: "50px" 
+                            }}>
+                        <Card.Img 
+                            style={
+                                {
+                                   
+                                    width: "100px",
+                                    height: "100px",
+                                    objectFit: "cover",
+                                    margin: "10px"
+                                    }} 
+                                    variant="top" 
+                                    src={orgs.logo} />
+                        <Card.Body>
+                            <Card.Title 
+                                style={{
+                                    display: "flex",
+                                
+                                    justifyContent: "center",
+                                    alignItems: "end",
+                                    fontSize: "25px"
+                                         }}>
+                                             {orgs.name}
+                            </Card.Title>
+                            <Card.Subtitle 
+                                style={{
+                                    display: "flex",
+                                
+                                    justifyContent: "center",
+                                    alignItems: "center",
+                                    fontSize: "20px"
+                                }}
+                                className="mb-2 text-muted">
+                                {orgs.text}
+                            </Card.Subtitle>
+                            <br/><br/><br/>
+                            <Button 
+                                style={{
+                                    background: "#003566",
+                                    left: "24%",
+                                    margin: "5px",
+                                    color: "white",
+                                    borderRadius: "50px",
+                                    padding: "5%"
+                                }}
+                                >View Projects</Button>
+                        </Card.Body>
+                    </Card>
                     </Grid>
-                        
-                        ))} */}
+                ))}
+                </Grid>
             </div>
         );
     };

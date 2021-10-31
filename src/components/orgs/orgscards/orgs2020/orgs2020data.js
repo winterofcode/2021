@@ -52,7 +52,7 @@ export const UseStyles = makeStyles((theme) => ({
       // alignItems: "center",
       // width: "80%",
       // margin: "0 auto",
-      minWidth: "50%"
+      // minWidth: "50%"
   },
   Media: {
       height: "10",
@@ -62,6 +62,10 @@ export const UseStyles = makeStyles((theme) => ({
       // display: "flex",
       // justifyContent: "space-between",
   },
+   cardSection:{
+      display: "grid",
+      gridTemplateColumns: "20% 20% 20%",
+   },
   }))
 
 export const Organisations2020 = [
