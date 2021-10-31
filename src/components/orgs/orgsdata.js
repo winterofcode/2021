@@ -1,5 +1,7 @@
 import { makeStyles } from '@material-ui/core';
 
+import dscnseclogo from '../../images/orgimages/dscnsec.png';
+
 export const UseStyles = makeStyles((theme) => ({
     root: {
         background: "#000814",
@@ -36,7 +38,7 @@ export const UseStyles = makeStyles((theme) => ({
 export const Organisations2019 = [
     {
       name: "DSC NSEC",
-      logo: require("../../images/orgimages/dscnsec.png"),
+      logo: dscnseclogo,
       class: "dsc-logo",
       link: "https://2019.winterofcode.com/dsc-nsec.html",
       openInNewPage: true,
@@ -44,7 +46,8 @@ export const Organisations2019 = [
     },
     {
       name: "The Code Foundation",
-      logo: require("../../images/orgimages/tcf.jpg"),
+      // logo: require("../../images/orgimages/tcf.jpg"),
+      logo: dscnseclogo,
       link: "https://2019.winterofcode.com/the-code-foundation.html",
       openInNewPage: true,
       text: "2 Projects"

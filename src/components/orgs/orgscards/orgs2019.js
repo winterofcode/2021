@@ -34,7 +34,7 @@ export default function Orgs2019() {
                         <CardMedia
                             component="img"
                             // width="45px"
-                            height="194"
+                            height="50"
                             image={orgs.logo}
                             alt=""
                         />
