@@ -15,7 +15,7 @@ export default function About() {
     
       const { root, sectionHeading, section, titleText, descriptionText, workSection,
          subSection, workSectionMobile, subSectionMobile, statsText, sectionRow,
-         sectionTwo, worksubSection, wocimagestyle, sectionRowMobile}= UseStyles();
+         sectionTwo, worksubSection, wocimagestyle, sectionRowMobile, iframeMobile}= UseStyles();
     
       const { mobileView } = state;
     
@@ -235,22 +235,23 @@ export default function About() {
                   <h1 className={sectionHeading}>How the Program Works ?<br /></h1>   
                 </div>
                 <div className={sectionRowMobile}>
-                  <div style={{margin: "2%"}}>
-                    <iframe src="https://www.youtube.com/embed/ZtyBCP6_whw"
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
-                    clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                        How to write proposal for winter of code</iframe>
-                  </div>
-                   <div>
+                    <div className={iframeMobile}>
+               
+                        <iframe src="https://www.youtube.com/embed/ZtyBCP6_whw"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+                        clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                            How to write proposal for winter of code</iframe>
+                    </div>
+              
                      <Typography>
-                      <h1 align="center"> Students</h1>
-                      <p className={descriptionText}>Students who are interested can register for the Winter of Code by filling a form.
-                         Students who are selected will work with mentors of the organization that they are accepted for.
-                         If accepted, students amalgamate with their organizations prior to the start of coding and learn more
-                          about their organization’s community. Students then have one month to code and meet the deadlines agreed upon with their mentors.
-                          On successful completion of the program students will be rewarded with some cool schwags.</p>
+                        <h1 align="center"> Students</h1>
+                        <p className={descriptionText}>Students who are interested can register for the Winter of Code by filling a form.
+                            Students who are selected will work with mentors of the organization that they are accepted for.
+                            If accepted, students amalgamate with their organizations prior to the start of coding and learn more
+                            about their organization’s community. Students then have one month to code and meet the deadlines agreed upon with their mentors.
+                            On successful completion of the program students will be rewarded with some cool schwags.</p>
                       </Typography>
-                   </div>
+         
 
                 </div>
                 <div className={sectionRowMobile}>

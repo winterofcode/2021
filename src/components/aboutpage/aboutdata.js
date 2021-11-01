@@ -6,14 +6,13 @@ export const UseStyles = makeStyles((theme) => ({
     root: {
         background: "#000814",
         display: "flex",
-        flexDirection: "column",
-        // justifyContent: "space-between",
+        // flexDirection: "column",
+        justifyContent: "center",
         alignItems: 'center',
         minheight: '100vh',
         // width: "75%",
         margin: "0 auto",
         color: "white",
-        // width: "100vw"
     },
     
     section: {
@@ -43,6 +42,9 @@ export const UseStyles = makeStyles((theme) => ({
         marginRight: "3%",
         // textShadow: "2px 2px #003566",
         // paddingLeft: "5%",
+        // display: "flex",
+        // justifyContent: "center",
+        // alignItems: "center",
     },
 
     titleText: {
@@ -53,6 +55,7 @@ export const UseStyles = makeStyles((theme) => ({
         marginLeft: "5%",
         paddingTop: '2%',
         alignContent: 'center',
+        
 
     },
 
@@ -68,9 +71,9 @@ export const UseStyles = makeStyles((theme) => ({
     workSection: {
         background: "#000813",
         display: "flex",
-        flexDirection: "row",
+        // flexDirection: "row",
         justifyContent: "space-between",
-        // alignItems: 'center',
+        alignItems: 'center',
         // margin: "5%",
         marginTop: "0",
         // width:"100%",
@@ -93,6 +96,24 @@ export const UseStyles = makeStyles((theme) => ({
         borderRadius: "15px",
 
         // marginLeft: 
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+    },
+
+    statsText: {
+        fontFamily: "Open Sans, sans-serif",
+        fontSize: "1.5rem",
+        color: '#fff',
+        // fontWeight: "bold",
+        // marginLeft: "5%",
+        // paddingLeft: "5%",
+        // paddingTop: '2%',
+        // alignContent: 'center',
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+
     },
 
     workSectionMobile: {
@@ -119,22 +140,14 @@ export const UseStyles = makeStyles((theme) => ({
         borderRadius: "5%"
     },
 
-    statsText: {
-        fontFamily: "Open Sans, sans-serif",
-        fontSize: "1.5rem",
-        color: '#fff',
-        // fontWeight: "bold",
-        // marginLeft: "5%",
-        paddingLeft: "5%",
-        // paddingTop: '2%',
-        // alignContent: 'center',
-
-    },
+    
     
     sectionRow: {
         // background: "#001D3D",
         display: "flex",
-        flexDirection: "row",
+        // flexDirection: "row",
+        justifyContent: "center",
+        alignItems: "center",
         margin: "5%",
         marginTop: "0",
         marginBottom: "0",
@@ -181,8 +194,14 @@ export const UseStyles = makeStyles((theme) => ({
         // borderRight: "45px solid #001D3D",
         borderRadius: "25px",
 
+     
     },
 
+    iframeMobile: {
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+    }
 
     
 
