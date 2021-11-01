@@ -10,12 +10,12 @@ export const headersData = [
       href: "/mentors",
     },
     {
-      label: "Organizers",
-      href: "/organizers",
+      label: "Organisers",
+      href: "/organisers",
     },
     {
-      label: "Organizations",
-      href: "/organizations",
+      label: "Organisations",
+      href: "/organisations",
     },
     {
       label: "Contact Us",
