@@ -74,7 +74,7 @@ export default function Orgs2019() {
                                     display: "flex",
 
                                     justifyContent: "center",
-                                    alignItems: "end",
+                                    alignItems: "center",
                                     fontSize: "25px"
                                          }}>
                                              {orgs.name}
@@ -103,7 +103,12 @@ export default function Orgs2019() {
                                     marginRight: "20%",
                                     width: "60%"
                                 }}
-                                >View Projects</Button>
+                                ><a 
+                                    style={{
+                                        textDecoration: "none",
+                                        color: "white"
+                                    }} 
+                                    href={orgs.link}>View Projects</a></Button>
                         </Card.Body>
                     </Card>
                     </Grid>
@@ -148,7 +153,7 @@ export default function Orgs2019() {
                                     display: "flex",
                                 
                                     justifyContent: "center",
-                                    alignItems: "end",
+                                    alignItems: "center",
                                     fontSize: "25px"
                                          }}>
                                              {orgs.name}
