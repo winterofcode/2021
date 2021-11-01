@@ -35,8 +35,8 @@ export const UseStyles = makeStyles((theme) => ({
         alignItems: "center",
     },
     wocimagestyle: {
-        width: "80%",
-        height: "80%",
+        width: "100%",
+        height: "100%",
         // display: "flex",
         // justifyContent: "center",
         // alignItems: "center",
@@ -50,13 +50,19 @@ export const UseStyles = makeStyles((theme) => ({
         justifyContent: "center",
         alignItems: "center",
     },
+    buttonStyleMobile: {
+        display: 'flex',
+        justifyContent: "center",
+        alignItems: "center",
+        fontSize: "0.5rem",
+    },
     wocimagestylemobile: {
         width: "100%",
         height: "100%",
     },
     welcomeTitleMobile: {
         fontFamily: "Open Sans, sans-serif",
-        fontSize: "3.5rem",
+        fontSize: "2.1rem",
         color: '#fff',
         fontWeight: "normal",
         display: "flex",
@@ -66,11 +72,22 @@ export const UseStyles = makeStyles((theme) => ({
     },
     welcomeSubTitleMobile: {
         fontFamily: "Open Sans, sans-serif",
-        fontSize: "1.3rem",
+        fontSize: "1rem",
         fontWeight: "normal",
         color: "#fff",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
     },
+    wocimagestyleMobile: {
+        // width: "100%",
+        height: "100%",
+        // display: "flex",
+        // justifyContent: "center",
+        // alignItems: "center",
+        display: "block",
+        marginLeft: "auto",
+        marginRight: "auto",
+        width: "100%",
+    }
 }))

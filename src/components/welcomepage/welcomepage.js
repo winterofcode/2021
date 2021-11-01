@@ -18,7 +18,7 @@ import wocimage from '../../images/WOC.png';
 
 export default function WelcomePage() {
 
-    const {root, welcomeTitle, welcomeTitleMobile, welcomeSubTitle, welcomeSubTitleMobile, welcomeWoc, wocimagestyle, wocimagestylemobile, buttonStyle} = UseStyles();
+    const {root, welcomeTitle, welcomeSection, wocimagestyleMobile, welcomeTitleMobile, welcomeSubTitle, welcomeSubTitleMobile, welcomeWoc, wocimagestyle, wocimagestylemobile, buttonStyle, buttonStyleMobile} = UseStyles();
 
     const [state, setState] = useState({
         mobileView: false,
@@ -59,7 +59,7 @@ export default function WelcomePage() {
         //     <img src={wocimage} className={wocimagestyle} alt="WOC main imgs"/>
         // </>
             <>
-                <div>
+                <div className={welcomeSection}>
                     <h1 className={welcomeTitle}>Welcome to</h1>
                     <img src={wocimage} className={wocimagestyle} alt="WOC main imgs"/>
                     <span className={welcomeSubTitle}>An initiative of GDSC NSEC</span>
@@ -79,10 +79,10 @@ export default function WelcomePage() {
         <>
                 <div>
                     <h1 className={welcomeTitleMobile}>Welcome to</h1>
-                    <img src={wocimage} className={wocimagestyle} alt="WOC main imgs"/>
+                    <img src={wocimage} className={wocimagestyleMobile} alt="WOC main imgs"/>
                     <span className={welcomeSubTitleMobile}>An initiative of GDSC NSEC</span>
                     <br/>
-                    <Stack className={buttonStyle} spacing={2} direction="row">
+                    <Stack className={buttonStyleMobile} spacing={2} direction="row">
                         <Button style={{borderRadius: '50px'}} variant="outlined">Get Started</Button>
                         <Button style={{borderRadius: '50px'}} variant="outlined">Apply</Button>
                     </Stack>
