@@ -7,6 +7,7 @@ import Orgs from "../orgs/orgs";
 import Timeline from "../timeline/timeline";
 import Faq from "../faq/faq";
 import Footer from "../footer/footer";
+import About from "../aboutpage/about"
 
 export default function AppRouter() {
   return (
@@ -18,6 +19,7 @@ export default function AppRouter() {
     // </Router>
     <Router>
       <LandingPage/>
+      <About/>
       <Apply/>
       <Orgs/>
       <Timeline/>
