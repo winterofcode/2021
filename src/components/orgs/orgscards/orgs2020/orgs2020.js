@@ -30,7 +30,7 @@ export default function Orgs2020() {
     const [state, setState] = useState({
         mobileView: false,
       });
-    
+
     const { mobileView } = state;
 
     useEffect(() => {
@@ -51,46 +51,46 @@ export default function Orgs2020() {
 
     const displayDesktop = () => {
         return (
-            <> 
+            <div>
                 {/* <div Style={{display: "grid"}} className={cardSection}> */}
                 <Grid container>
                 {Organisations2020.map(orgs => (
-                    <Grid item lg={4} md={6} xs={12}>
+                    <Grid item lg={4} md={6} xs={12} style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
                     <Card
                         style={
                             {
-                                margin: "80px", 
-                                background: "white", 
-                                width: "18rem", 
+                                margin: "100px",
+                                background: "white",
+                                width: "18rem",
                                 height: "20rem",
-                                border: "50px" 
+                                border: "50px"
                             }}>
-                        <Card.Img 
+                        <Card.Img
                             style={
                                 {
-                                   
+
                                     width: "100px",
                                     height: "100px",
                                     objectFit: "cover",
                                     margin: "10px"
-                                    }} 
-                                    variant="top" 
+                                    }}
+                                    variant="top"
                                     src={orgs.logo} />
                         <Card.Body>
-                            <Card.Title 
+                            <Card.Title
                                 style={{
                                     display: "flex",
-                                
+
                                     justifyContent: "center",
                                     alignItems: "end",
                                     fontSize: "25px"
                                          }}>
                                              {orgs.name}
                             </Card.Title>
-                            <Card.Subtitle 
+                            <Card.Subtitle
                                 style={{
                                     display: "flex",
-                                
+
                                     justifyContent: "center",
                                     alignItems: "center",
                                     fontSize: "20px"
@@ -99,14 +99,17 @@ export default function Orgs2020() {
                                 {orgs.text}
                             </Card.Subtitle>
                             <br/><br/><br/>
-                            <Button 
+                            <Button
                                 style={{
                                     background: "#003566",
-                                    left: "24%",
-                                    margin: "5px",
+                                    // left: "20%",
+                                    // margin: "5px",
                                     color: "white",
                                     borderRadius: "50px",
-                                    padding: "5%"
+                                    padding: "5%",
+                                    marginLeft: "20%",
+                                    marginRight: "20%",
+                                    width: "60%"
                                 }}
                                 >View Projects</Button>
                         </Card.Body>
@@ -116,53 +119,53 @@ export default function Orgs2020() {
                 </Grid>
             {/* </div> */}
 
-                
-            </>
+
+            </div>
 
         );
       };
-    
+
     const displayMobile = () => {
         return (
             <div>
-                <Grid container>
+                <Grid container spacing={12}>
                 {Organisations2020.map(orgs => (
-                    <Grid item lg={4} md={6} xs={12}>
+                    <Grid item lg={4} md={6} xs={12} style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
                     <Card
                         style={
                             {
-                                margin: "80px", 
-                                background: "white", 
-                                width: "70%", 
-                                height: "80%",
-                                border: "50px" 
+                                margin: "56px",
+                                background: "white",
+                                width: "70%",
+                                height: "70%",
+                                border: "50px"
                             }}>
-                        <Card.Img 
+                        <Card.Img
                             style={
                                 {
-                                   
+
                                     width: "100px",
                                     height: "100px",
                                     objectFit: "cover",
                                     margin: "10px"
-                                    }} 
-                                    variant="top" 
+                                    }}
+                                    variant="top"
                                     src={orgs.logo} />
                         <Card.Body>
-                            <Card.Title 
+                            <Card.Title
                                 style={{
                                     display: "flex",
-                                
+
                                     justifyContent: "center",
                                     alignItems: "end",
                                     fontSize: "25px"
                                          }}>
                                              {orgs.name}
                             </Card.Title>
-                            <Card.Subtitle 
+                            <Card.Subtitle
                                 style={{
                                     display: "flex",
-                                
+
                                     justifyContent: "center",
                                     alignItems: "center",
                                     fontSize: "20px"
@@ -171,14 +174,17 @@ export default function Orgs2020() {
                                 {orgs.text}
                             </Card.Subtitle>
                             <br/><br/><br/>
-                            <Button 
+                            <Button
                                 style={{
                                     background: "#003566",
-                                    left: "24%",
-                                    margin: "5px",
+                                    // left: "22%",
+                                    marginBottom: "40px",
                                     color: "white",
                                     borderRadius: "50px",
-                                    padding: "5%"
+                                    padding: "5%",
+                                    marginLeft: "20%",
+                                    marginRight: "20%",
+                                    width: "60%"
                                 }}
                                 >View Projects</Button>
                         </Card.Body>
@@ -192,7 +198,7 @@ export default function Orgs2020() {
 
     return (
         <div className={root}>
-            {mobileView ? displayMobile() : displayDesktop()}  
+            {mobileView ? displayMobile() : displayDesktop()}
         </div>
         )
     }
