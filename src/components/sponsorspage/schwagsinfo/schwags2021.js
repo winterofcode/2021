@@ -4,21 +4,39 @@ import { makeStyles, Typography } from '@material-ui/core';
 import { Grid } from "@material-ui/core";
 
 export const UseStyles = makeStyles((theme) => ({
-
-    imgContainer: {
-          
-        width: "23rem",
+    root: {
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+    },
+    image: {
+        width: "50%",
         display:"flex",
-        flexDirection:"column",
         justifyContent: "center",
         alignItems: "center",
-        // margin:"0 auto",
+        margin:"0 auto",
     },
     
     titleText: {
         fontSize: "1.5rem",
-        textAlign: "center",
-        // marginTop: "1.5rem",
+        textAlign: "center", textAlign: "center",
+        display:"flex",
+        justifyContent: "center",
+        alignItems: "center",
+    },
+    imageMobile: {
+        width: "50%",
+        margin:"0 auto",
+        display:"flex",
+        justifyContent: "center",
+        alignItems: "center",
+    },
+    titleTextMobile: {
+        fontSize: "1.5rem",
+        display:"flex",   
+        justifyContent: "center",
+        alignItems: "center",
+
     }
 
 }));
@@ -28,7 +46,7 @@ export const UseStyles = makeStyles((theme) => ({
 
 const Schwags2019 = () => {
 
-    const { imgContainer, image, titleText }= UseStyles()
+    const { root, imgContainer, image, titleText, imageMobile, titleTextMobile }= UseStyles()
 
 
     const [state, setState] = useState({
@@ -56,9 +74,10 @@ const Schwags2019 = () => {
     const displayDesktop = () =>{
 
         return(
-            <Grid container >
+          <div>
+            {/* <Grid container >
             {SchwagsData.map(schwag =>(
-            <Grid item xs={12} md={4} style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+            <Grid item xs={12} md={4} lg={4} style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
             <div className={imgContainer}>
                 <img src={alienbrains} className={image}
                   alt={schwag.name}/>
@@ -66,37 +85,41 @@ const Schwags2019 = () => {
                 <p className={titleText}>{schwag.name}</p>
                 </Typography>
             </div>
-            
-            </Grid>
-           
+            </Grid> 
         ))}
-        </Grid>
+        </Grid> */}
+       
+              <div>
+                <h1 style={{display: "flex", justifyContent: "center", alignItems: "center", fontStyle: "1rem"}}>Coming Soon...</h1>
+              </div>
+          </div>
+            
         )
     }
     
     const displayMobile = () => {
 
         return(
-            <Grid container >
-            {SchwagsData.map(schwag =>(
-            <Grid item xs={12} md={4} style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
-            <div className={imgContainer}>
-                <img src={alienbrains} className={image}
-                  alt={schwag.name}/>
-                <Typography>
-                <p className={titleText}>{schwag.name}</p>
-                </Typography>
-            </div>
-            
-            </Grid>
-           
-        ))}
-        </Grid>
+          <div>
+              {/* <Grid container>
+              {SchwagsData.map(schwag =>(
+              <Grid item xs={12} md={4} lg={4} >
+                  <img src={alienbrains} className={imageMobile}
+                    alt={schwag.name}/>
+                  <h1 className={titleTextMobile}>{schwag.name}</h1>
+              </Grid> 
+          ))}
+          </Grid> */}
+          <br/><br/>
+          <div>
+              <h1 style={{display: "flex", justifyContent: "center", alignItems: "center", fontStyle: "1rem"}}>Coming Soon...</h1>
+          </div>
+        </div>
         )
     }
   return (
         
-      <div>
+      <div className={root}>
           {mobileView ? displayMobile() : displayDesktop()}
       </div>
   );
@@ -127,7 +150,7 @@ const SchwagsData = [
   },
   
    {
-     name: " T-shirts and 50% off coupon for",
+     name: " T-shirts and 50% off coupon",
     //  image: require("../../Assets/Alienbrains.png"),
      classes: "", 
      linkName: 'ISB 2.0'

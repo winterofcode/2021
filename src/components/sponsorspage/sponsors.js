@@ -1,10 +1,10 @@
 import React, {useState, useEffect} from 'react'
 import { UseStyles } from './sponsorsdata';
-import Schwags2019 from './schwagsinfo/schwags2019';
+import Schwags2019 from './schwagsinfo/schwags2021';
 
 export default function Sponsors() {
 
-    const { root, section, sectionHeading} = UseStyles();
+    const { root, section, sectionHeading, sectionHeadingMobile} = UseStyles();
 
     const [state, setState] = useState({
         mobileView: false,
@@ -31,30 +31,27 @@ export default function Sponsors() {
 
     const displayDesktop = () => {
         return (
-            <> 
-            <div className={section}>
-               <div>
-                 <h1 className={sectionHeading}> Rewards for Successful Students </h1>
+            <div>
+               <div className={sectionHeading}>
+                 <h1>Rewards for Successful Students</h1>
                </div>
                <Schwags2019/>
             </div>
-            </>
         ) 
     }
 
     const displayMobile = () => {
 
         return(
-           <>
-                <div className={section}>
-                 <h1 className={sectionHeading} style={{fontSize: "1.2rem"}}> Rewards for Successful Students </h1>
-                 <Schwags2019/>
-                </div>
-           </>
+            <div>
+            <div className={sectionHeadingMobile}>
+              <h1>Rewards for Successful Students</h1>
+            </div>
+            <Schwags2019/>
+           
+         </div>
         )
     }
-
-
 
     return (
 
@@ -63,5 +60,3 @@ export default function Sponsors() {
         </div>
     )
 }
-
-
