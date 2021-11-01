@@ -2,26 +2,7 @@ import React, {useState, useEffect} from 'react'
 import { UseStyles } from '../../orgsdata';
 import { Grid } from '@material-ui/core';
 import { Organisations2020 } from './orgs2020data';
-
-// import { styled } from '@mui/material/styles';
-// import Card from '@mui/material/Card';
-// import CardHeader from '@mui/material/CardHeader';
-// import CardMedia from '@mui/material/CardMedia';
-// import CardContent from '@mui/material/CardContent';
-// import CardActions from '@mui/material/CardActions';
-// import Collapse from '@mui/material/Collapse';
-// import Avatar from '@mui/material/Avatar';
-// import IconButton from '@mui/material/IconButton';
-// import Typography from '@mui/material/Typography';
-// import { red } from '@mui/material/colors';
-// import FavoriteIcon from '@mui/icons-material/Favorite';
-// import ShareIcon from '@mui/icons-material/Share';
-// import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-// import MoreVertIcon from '@mui/icons-material/MoreVert';
-
 import { Button } from '@material-ui/core';
-// import { maxWidth } from '@mui/system';
-
 import { Card } from 'react-bootstrap';
 
 export default function Orgs2020() {
@@ -68,7 +49,6 @@ export default function Orgs2020() {
                         <Card.Img
                             style={
                                 {
-
                                     width: "100px",
                                     height: "100px",
                                     objectFit: "cover",
@@ -80,9 +60,8 @@ export default function Orgs2020() {
                             <Card.Title
                                 style={{
                                     display: "flex",
-
                                     justifyContent: "center",
-                                    alignItems: "end",
+                                    alignItems: "center",
                                     fontSize: "25px"
                                          }}>
                                              {orgs.name}
@@ -90,7 +69,6 @@ export default function Orgs2020() {
                             <Card.Subtitle
                                 style={{
                                     display: "flex",
-
                                     justifyContent: "center",
                                     alignItems: "center",
                                     fontSize: "20px"
@@ -102,8 +80,6 @@ export default function Orgs2020() {
                             <Button
                                 style={{
                                     background: "#003566",
-                                    // left: "20%",
-                                    // margin: "5px",
                                     color: "white",
                                     borderRadius: "50px",
                                     padding: "5%",
@@ -111,17 +87,18 @@ export default function Orgs2020() {
                                     marginRight: "20%",
                                     width: "60%"
                                 }}
-                                >View Projects</Button>
+                                ><a 
+                                style={{
+                                    textDecoration: "none",
+                                    color: "white"
+                                }} 
+                                href={orgs.link}>View Projects</a></Button>
                         </Card.Body>
                     </Card>
                     </Grid>
                 ))}
                 </Grid>
-            {/* </div> */}
-
-
             </div>
-
         );
       };
 
@@ -143,7 +120,6 @@ export default function Orgs2020() {
                         <Card.Img
                             style={
                                 {
-
                                     width: "100px",
                                     height: "100px",
                                     objectFit: "cover",
@@ -155,7 +131,6 @@ export default function Orgs2020() {
                             <Card.Title
                                 style={{
                                     display: "flex",
-
                                     justifyContent: "center",
                                     alignItems: "end",
                                     fontSize: "25px"
@@ -165,7 +140,6 @@ export default function Orgs2020() {
                             <Card.Subtitle
                                 style={{
                                     display: "flex",
-
                                     justifyContent: "center",
                                     alignItems: "center",
                                     fontSize: "20px"
@@ -177,7 +151,6 @@ export default function Orgs2020() {
                             <Button
                                 style={{
                                     background: "#003566",
-                                    // left: "22%",
                                     marginBottom: "40px",
                                     color: "white",
                                     borderRadius: "50px",
@@ -186,7 +159,12 @@ export default function Orgs2020() {
                                     marginRight: "20%",
                                     width: "60%"
                                 }}
-                                >View Projects</Button>
+                                ><a 
+                                style={{
+                                    textDecoration: "none",
+                                    color: "white"
+                                }} 
+                                href={orgs.link}>View Projects</a></Button>
                         </Card.Body>
                     </Card>
                     </Grid>

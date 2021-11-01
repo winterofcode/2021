@@ -44,7 +44,14 @@ export default function Navbar() {
     return (
       <Toolbar className={toolbarWrapper}>
         <img src={logo} className={logoimg} alt="winter of code logo" />
-        <h1 className={logoTitle}>Winter of Code</h1>
+        <h1 className={logoTitle}>
+          <a 
+              style={{
+                textDecoration: "none",
+                color: "#fff",
+              }}
+              href="/">Winter of Code</a>
+        </h1>
         <div>{getMenuButtons()}</div>
       </Toolbar>
     );
@@ -59,7 +66,13 @@ export default function Navbar() {
     return (
       <Toolbar>
         <img src={logo} className={logoimg} alt="winter of code logo" />
-        <h1 className={logoTitle}>Winter of Code</h1>
+        <h1 className={logoTitle}>
+          <a 
+              style={{
+                textDecoration: "none",
+                color: "#fff",
+              }}
+              href="/">Winter of Code</a></h1>
         <IconButton 
           {...{
             color: "inherit",

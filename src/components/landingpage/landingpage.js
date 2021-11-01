@@ -4,7 +4,7 @@ import Navbar from '../navbar/navbar';
 import WelcomePage from '../welcomepage/welcomepage';
 import { UseStyles } from '../landingpage/landingpagedata';
 
-export default function landingPage() {
+export default function LandingPage() {
     const {root} = UseStyles();
 
     return (
