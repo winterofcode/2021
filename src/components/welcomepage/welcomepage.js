@@ -18,7 +18,7 @@ import wocimage from '../../images/WOC.png';
 
 export default function WelcomePage() {
 
-    const {root, welcomeTitle, welcomeSubTitle, welcomeWoc, wocimagestyle, wocimagestylemobile} = UseStyles();
+    const {root, welcomeTitle, welcomeTitleMobile, welcomeSubTitle, welcomeSubTitleMobile, welcomeWoc, wocimagestyle, wocimagestylemobile, buttonStyle} = UseStyles();
 
     const [state, setState] = useState({
         mobileView: false,
@@ -45,39 +45,49 @@ export default function WelcomePage() {
 
     const displayDesktop = () => {
         return (
-        <>
-        <div>
-            <h1 className={welcomeTitle}>Welcome to <br/>
-            <span className={welcomeWoc}> Winter of Code </span> <br/>
-            <span className={welcomeSubTitle}>An initiative of GDSC NSEC</span>
-            </h1>
-            <Stack spacing={2} direction="row">
-                <Button style={{borderRadius: '50px'}} variant="outlined">Get Started</Button>
-                <Button style={{borderRadius: '50px'}} variant="outlined">Apply</Button>
-            </Stack>
-        </div>
-            <img src={wocimage} className={wocimagestyle} alt="WOC main imgs"/>
-        </>
+        // <>
+        // <div>
+        //     <h1 className={welcomeTitle}>Welcome to <br/>
+        //     <span className={welcomeWoc}> Winter of Code </span> <br/>
+        //     <span className={welcomeSubTitle}>An initiative of GDSC NSEC</span>
+        //     </h1>
+        //     <Stack spacing={2} direction="row">
+        //         <Button style={{borderRadius: '50px'}} variant="outlined">Get Started</Button>
+        //         <Button style={{borderRadius: '50px'}} variant="outlined">Apply</Button>
+        //     </Stack>
+        // </div>
+        //     <img src={wocimage} className={wocimagestyle} alt="WOC main imgs"/>
+        // </>
+            <>
+                <div>
+                    <h1 className={welcomeTitle}>Welcome to</h1>
+                    <img src={wocimage} className={wocimagestyle} alt="WOC main imgs"/>
+                    <span className={welcomeSubTitle}>An initiative of GDSC NSEC</span>
+                    <br/>
+                    <Stack className={buttonStyle} spacing={2} direction="row">
+                        <Button style={{borderRadius: '50px'}} variant="outlined">Get Started</Button>
+                        <Button style={{borderRadius: '50px'}} variant="outlined">Apply</Button>
+                    </Stack>
+                </div>
+            </>
         );
       };
 
     const displayMobile = () => {
 
     return (
-        <div>
-            <h1 className={welcomeTitle}>Welcome to <br/>
-            <span className={welcomeWoc}> Winter of Code </span> <br/>
-            <span className={welcomeSubTitle}>An initiative of GDSC NSEC</span>
-            </h1>
-            <div>
-                <Stack spacing={2} direction="row">
-                    <Button style={{borderRadius: '50px'}} variant="outlined">Get Started</Button>
-                    <Button style={{borderRadius: '50px'}} variant="outlined">Apply</Button>
-                </Stack>
-            </div>
-            <br/>
-            <img src={wocimage} className={wocimagestylemobile} alt="WOC main imgs"/>
-        </div>
+        <>
+                <div>
+                    <h1 className={welcomeTitleMobile}>Welcome to</h1>
+                    <img src={wocimage} className={wocimagestyle} alt="WOC main imgs"/>
+                    <span className={welcomeSubTitleMobile}>An initiative of GDSC NSEC</span>
+                    <br/>
+                    <Stack className={buttonStyle} spacing={2} direction="row">
+                        <Button style={{borderRadius: '50px'}} variant="outlined">Get Started</Button>
+                        <Button style={{borderRadius: '50px'}} variant="outlined">Apply</Button>
+                    </Stack>
+                </div>
+            </>
     );
     };
 
