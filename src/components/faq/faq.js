@@ -111,7 +111,7 @@ export default function CustomizedAccordions() {
               </Typography>
             </AccordionDetails>
           </Accordion>
-          <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
+          {/* <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
             <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
               <Typography>Will everyone who participates as a student in Winter of Code get WoC schwags?</Typography>
             </AccordionSummary>
@@ -121,7 +121,7 @@ export default function CustomizedAccordions() {
               However, we do promise to have a small token of appreciation in the form of schwags and certificates for everyone who participates in Winter of Code.
               </Typography>
             </AccordionDetails>
-          </Accordion>
+          </Accordion> */}
           <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
             <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
               <Typography >Can I submit more than one proposal?</Typography>
@@ -221,7 +221,7 @@ export default function CustomizedAccordions() {
               </Typography>
             </AccordionDetails>
           </Accordion>
-          <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
+          {/* <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
             <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
               <Typography>Will everyone who participates as a student in Winter of Code get WoC schwags?</Typography>
             </AccordionSummary>
@@ -231,7 +231,7 @@ export default function CustomizedAccordions() {
                 However, we do promise to have a small token of appreciation in the form of schwags and certificates for everyone who participates in Winter of Code.
               </Typography>
             </AccordionDetails>
-          </Accordion>
+          </Accordion> */}
           <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
             <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
               <Typography >Can I submit more than one proposal?</Typography>

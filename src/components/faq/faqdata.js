@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core';
 export const UseStyles = makeStyles((theme) => ({
     
     root: {
-        minHeight: '70vh',
+        minHeight: '60vh',
         backgroundColor: '#000814',
         // backgroundRepeat: 'no-repeat',
         // backgroundSize: 'cover',
