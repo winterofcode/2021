@@ -18,7 +18,7 @@ import Parallax from '../../hooks/parallax';
 
 export default function WelcomePage() {
 
-    const {root, welcomeTitle, welcomeSection, wocimagestyleMobile, welcomeTitleMobile, welcomeSubTitle, welcomeSubTitleMobile, welcomeWoc, wocimagestyle, wocimagestylemobile, buttonStyle, buttonStyleMobile} = UseStyles();
+    const {root, welcomeTitle, welcomeSection, welcomeSectionMobile, wocimagestyleMobile, welcomeTitleMobile, welcomeSubTitle, welcomeSubTitleMobile, welcomeWoc, wocimagestyle, wocimagestylemobile, buttonStyle, buttonStyleMobile} = UseStyles();
 
     const [state, setState] = useState({
         mobileView: false,
@@ -79,7 +79,7 @@ export default function WelcomePage() {
 
     return (
         <>
-                <div>
+                <div className={welcomeSectionMobile}>
                     <h1 className={welcomeTitleMobile}>Welcome to</h1>
                     <img src={wocimage} className={wocimagestyleMobile} alt="WOC main imgs"/>
                     <span className={welcomeSubTitleMobile}>An initiative of GDSC NSEC</span>

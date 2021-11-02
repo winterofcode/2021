@@ -212,7 +212,7 @@ export default function CustomizedAccordions() {
           </Accordion>
           <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
             <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-              <Typography>Will everyone who participates as a student in Winter of Code get WoC schwags?</Typography>
+              <Typography>What programming language(s) should I know to participate in Winter of Code?</Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>

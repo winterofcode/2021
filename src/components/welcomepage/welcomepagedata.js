@@ -6,8 +6,15 @@ export const UseStyles = makeStyles((theme) => ({
         justifyContent: "center",
         alignItems: 'center',
         height: '100vh',
-        width: "50%",
+        width: "80%",
         margin: "0 auto",
+       
+    },
+    welcomeSection: {
+        marginTop: "25%",
+    },
+    welcomeSectionMobile: {
+        marginTop: "30%",
     },
     welcomeTitle: {
         fontFamily: "Open Sans, sans-serif",
