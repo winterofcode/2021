@@ -74,7 +74,7 @@ export default function Apply() {
     };
 
     return (
-        <div className={root}>
+        <div id="apply" className={root}>
             
             {mobileView ? displayMobile() : displayDesktop()}  
             

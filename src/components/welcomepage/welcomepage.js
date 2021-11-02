@@ -66,8 +66,8 @@ export default function WelcomePage() {
                     <span className={welcomeSubTitle}>An initiative of GDSC NSEC</span>
                     <br/>
                     <Stack className={buttonStyle} spacing={2} direction="row">
-                        <Button style={{borderRadius: '50px'}} variant="outlined">Get Started</Button>
-                        <Button style={{borderRadius: '50px'}} variant="outlined">Apply</Button>
+                        <Button style={{borderRadius: '50px'}} variant="outlined"><a style={{textDecoration: "none", color: "#1976d2"}} href="#about">Get Started</a></Button>
+                        <Button style={{borderRadius: '50px'}} variant="outlined"><a style={{textDecoration: "none", color: "#1976d2"}} href="#apply">Apply</a></Button>
                     </Stack>
                 </div>
          
@@ -85,8 +85,8 @@ export default function WelcomePage() {
                     <span className={welcomeSubTitleMobile}>An initiative of GDSC NSEC</span>
                     <br/>
                     <Stack className={buttonStyleMobile} spacing={2} direction="row">
-                        <Button style={{borderRadius: '50px'}} variant="outlined">Get Started</Button>
-                        <Button style={{borderRadius: '50px'}} variant="outlined">Apply</Button>
+                        <Button style={{borderRadius: '50px'}} variant="outlined"><a style={{textDecoration: "none", color: "#1976d2"}} href="#about">Get Started</a></Button>
+                        <Button style={{borderRadius: '50px'}} variant="outlined"><a style={{textDecoration: "none", color: "#1976d2"}} href="#apply">Apply</a></Button>
                     </Stack>
                 </div>
             </>

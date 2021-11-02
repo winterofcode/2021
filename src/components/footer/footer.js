@@ -100,7 +100,7 @@ export default function Footer() {
                         <ExternalLink className={resourceslink} href="https://www.youtube.com/playlist?list=PLLGfrNGZ7g4MzarnbBN-DC_AGErhYMC2s">
                             <p>Full Stack Projects</p>
                         </ExternalLink>
-                        <ExternalLink className={resourceslink} href="https://30daysofgc.dscnsec.com/">
+                        <ExternalLink className={resourceslink} href="https://gcp2021.dscnsec.com/">
                             <p>30 Days of Google Cloud</p>
                         </ExternalLink>
                     </div>
@@ -170,7 +170,7 @@ export default function Footer() {
                         <ExternalLink className={resourceslinkMobile} href="https://www.youtube.com/playlist?list=PLLGfrNGZ7g4MzarnbBN-DC_AGErhYMC2s">
                             <p>Full Stack Projects</p>
                         </ExternalLink>
-                        <ExternalLink className={resourceslinkMobile} href="https://30daysofgc.dscnsec.com/">
+                        <ExternalLink className={resourceslinkMobile} href="https://gcp2021.dscnsec.com/">
                             <p>30 Days of Google Cloud</p>
                         </ExternalLink>
                     </div>
