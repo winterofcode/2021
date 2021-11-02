@@ -8,6 +8,7 @@ import pic from '../../images/orgimages/fireshort.png'
 import { flexbox } from '@mui/system';
 import { Github, LinkedIn, Twitter } from '../../icon/icon';
 import { ExternalLink } from 'react-external-link';
+import NavbarRoute from './navbarroute';
 
 export const UseStyles = makeStyles((theme) => ({
 
@@ -222,7 +223,7 @@ export default function Organiser() {
     const displayDesktop = () =>{
         return(
             <div>
-                <Navbar style={{position: "absolute"}}/>
+                <NavbarRoute style={{position: "absolute"}}/>
                 <div className={container}>
                    <Typography>
                       <h1 align="center"> Our Organisers </h1>
@@ -263,7 +264,10 @@ export default function Organiser() {
     const displayMobile =() =>{
         return(
             <div>
-            <Navbar style={{position: "absolute"}}/>
+            <div style={{height: "5vh",}}>
+                <CssBaseline/>
+                <NavbarRoute/>
+            </div>
             <div className={container} style={{marginTop: "20%"}}>
                <Typography>
                   <h1 align="center"> Our Organisers </h1>
