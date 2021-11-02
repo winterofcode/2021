@@ -15,32 +15,38 @@ export const UseStyles = makeStyles((theme) => ({
     container:{
           
         display:"flex",
-        flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
+        flexDirection: "column",
+        marginTop: "10%",
+        // margin: "0 auto",
         // minHeight: "100vh",
         // minWidth: "100vh",
-        marginTop:"5%"
+        
 
 
     },
     
     imageContainer:{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
+        // display: "flex",
         // background: "black",
-        // margin: "0 auto",
+        // margin: "auto",
+        // display: "inline"
         // minHeight: "100vh",
     },
 
     image:{
         width:"40%",
         height: "40%",
-        justifyContent:"center",
-        align:"center",
-        margin:"0 auto",
+        // justifyContent:"center",
+        // alignItems:"center",
+        // margin:"0 auto",
         background: "black",
+    },
+
+    profileContainer:{
+
+        marginBottom:"2%"
     },
     profileLink: {
         marginRight: "20px"
@@ -54,7 +60,7 @@ export const UseStyles = makeStyles((theme) => ({
 export default function Organiser() {
 
 
-    const {container, image, imageContainer, profileLink} = UseStyles()
+    const {container, image, imageContainer, profileLink, profileContainer} = UseStyles()
 
     const [state, setState] = useState({
         mobileView: false,
@@ -217,40 +223,33 @@ export default function Organiser() {
         return(
             <div>
                 <Navbar style={{position: "absolute"}}/>
-
                 <div className={container}>
-                
-                <Typography>
-                  <h1 align="center"> Our Organisers </h1>
-                </Typography>
+                   <Typography>
+                      <h1 align="center"> Our Organisers </h1>
+                    </Typography>
+                    <div className={imageContainer}>
+                       <Grid container align="center">
+                            {OrganizersData.map(organiser =>(
+                                <Grid item xs={12} md={4}>
+                                    <div className={profileContainer}>
+                                        <img src={pic} className={image}></img>
+                                        <p>{organiser.username}</p>
+                                        <ExternalLink href={organiser.GithubLink} >
+                                        <Github className={profileLink}/>
+                                        </ExternalLink >
+                                        <ExternalLink href={organiser.LinkedInLink}>
+                                        <LinkedIn className={profileLink}/>
+                                        </ExternalLink>
+                                        <ExternalLink href={organiser.TwitterLink}>
+                                        <Twitter className={profileLink}/>
+                                        </ExternalLink>
+                                    </div>
+                                </Grid> 
 
-               <div className={imageContainer}>
-
-              <Grid container >
-                {OrganizersData.map(organiser =>(
-
-                    <Grid item xs={12} md={4}>
-                        <div>
-                            <img src={pic} className={image}></img>
-                            <p>{organiser.username}</p>
-                            <ExternalLink href={organiser.GithubLink} >
-                            <Github className={profileLink}/>
-                            </ExternalLink >
-                            <ExternalLink href={organiser.LinkedInLink}>
-                             <LinkedIn className={profileLink}/>
-                             </ExternalLink>
-                             <ExternalLink href={organiser.TwitterLink}>
-                             <Twitter className={profileLink}/>
-                             </ExternalLink>
-                        </div>
-                    </Grid> 
-
-                ))}
-
-              </Grid> 
-
-              </div>
-              </div> 
+                            ))}
+                       </Grid> 
+                    </div>
+                </div> 
 
               <Footer />
 
@@ -264,50 +263,37 @@ export default function Organiser() {
     const displayMobile =() =>{
         return(
             <div>
-                <div>
-                <Navbar style={{position: "absolute"}}/>
-
-                <div className={container}>
-                
-                <Typography>
+            <Navbar style={{position: "absolute"}}/>
+            <div className={container} style={{marginTop: "20%"}}>
+               <Typography>
                   <h1 align="center"> Our Organisers </h1>
                 </Typography>
+                <div className={imageContainer}>
+                   <Grid container align="center">
+                        {OrganizersData.map(organiser =>(
+                            <Grid item xs={12} md={4}>
+                                <div className={profileContainer}>
+                                    <img src={pic} className={image}></img>
+                                    <p>{organiser.username}</p>
+                                    <ExternalLink href={organiser.GithubLink} >
+                                    <Github className={profileLink}/>
+                                    </ExternalLink >
+                                    <ExternalLink href={organiser.LinkedInLink}>
+                                    <LinkedIn className={profileLink}/>
+                                    </ExternalLink>
+                                    <ExternalLink href={organiser.TwitterLink}>
+                                    <Twitter className={profileLink}/>
+                                    </ExternalLink>
+                                </div>
+                            </Grid> 
 
-               <div className={imageContainer}>
+                        ))}
+                   </Grid> 
+                </div>
+            </div> 
 
-              <Grid container >
-                {OrganizersData.map(organiser =>(
-
-                    <Grid item xs={12} md={4}>
-                        <div>
-                            <img src={pic} className={image}></img>
-                            <p>{organiser.username}</p>
-                            <ExternalLink href={organiser.GithubLink} >
-                            <Github className={profileLink}/>
-                            </ExternalLink >
-                            <ExternalLink href={organiser.LinkedInLink}>
-                             <LinkedIn className={profileLink}/>
-                             </ExternalLink>
-                             <ExternalLink href={organiser.TwitterLink}>
-                             <Twitter className={profileLink}/>
-                             </ExternalLink>
-                        </div>
-                    </Grid> 
-
-                ))}
-
-              </Grid> 
-
-              </div>
-              </div> 
-
-              <Footer />
-
-              
-
-            </div>
-
-            </div>
+          <Footer />
+        </div>
         )
     }
     
