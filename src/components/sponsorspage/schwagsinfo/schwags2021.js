@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from "react";
-import alienbrains from "../../../images/orgimages/Alienbrains.png";
-import { makeStyles, Typography } from '@material-ui/core';
-import { Grid } from "@material-ui/core";
+// import alienbrains from "../../../images/orgimages/Alienbrains.png";
+import { makeStyles, } from '@material-ui/core';
 
 export const UseStyles = makeStyles((theme) => ({
     root: {
@@ -19,7 +18,7 @@ export const UseStyles = makeStyles((theme) => ({
     
     titleText: {
         fontSize: "1.5rem",
-        textAlign: "center", textAlign: "center",
+        textAlign: "center",
         display:"flex",
         justifyContent: "center",
         alignItems: "center",
@@ -46,7 +45,8 @@ export const UseStyles = makeStyles((theme) => ({
 
 const Schwags2019 = () => {
 
-    const { root, imgContainer, image, titleText, imageMobile, titleTextMobile }= UseStyles()
+    // const { root, imgContainer, image, titleText, imageMobile, titleTextMobile }= UseStyles()
+    const { root }= UseStyles()
 
 
     const [state, setState] = useState({
@@ -127,37 +127,37 @@ const Schwags2019 = () => {
 
 export default Schwags2019;
 
-const SchwagsData = [
-  {
-    name: "Books",
-    // image: require("../../Assets/Manning.svg"),
-    classes: "", 
-  },
-  {
-    name: "Exclusive Schwags",
-    // image: require("../../Assets/Google Developers.svg"),
-    classes: "", 
-  },
-  {
-    name: "Qwiklabs Credits",
-    // image: require("../../Assets/Qwiklabs.png"),
-    classes: "", 
-  },
-  {
-    name: "1 Year KiwisMedia Premium",
-    // image: require("../../Assets/kiwismedia.png"),
-    classes: "", 
-  },
+// const SchwagsData = [
+//   {
+//     name: "Books",
+//     // image: require("../../Assets/Manning.svg"),
+//     classes: "", 
+//   },
+//   {
+//     name: "Exclusive Schwags",
+//     // image: require("../../Assets/Google Developers.svg"),
+//     classes: "", 
+//   },
+//   {
+//     name: "Qwiklabs Credits",
+//     // image: require("../../Assets/Qwiklabs.png"),
+//     classes: "", 
+//   },
+//   {
+//     name: "1 Year KiwisMedia Premium",
+//     // image: require("../../Assets/kiwismedia.png"),
+//     classes: "", 
+//   },
   
-   {
-     name: " T-shirts and 50% off coupon",
-    //  image: require("../../Assets/Alienbrains.png"),
-     classes: "", 
-     linkName: 'ISB 2.0'
-   },
-  {
-    name: "Winter of Code Schwags",
-    // image: require("../../Assets/swags.png"),
-    classes: "first-child", 
-  },
-]
+//    {
+//      name: " T-shirts and 50% off coupon",
+//     //  image: require("../../Assets/Alienbrains.png"),
+//      classes: "", 
+//      linkName: 'ISB 2.0'
+//    },
+//   {
+//     name: "Winter of Code Schwags",
+//     // image: require("../../Assets/swags.png"),
+//     classes: "first-child", 
+//   },
+// ]

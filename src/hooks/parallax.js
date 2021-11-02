@@ -1,4 +1,4 @@
-import { useState, useRef, useLayoutEffect, ReactNode } from 'react'
+import { useState, useRef, useLayoutEffect } from 'react'
 import { motion, useViewportScroll, useTransform, useSpring, useReducedMotion } from 'framer-motion'
 
 // type ParallaxProps = {

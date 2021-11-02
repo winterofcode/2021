@@ -6,7 +6,7 @@ import Parallax from '../../hooks/parallax';
 
 export default function Sponsors() {
 
-    const { root, section, sectionHeading, sectionHeadingMobile} = UseStyles();
+    const { root, sectionHeading, sectionHeadingMobile} = UseStyles();
 
     const [state, setState] = useState({
         mobileView: false,
