@@ -11,7 +11,7 @@ export const UseStyles = makeStyles((theme) => ({
        
     },
     welcomeSection: {
-        marginTop: "25%",
+        marginTop: "10%",
     },
     welcomeSectionMobile: {
         marginTop: "30%",
