@@ -59,7 +59,7 @@ export default function About() {
                         Winter of Code is here to light up your winter spirits with the wide
                         world of open source development. This initiative aims to prepare you
                         for the grand Google Summer of Code. Join us for a month-long
-                        programming project with an open-source organization.
+                        programming project with an open-source organisation.
                     </p>
                     <p className={descriptionText}>
                         As a part of the Winter of Code, students are paired with mentors from
@@ -84,13 +84,13 @@ export default function About() {
                 <div className={subSection}>
                     <Typography>
                     <p align='center' className={statsText}>10+</p>
-                    <p align='center' className={statsText}>Organizations</p>
+                    <p align='center' className={statsText}>Organisations</p>
                     </Typography>
                 </div>
                 <div align='center' className={subSection}>
                     <Typography>
                     <p align='center' className={statsText}>40+</p>
-                    <p align='center' className={statsText}>Organizations</p>
+                    <p align='center' className={statsText}>Mentors</p>
                     </Typography>
                 </div>
             </div>
@@ -107,7 +107,7 @@ export default function About() {
                         <p className={descriptionText}>
                           Developer Students Club of NSEC brings to you Winter of Code which is a month-long extravaganza
                           of Open Source contribution, bringing together students, organisations and mentors to build 
-                          amazing projects together. Here is what the program has to offer for students, organizations, and mentors.
+                          amazing projects together. Here is what the program has to offer for students, organisations, and mentors.
                         </p>
                     </div>
                     <div>
@@ -131,9 +131,9 @@ export default function About() {
                       <Typography>
                         <h1 align="center"> Students</h1>
                         <p className={descriptionText}>Students who are interested can register for the Winter of Code by filling a form.
-                         Students who are selected will work with mentors of the organization that they are accepted for.
-                         If accepted, students amalgamate with their organizations prior to the start of coding and learn more
-                          about their organization’s community. Students then have one month to code and meet the deadlines agreed upon with their mentors.
+                         Students who are selected will work with mentors of the organisation that they are accepted for.
+                         If accepted, students amalgamate with their organisations prior to the start of coding and learn more
+                          about their organisation’s community. Students then have one month to code and meet the deadlines agreed upon with their mentors.
                           On successful completion of the program students will be rewarded with some cool schwags.</p>
                       </Typography>
                    </div>
@@ -144,9 +144,9 @@ export default function About() {
                 <div className={sectionRow}>
                     <div>
                         <Typography>
-                            <h1 align="center">Organizations</h1>
+                            <h1 align="center">Organisations</h1>
                             <p className={descriptionText}>
-                             Open source organizations can apply to be mentor organizations. Once accepted, organizations
+                             Open source organisations can apply to be mentor organisations. Once accepted, organisations
                               discuss possible ideas with students and then decide on the proposals they wish to mentor for the winter. 
                               They provide feedback to help guide each student through the program. Mentors and students work together 
                               to determine appropriate milestones and requirements for the winter. Mentor interaction is a vital part of the program.
@@ -198,7 +198,7 @@ export default function About() {
                         Winter of Code is here to light up your winter spirits with the wide
                         world of open source development. This initiative aims to prepare you
                         for the grand Google Summer of Code. Join us for a month-long
-                        programming project with an open-source organization.
+                        programming project with an open-source organisation.
                     </p>
                     <p className={descriptionText}>
                         As a part of the Winter of Code, students are paired with mentors from
@@ -223,7 +223,7 @@ export default function About() {
                 <div className={subSectionMobile}>
                     <Typography>
                        <p align='center' className={statsText}>10+</p>
-                       <p align='center' className={statsText}>Organizations</p>
+                       <p align='center' className={statsText}>Organisations</p>
                     </Typography>
                 </div>
                 <div align='center' className={subSectionMobile}>
@@ -246,7 +246,7 @@ export default function About() {
                         <p className={descriptionText}>
                           Developer Students Club of NSEC brings to you Winter of Code which is a month-long extravaganza
                           of Open Source contribution, bringing together students, organisations and mentors to build 
-                          amazing projects together. Here is what the program has to offer for students, organizations, and mentors.
+                          amazing projects together. Here is what the program has to offer for students, organisations, and mentors.
                         </p>
                     </div>
                     <div>
@@ -274,9 +274,9 @@ export default function About() {
                      <Typography>
                         <h1 align="center"> Students</h1>
                         <p className={descriptionText}>Students who are interested can register for the Winter of Code by filling a form.
-                            Students who are selected will work with mentors of the organization that they are accepted for.
-                            If accepted, students amalgamate with their organizations prior to the start of coding and learn more
-                            about their organization’s community. Students then have one month to code and meet the deadlines agreed upon with their mentors.
+                            Students who are selected will work with mentors of the organisation that they are accepted for.
+                            If accepted, students amalgamate with their organisations prior to the start of coding and learn more
+                            about their organisation’s community. Students then have one month to code and meet the deadlines agreed upon with their mentors.
                             On successful completion of the program students will be rewarded with some cool schwags.</p>
                       </Typography>
                     </Parallax>
@@ -287,9 +287,9 @@ export default function About() {
                     <Parallax>
                     <div>
                         <Typography>
-                            <h1 align="center">Organizations</h1>
+                            <h1 align="center">Organisations</h1>
                             <p className={descriptionText}>
-                             Open source organizations can apply to be mentor organizations. Once accepted, organizations
+                             Open source organisations can apply to be mentor organisations. Once accepted, organisations
                               discuss possible ideas with students and then decide on the proposals they wish to mentor for the winter. 
                               They provide feedback to help guide each student through the program. Mentors and students work together 
                               to determine appropriate milestones and requirements for the winter. Mentor interaction is a vital part of the program.

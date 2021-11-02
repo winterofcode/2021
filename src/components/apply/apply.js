@@ -42,7 +42,7 @@ export default function Apply() {
                 </div>
                 <div className={ApplyButton}>
                     <Stack spacing={2} direction="row">
-                        <Button style={{borderRadius: '50px'}} variant="outlined">Apply as Organization</Button>
+                        <Button style={{borderRadius: '50px'}} variant="outlined">Apply as Organisation</Button>
                         <Button style={{borderRadius: '50px'}} variant="outlined">Apply as Mentor</Button>
                         <Button style={{borderRadius: '50px'}} variant="outlined">Apply as Student</Button>
                     </Stack>
@@ -55,12 +55,12 @@ export default function Apply() {
     const displayMobile = () => {
         return (
             <div>
-                <Parallax>
+      
                 <h1 className={ApplyTitle}>Apply</h1>
                 <p className={ApplyContentMobile}>Start your journey with Winter Of Code & be a part of our Open Source memory.</p>
                 <br/>
                 <Stack className={ApplyButtonMobile} spacing={2} direction="row">
-                    <Button style={{borderRadius: '50px'}} variant="outlined">Apply as Organization</Button>
+                    <Button style={{borderRadius: '50px'}} variant="outlined">Apply as Organisation</Button>
                 </Stack>
                 <Stack className={ApplyButtonMobile} spacing={2} direction="row">
                     <Button style={{borderRadius: '50px'}} variant="outlined">Apply as Mentor</Button>
@@ -68,7 +68,7 @@ export default function Apply() {
                 <Stack className={ApplyButtonMobile} spacing={2} direction="row">
                     <Button style={{borderRadius: '50px'}} variant="outlined">Apply as Student</Button>
                 </Stack>
-                </Parallax>
+        
             </div>
         )     
     };

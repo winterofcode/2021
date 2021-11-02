@@ -84,6 +84,7 @@ export default function CustomizedAccordions() {
   const displayDesktop = () => {
     return (
         <div>
+          <Parallax>
           <Typography>
             <div className={sectionHeading}>
               <h1 align="center"> FAQ </h1>
@@ -105,8 +106,8 @@ export default function CustomizedAccordions() {
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-              The programming language you need to know depends on which organization you are interested in working with.
-              You should be familiar with the programming language(s) used by that organization.
+              The programming language you need to know depends on which organisation you are interested in working with.
+              You should be familiar with the programming language(s) used by that organisation.
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -149,7 +150,7 @@ export default function CustomizedAccordions() {
             <AccordionDetails>
               <Typography>
               Read the Mentor Guide How it Works for more information on becoming a Winter of Code mentor.
-              You must already be an active community member of the organization that you wish to mentor for.
+              You must already be an active community member of the organisation that you wish to mentor for.
               Fill up the form above in the Apply section and join us!
               </Typography>
             </AccordionDetails>
@@ -184,6 +185,7 @@ export default function CustomizedAccordions() {
               </Typography>
             </AccordionDetails>
           </Accordion>
+          </Parallax>
         </div>
     );
   };
@@ -192,6 +194,7 @@ export default function CustomizedAccordions() {
 
     return (
         <div>
+     
           <Typography>
             <div className={sectionHeading}>
               <h1 align="center"> FAQ </h1>
@@ -213,8 +216,8 @@ export default function CustomizedAccordions() {
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-              The programming language you need to know depends on which organization you are interested in working with.
-              You should be familiar with the programming language(s) used by that organization.
+              The programming language you need to know depends on which organisation you are interested in working with.
+              You should be familiar with the programming language(s) used by that organisation.
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -260,7 +263,7 @@ export default function CustomizedAccordions() {
             <AccordionDetails>
               <Typography>
               Read the Mentor Guide How it Works for more information on becoming a Winter of Code mentor.
-              You must already be an active community member of the organization that you wish to mentor for.
+              You must already be an active community member of the organisation that you wish to mentor for.
               Fill up the form above in the Apply section and join us!
               </Typography>
             </AccordionDetails>
@@ -296,15 +299,16 @@ export default function CustomizedAccordions() {
               </Typography>
             </AccordionDetails>
           </Accordion>
+       
         </div>
     );
   };
 
   return (
       <div className={root}>
-          <Parallax>
+   
               {mobileView ? displayMobile() : displayDesktop()}  
-          </Parallax>
+
       </div>
   );
 }

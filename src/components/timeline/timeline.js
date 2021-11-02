@@ -55,7 +55,7 @@ export default function Timeline() {
                 <h3 className="vertical-timeline-element-title">Project Application Starts</h3>
                 <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4>
                 <p>
-                Within this period various organizations submit their project proposal.
+                Within this period various organisations submit their project proposal.
                 </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -79,7 +79,7 @@ export default function Timeline() {
                 <h3 className="vertical-timeline-element-title">Student Application Starts</h3>
                 <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4>
                 <p>
-                Students select their organizations and apply to them during this period.
+                Students select their organisations and apply to them during this period.
                 </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -88,7 +88,7 @@ export default function Timeline() {
                 iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                 icon={<StarEmpty/>}
             >
-                <h3 className="vertical-timeline-element-title">Students announced, projects matched by organizations</h3>
+                <h3 className="vertical-timeline-element-title">Students announced, projects matched by organisations</h3>
                 <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4>
                 <p>
                 Students receive an email regarding their selection and are assigned projects by their respective organisation.
@@ -195,7 +195,7 @@ export default function Timeline() {
                 <h3 className="vertical-timeline-element-title">Project Application Starts</h3>
                 <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4>
                 <p>
-                Within this period various organizations submit their project proposal.
+                Within this period various organisations submit their project proposal.
                 </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -219,7 +219,7 @@ export default function Timeline() {
                 <h3 className="vertical-timeline-element-title">Student Application Starts</h3>
                 <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4>
                 <p>
-                Students select their organizations and apply to them during this period.
+                Students select their organisations and apply to them during this period.
                 </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -228,7 +228,7 @@ export default function Timeline() {
                 iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                 icon={<StarEmpty/>}
             >
-                <h3 className="vertical-timeline-element-title">Students announced, projects matched by organizations</h3>
+                <h3 className="vertical-timeline-element-title">Students announced, projects matched by organisations</h3>
                 <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4>
                 <p>
                 Students receive an email regarding their selection and are assigned projects by their respective organisation.
