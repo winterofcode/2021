@@ -8,6 +8,8 @@ import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import { UseStyles } from '../faq/faqdata';
 
+import Parallax from '../../hooks/parallax';
+
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
 ))(({ theme }) => ({
@@ -299,8 +301,10 @@ export default function CustomizedAccordions() {
   };
 
   return (
-    <div className={root}>
-     {mobileView ? displayMobile() : displayDesktop()} 
-     </div>
+      <div className={root}>
+          <Parallax>
+              {mobileView ? displayMobile() : displayDesktop()}  
+          </Parallax>
+      </div>
   );
 }

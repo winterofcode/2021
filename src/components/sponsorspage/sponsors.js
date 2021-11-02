@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react'
 import { UseStyles } from './sponsorsdata';
 import Schwags2019 from './schwagsinfo/schwags2021';
 
+import Parallax from '../../hooks/parallax';
+
 export default function Sponsors() {
 
     const { root, section, sectionHeading, sectionHeadingMobile} = UseStyles();
@@ -44,10 +46,12 @@ export default function Sponsors() {
 
         return(
             <div>
+            <Parallax>
             <div className={sectionHeadingMobile}>
               <h1>Rewards for Successful Students</h1>
             </div>
             <Schwags2019/>
+            </Parallax>
            
          </div>
         )
@@ -56,7 +60,9 @@ export default function Sponsors() {
     return (
 
         <div className={root}>
-        {mobileView ? displayMobile() : displayDesktop()}  
+            <Parallax>
+                {mobileView ? displayMobile() : displayDesktop()}  
+            </Parallax>
         </div>
     )
 }

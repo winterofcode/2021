@@ -12,6 +12,7 @@ import SortIcon from '@mui/icons-material/Sort';
 import { Link as RouterLink } from "react-router-dom";
 import logo from '../../images/org-logo.png';
 import { headersData, UseStyles } from "./navbardata";
+import Parallax from '../../hooks/parallax';
 
 
 export default function Navbar() {

@@ -5,7 +5,7 @@ import Button from '@mui/material/Button';
 import { UseStyles } from '../welcomepage/welcomepagedata';
 
 import wocimage from '../../images/WOC.png';
-
+import Parallax from '../../hooks/parallax';
 
 
 // const StyledButton = styled(Button)({
@@ -59,6 +59,7 @@ export default function WelcomePage() {
         //     <img src={wocimage} className={wocimagestyle} alt="WOC main imgs"/>
         // </>
             <>
+              
                 <div className={welcomeSection}>
                     <h1 className={welcomeTitle}>Welcome to</h1>
                     <img src={wocimage} className={wocimagestyle} alt="WOC main imgs"/>
@@ -69,6 +70,7 @@ export default function WelcomePage() {
                         <Button style={{borderRadius: '50px'}} variant="outlined">Apply</Button>
                     </Stack>
                 </div>
+         
             </>
         );
       };
@@ -94,7 +96,9 @@ export default function WelcomePage() {
 
     return (
         <div className={root}>
-            {mobileView ? displayMobile() : displayDesktop()}  
+            <Parallax offset={100}>
+                {mobileView ? displayMobile() : displayDesktop()}  
+            </Parallax>
         </div>
     )
 }

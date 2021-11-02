@@ -14,6 +14,7 @@ import { maxWidth } from '@mui/system';
 // import { Card, CardHeader, ImageHeader, } from 'react-simple-card';
 
 import { Card } from 'react-bootstrap';
+import Parallax from '../../../../hooks/parallax';
 
 export default function Orgs2019() {
     const {root, cards, cardWrapper, Media, gridContainer, imageStyle, 
@@ -126,7 +127,9 @@ export default function Orgs2019() {
             <div>
                 <Grid container spacing={12}>
                 {Organisations2019.map(orgs => (
+            
                     <Grid item lg={4} md={6} xs={12} style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+                   
                     <Card
                         style={
                             {
@@ -185,7 +188,9 @@ export default function Orgs2019() {
                                 >View Projects</Button>
                         </Card.Body>
                     </Card>
+                
                     </Grid>
+                 
                 ))}
                 </Grid>
             </div>
@@ -194,7 +199,9 @@ export default function Orgs2019() {
 
     return (
         <div className={root}>
+            <Parallax>
             {mobileView ? displayMobile() : displayDesktop()}  
+            </Parallax>
         </div>
         )
     }

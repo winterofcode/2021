@@ -4,6 +4,7 @@ import { Grid } from '@material-ui/core';
 import { Organisations2020 } from './orgs2020data';
 import { Button } from '@material-ui/core';
 import { Card } from 'react-bootstrap';
+import Parallax from '../../../../hooks/parallax';
 
 export default function Orgs2020() {
     const {root, cards, cardWrapper, Media, gridContainer, cardSection} = UseStyles();
@@ -176,7 +177,9 @@ export default function Orgs2020() {
 
     return (
         <div className={root}>
+            <Parallax offset={100}>
             {mobileView ? displayMobile() : displayDesktop()}
+            </Parallax>
         </div>
         )
     }

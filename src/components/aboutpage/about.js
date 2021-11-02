@@ -5,6 +5,7 @@ import Typography from '@mui/material/Typography';
 import { UseStyles } from '../aboutpage/aboutdata';
 import wocimage from '../../images/WOC.png'
 
+import Parallax from '../../hooks/parallax';
 
 export default function About() {
 
@@ -39,6 +40,7 @@ export default function About() {
       const displayDesktop = () => {
         return (
         <div>
+            <Parallax>
             <div className={section}>
                     <div>
                         <h1 className={sectionHeading}>About The Program <br /></h1>
@@ -69,7 +71,9 @@ export default function About() {
                         the world of open source and develop more code for the benefit of all.
                     </p>
             </div>
+            </Parallax>
                 <br/>
+            <Parallax>
             <div className={workSection}>
                 <div className={subSection}>
                         <Typography>
@@ -90,10 +94,14 @@ export default function About() {
                     </Typography>
                 </div>
             </div>
+            </Parallax>
+            <Parallax>
             <div>
                <h1 className={sectionHeading}>Let's Build Something Awesome Together <br /></h1>   
             </div>
+            </Parallax>
             <div className={sectionTwo}>
+                <Parallax>
                 <div className={sectionRow}>
                     <div style={{ marginTop: "1%"}}>
                         <p className={descriptionText}>
@@ -106,9 +114,13 @@ export default function About() {
                        <img src={wocimage} className={wocimagestyle} alt="WOC main imgs"/>
                     </div>
                 </div>
+                </Parallax>
+                <Parallax>
                 <div>
                   <h1 className={sectionHeading}>How the Program Works ?<br /></h1>   
                 </div>
+                </Parallax>
+                <Parallax>
                 <div className={sectionRow}>
                   <div style={{margin: "2%"}}>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/ZtyBCP6_whw"
@@ -125,8 +137,10 @@ export default function About() {
                           On successful completion of the program students will be rewarded with some cool schwags.</p>
                       </Typography>
                    </div>
-
+                
                 </div>
+                </Parallax>
+                <Parallax>
                 <div className={sectionRow}>
                     <div>
                         <Typography>
@@ -153,6 +167,7 @@ export default function About() {
                     </div>
 
                 </div>
+                </Parallax>
 
 
             </div>
@@ -165,6 +180,7 @@ export default function About() {
           
         return(
         <div>
+            <Parallax>
             <div className={section}>
                 <div>
                     <h1 className={sectionHeading}>About The Program <br /></h1>
@@ -195,6 +211,8 @@ export default function About() {
                     </p>
                 </div>
             </div>
+            </Parallax>
+            <Parallax>
             <div className={workSectionMobile}>
                 <div className={subSectionMobile}>
                     <Typography>
@@ -215,10 +233,14 @@ export default function About() {
                     </Typography>
                 </div>
             </div>
+            </Parallax>
+            <Parallax>
             <div>
                <h1 className={sectionHeading}>Let's Build Something Awesome Together <br /></h1>   
             </div>
+            </Parallax>
             <div className={sectionTwo}>
+                <Parallax>
                 <div className={sectionRowMobile}>
                     <div style={{ marginTop: "1%"}}>
                         <p className={descriptionText}>
@@ -231,10 +253,15 @@ export default function About() {
                        <img src={wocimage} style={{display:"none"}} className={wocimagestyle} alt="WOC main imgs"/>
                     </div>
                 </div>
+                </Parallax>
+                <Parallax>
                 <div>
                   <h1 className={sectionHeading}>How the Program Works ?<br /></h1>   
                 </div>
+                </Parallax>
+         
                 <div className={sectionRowMobile}>
+                    <Parallax>
                     <div className={iframeMobile}>
                
                         <iframe src="https://www.youtube.com/embed/ZtyBCP6_whw"
@@ -242,7 +269,8 @@ export default function About() {
                         clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                             How to write proposal for winter of code</iframe>
                     </div>
-              
+                    </Parallax>
+                    <Parallax>
                      <Typography>
                         <h1 align="center"> Students</h1>
                         <p className={descriptionText}>Students who are interested can register for the Winter of Code by filling a form.
@@ -251,10 +279,12 @@ export default function About() {
                             about their organization’s community. Students then have one month to code and meet the deadlines agreed upon with their mentors.
                             On successful completion of the program students will be rewarded with some cool schwags.</p>
                       </Typography>
-         
+                    </Parallax>
 
                 </div>
+            
                 <div className={sectionRowMobile}>
+                    <Parallax>
                     <div>
                         <Typography>
                             <h1 align="center">Organizations</h1>
@@ -266,6 +296,8 @@ export default function About() {
                             </p>
                         </Typography>
                     </div>
+                    </Parallax>
+                    <Parallax>
                     <div>
                         <Typography>
                           <h1 align="center">Mentors</h1>
@@ -278,9 +310,10 @@ export default function About() {
 
                         </Typography>
                     </div>
+                    </Parallax>
 
                 </div>
-
+                
 
             </div>
             

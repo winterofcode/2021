@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react'
 import { UseStyles } from './applydata';
 import { Stack, Button } from '@mui/material';
 
+import Parallax from '../../hooks/parallax';
+
 export default function Apply() {
     const {root, ApplyTitle, ApplyButton, ApplyContent, ApplyContentMobile, ApplyButtonMobile} = UseStyles();
 
@@ -31,6 +33,7 @@ export default function Apply() {
     const displayDesktop = () => {
         return (
             <div>
+                <Parallax>
                 <div className={ApplyTitle}>
                     <h1>Apply</h1>
                 </div>
@@ -44,6 +47,7 @@ export default function Apply() {
                         <Button style={{borderRadius: '50px'}} variant="outlined">Apply as Student</Button>
                     </Stack>
                 </div>
+                </Parallax>
             </div>
         );
       };
@@ -51,6 +55,7 @@ export default function Apply() {
     const displayMobile = () => {
         return (
             <div>
+                <Parallax>
                 <h1 className={ApplyTitle}>Apply</h1>
                 <p className={ApplyContentMobile}>Start your journey with Winter Of Code & be a part of our Open Source memory.</p>
                 <br/>
@@ -63,13 +68,16 @@ export default function Apply() {
                 <Stack className={ApplyButtonMobile} spacing={2} direction="row">
                     <Button style={{borderRadius: '50px'}} variant="outlined">Apply as Student</Button>
                 </Stack>
+                </Parallax>
             </div>
         )     
     };
 
     return (
         <div className={root}>
+            
             {mobileView ? displayMobile() : displayDesktop()}  
+            
         </div>
     )
 }

@@ -6,6 +6,8 @@ import {CircleStarFull, StarFull, StarEmpty, CircleStarEmpty } from "../../icon/
 import { UseStyles } from '../timeline/timelinedata';
 import { Typography } from '@mui/material';
 
+import Parallax from '../../hooks/parallax';
+
 export default function Timeline() {
 
     const {root, timelineTitle} = UseStyles();

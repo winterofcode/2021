@@ -4,6 +4,7 @@ import { Stack, Button } from '@mui/material';
 import Orgs2019 from './orgscards/orgs2019/orgs2019';
 import Orgs2020 from './orgscards/orgs2020/orgs2020';
 import Orgs2021 from './orgscards/orgs2021/orgs2021';
+import Parallax from '../../hooks/parallax';
 
 export default function Orgs() {
     const {root, orgsTitle, ApplyButton, cardStyle} = UseStyles();
@@ -80,6 +81,7 @@ export default function Orgs() {
     const displayMobile = () => {
         return (
             <div>
+                <Parallax>
                 <div className={orgsTitle}>
                     <h1>Organizations</h1>
                 </div>
@@ -90,18 +92,23 @@ export default function Orgs() {
                         <Button value='2021' onClick={Toggle} style={{borderRadius: '50px'}} variant={isContained2021 ? 'contained' : "outlined"}>2021</Button>
                     </Stack>
                 </div>
+      
                 <div>
                     {active==="2019" && <Orgs2019/>}
                     {active==="2020" && <Orgs2020/>}
                     {active==="2021" && <Orgs2021/>}
                 </div>
+             
+                </Parallax>
             </div>
         );
     };
 
     return (
         <div className={root}>
-            {mobileView ? displayMobile() : displayDesktop()}  
+            <Parallax>
+                {mobileView ? displayMobile() : displayDesktop()}  
+            </Parallax>
         </div>
     )
 }
