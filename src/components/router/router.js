@@ -12,6 +12,7 @@ import EduAlgoProject from "../routes/EduAlgo";
 import FireShortProject from "../routes/FireShot";
 import DSCNITRourkelaProject from "../routes/NITRourkela";
 import TesseractCodingProject from "../routes/TesseractCoding";
+import Organiser from "../routes/Organiser";
 
 export default function AppRouter() {
   return (
@@ -29,6 +30,7 @@ export default function AppRouter() {
         <Route path="/organisation/fireshort" component={FireShortProject} />
         <Route path="/organisation/dsc-nit-rourkela" component={DSCNITRourkelaProject} />
         <Route path="/organisation/tesseract-coding" component={TesseractCodingProject} />
+        <Route path="/organisers" component={Organiser} />
       </Switch>
     </Router>
   );
