@@ -87,7 +87,7 @@ export default function CustomizedAccordions() {
           <Parallax>
           <Typography>
             <div className={sectionHeading}>
-              <h1 align="center"> FAQ </h1>
+              <h1 align="center"> FAQs </h1>
             </div>
           </Typography>
           <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
@@ -197,7 +197,7 @@ export default function CustomizedAccordions() {
      
           <Typography>
             <div className={sectionHeading}>
-              <h1 align="center"> FAQ </h1>
+              <h1 align="center"> FAQs </h1>
             </div>
           </Typography>
           <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
@@ -305,10 +305,8 @@ export default function CustomizedAccordions() {
   };
 
   return (
-      <div className={root}>
-   
-              {mobileView ? displayMobile() : displayDesktop()}  
-
+      <div id="faq" className={root}>
+          {mobileView ? displayMobile() : displayDesktop()}  
       </div>
   );
 }

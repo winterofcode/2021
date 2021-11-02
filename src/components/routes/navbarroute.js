@@ -20,12 +20,12 @@ export const headersData = [
       href: "https://dscnsec.com/",
     },
     {
-        label: "Home",
-        href: "/",
-      },
+      label: "Home",
+      href: "/",
+    },
     {
       label: "Contact Us",
-      href: "/contactus",
+      href: "#contact",
     },
   ];
   
@@ -153,14 +153,14 @@ export default function NavbarRoute() {
       return (
         <Link
           {...{
-            component: RouterLink,
-            to: href,
+            // component: RouterLink,
+            // to: href,
             color: "inherit",
             style: { textDecoration: "none" },
             key: label,
           }}
         >
-          <MenuItem>{label}</MenuItem>
+          <MenuItem><a style={{textDecoration: "none", color: "black"}} href={href}>{label}</a></MenuItem>
         </Link>
       );
     });
@@ -173,12 +173,12 @@ export default function NavbarRoute() {
           {...{
             key: label,
             color: "inherit",
-            to: href,
-            component: RouterLink,
+            // to: href,
+            // component: RouterLink,
             className: menuButton,
           }}
         >
-          {label}
+          <a style={{textDecoration: "none", color: "white"}} href={href}>{label}</a>
         </Button>
       );
     });

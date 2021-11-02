@@ -6,20 +6,28 @@ export const headersData = [
       href: "https://dscnsec.com/",
     },
     {
-      label: "Mentors",
-      href: "/mentors",
+      label: "About Us",
+      href: "#about",
     },
+    // {
+    //   label: "Mentors",
+    //   href: "/mentors",
+    // },
     {
       label: "Organisers",
       href: "/organisers",
     },
     {
       label: "Organisations",
-      href: "/organisations",
+      href: "#organisations",
+    },
+    {
+      label: "Faq",
+      href: "#faq",
     },
     {
       label: "Contact Us",
-      href: "/contactus",
+      href: "#contact",
     },
   ];
   

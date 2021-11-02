@@ -325,7 +325,7 @@ export default function About() {
 
     
     return (
-            <div className={root}>
+            <div id="about" className={root}>
             {mobileView ? displayMobile() : displayDesktop()} 
             </div>   
     )

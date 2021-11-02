@@ -12,7 +12,6 @@ import SortIcon from '@mui/icons-material/Sort';
 import { Link as RouterLink } from "react-router-dom";
 import logo from '../../images/org-logo.png';
 import { headersData, UseStyles } from "./navbardata";
-import Parallax from '../../hooks/parallax';
 
 
 export default function Navbar() {
@@ -22,6 +21,8 @@ export default function Navbar() {
     mobileView: false,
     drawerOpen: false,
   });
+
+
 
   const { mobileView, drawerOpen } = state;
 
@@ -103,14 +104,14 @@ export default function Navbar() {
       return (
         <Link
           {...{
-            component: RouterLink,
-            to: href,
+            // component: RouterLink,
+            // to: href,
             color: "inherit",
             style: { textDecoration: "none" },
             key: label,
           }}
         >
-          <MenuItem>{label}</MenuItem>
+          <MenuItem><a style={{textDecoration: "none", color: "black"}} href={href}>{label}</a></MenuItem>
         </Link>
       );
     });
@@ -123,12 +124,12 @@ export default function Navbar() {
           {...{
             key: label,
             color: "inherit",
-            to: href,
-            component: RouterLink,
+            // to: href,
+            // component: RouterLink,
             className: menuButton,
           }}
         >
-          {label}
+          <a style={{textDecoration: "none", color: "white"}} href={href}>{label}</a>
         </Button>
       );
     });

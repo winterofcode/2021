@@ -105,7 +105,7 @@ export default function Orgs() {
     };
 
     return (
-        <div className={root}>
+        <div id="organisations" className={root}>
             <Parallax>
                 {mobileView ? displayMobile() : displayDesktop()}  
             </Parallax>

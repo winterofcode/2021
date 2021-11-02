@@ -203,7 +203,7 @@ export default function Footer() {
     };
 
     return (
-        <div className={root}>
+        <div id="contact" className={root}>
             {mobileView ? displayMobile() : displayDesktop()}  
         </div>
     )
