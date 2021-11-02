@@ -6,6 +6,7 @@ import { Card } from 'react-bootstrap';
 import Footer from '../footer/footer';
 
 import absurdnerdlogo from '../../images/orgimages/absurdNerd.png';
+import NavbarRoute from './navbarroute';
 
 export const UseStyles = makeStyles((theme) => ({
     // root: {
@@ -93,7 +94,7 @@ export default function AbsurdNerdProject() {
             <div>
                 <div style={{height: "5vh",}}>
                   <CssBaseline/>
-                  <Navbar/>
+                  <NavbarRoute/>
                 </div>
                 <div className={projectSection}>
                     <div className={projectTitle}>
@@ -167,7 +168,7 @@ export default function AbsurdNerdProject() {
             <div>
                 <div style={{height: "5vh",}}>
                   <CssBaseline/>
-                  <Navbar/>
+                  <NavbarRoute/>
                 </div>
               <div>
                 <div className={projectSection}>

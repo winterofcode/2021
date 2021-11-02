@@ -6,6 +6,7 @@ import { Card } from 'react-bootstrap';
 import Footer from '../footer/footer';
 
 import deepfusionAIlogo from '../../images/orgimages/deepfusionai.png';
+import NavbarRoute from './navbarroute';
 
 export const UseStyles = makeStyles((theme) => ({
     // root: {
@@ -96,7 +97,7 @@ export default function DeepFusionAIProject() {
             <div>
                 <div style={{height: "5vh",}}>
                   <CssBaseline/>
-                  <Navbar/>
+                  <NavbarRoute/>
                 </div>
                 <div className={projectSection}>
                     <div className={projectTitle}>
@@ -170,7 +171,7 @@ export default function DeepFusionAIProject() {
             <div>
                 <div style={{height: "5vh",}}>
                   <CssBaseline/>
-                  <Navbar/>
+                  <NavbarRoute/>
                 </div>
               <div>
                 <div className={projectSection}>

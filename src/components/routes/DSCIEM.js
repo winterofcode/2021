@@ -5,6 +5,8 @@ import { Grid, Button } from '@material-ui/core';
 import { Card } from 'react-bootstrap';
 import Footer from '../footer/footer';
 
+import NavbarRoute from './navbarroute'
+
 import dsciemlogo from '../../images/orgimages/dsciem.png';
 
 export const UseStyles = makeStyles((theme) => ({
@@ -93,7 +95,7 @@ export default function DSCIEMProject() {
             <div>
                 <div style={{height: "5vh",}}>
                   <CssBaseline/>
-                  <Navbar/>
+                  <NavbarRoute/>
                 </div>
                 <div className={projectSection}>
                     <div className={projectTitle}>
@@ -167,7 +169,7 @@ export default function DSCIEMProject() {
             <div>
               <div style={{height: "5vh",}}>
                 <CssBaseline/>
-                <Navbar/>
+                <NavbarRoute/>
               </div>
               <div>
                 <div className={projectSection}>

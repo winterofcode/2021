@@ -8,22 +8,17 @@ import Faq from "../faq/faq";
 import Footer from "../footer/footer";
 import Sponsors from '../sponsorspage/sponsors';
 
-import Parallax from '../../hooks/parallax';
-
-
 export default function Homepage() {
     return (
         <div>
-         
-                <LandingPage/>
-                <About/>
-                <Apply/>
-                <Orgs/>
-                <Timeline/>
-                <Sponsors/>
-                <Faq/>
-                <Footer/>
-         
+            <LandingPage/>
+            <About/>
+            <Apply/>
+            <Orgs/>
+            <Timeline/>
+            <Sponsors/>
+            <Faq/>
+            <Footer/>
         </div>
     )
 }

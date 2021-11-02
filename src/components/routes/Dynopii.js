@@ -6,6 +6,7 @@ import { Card } from 'react-bootstrap';
 import Footer from '../footer/footer';
 
 import dynopiilogo from '../../images/orgimages/dynopii.png';
+import NavbarRoute from './navbarroute';
 
 export const UseStyles = makeStyles((theme) => ({
     // root: {
@@ -95,7 +96,7 @@ export default function DynopiiProject() {
             <div>
                 <div style={{height: "5vh",}}>
                   <CssBaseline/>
-                  <Navbar/>
+                  <NavbarRoute/>
                 </div>
                 <div className={projectSection}>
                     <div className={projectTitle}>
@@ -169,7 +170,7 @@ export default function DynopiiProject() {
             <div>
                 <div style={{height: "5vh",}}>
                   <CssBaseline/>
-                  <Navbar/>
+                  <NavbarRoute/>
                 </div>
               <div>
                 <div className={projectSection}>

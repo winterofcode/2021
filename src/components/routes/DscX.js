@@ -5,6 +5,8 @@ import { Grid, Button } from '@material-ui/core';
 import { Card } from 'react-bootstrap';
 import Footer from '../footer/footer';
 
+import NavbarRoute from './navbarroute'
+
 import dscxlogo from '../../images/orgimages/dscx.png'
 
 export const UseStyles = makeStyles((theme) => ({
@@ -95,7 +97,7 @@ export default function DSCXProject() {
             <div>
                 <div style={{height: "5vh",}}>
                   <CssBaseline/>
-                  <Navbar/>
+                  <NavbarRoute/>
                 </div>
                 <div className={projectSection}>
                     <div className={projectTitle}>
@@ -169,7 +171,7 @@ export default function DSCXProject() {
             <div>
                 <div style={{height: "5vh",}}>
                   <CssBaseline/>
-                  <Navbar/>
+                  <NavbarRoute/>
                 </div>
               <div>
                 <div className={projectSection}>
