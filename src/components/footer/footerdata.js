@@ -8,13 +8,13 @@ export const UseStyles = makeStyles((theme) => ({
     footerWrapper: {
         display: "flex",
         justifyContent: "space-between",
-        alignItems: "center",
+        // alignItems: "center",
         width: "80%",
         margin: "0 auto",
     },
     footerColumn1: {
-        flex: "0 0 200px",
-        marginTop: "25px",
+        flex: "0 0 210px",
+        marginTop: "10px",
     },
     footerColumn2: {
         flex: "0 0 200px",
@@ -130,4 +130,13 @@ export const UseStyles = makeStyles((theme) => ({
         textDecoration: "none",
         color: "#fff" 
     },
+    developer: {
+        margin: "6px",
+        color: "#fff",
+    },
+    developerMobile: {
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",   
+    }
   }))

@@ -32,6 +32,8 @@ export default function Footer() {
         resourceslinkMobile,
         DSCNSECTitleMobile,
         handlesLinkMobile,
+        developer,
+        developerMobile,
     } = UseStyles();
 
     const [state, setState] = useState({
@@ -81,6 +83,20 @@ export default function Footer() {
                     </div>
                     <div className={wocCopyright}>
                         <p>&copy; Winter of Code 2020</p>
+                    </div>
+                    <div className={developer}>
+                        <p>Developed by&nbsp;
+                            <a 
+                                href="https://github.com/ayush-AI" 
+                                style={{textDecoration: "none", color: "#FFD60A"}}>
+                                    Ayush
+                            </a> &&nbsp; 
+                            <a 
+                                href="https://github.com/cosmo3769" 
+                                style={{textDecoration: "none", color: "#FFD60A"}}>
+                                    Piyush
+                            </a>
+                        </p>
                     </div>
                 </div>
                 <div className={footerColumn2}>
@@ -196,6 +212,20 @@ export default function Footer() {
                     </div>
                     <div className={wocCopyrightMobile}>
                         <p>&copy; Winter of Code 2020</p>
+                    </div>
+                    <div className={developerMobile}>
+                        <p>Developed by&nbsp;
+                            <a 
+                                href="https://github.com/ayush-AI" 
+                                style={{textDecoration: "none", color: "#FFD60A"}}>
+                                    Ayush
+                            </a> &&nbsp; 
+                            <a 
+                                href="https://github.com/cosmo3769" 
+                                style={{textDecoration: "none", color: "#FFD60A"}}>
+                                    Piyush
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>
