@@ -31,7 +31,7 @@ export default function Orgs2021() {
         return (
             <div>
                 <div className={section}>
-                    <h1>Coming Soon ...</h1>
+                    <h3>To be announced</h3>
                 </div>
             </div>
         );
@@ -41,7 +41,7 @@ export default function Orgs2021() {
         return (
             <div>
                 <div className={sectionMobile}>
-                    <h1>Coming Soon ...</h1>
+                    <h4>To be announced</h4>
                 </div>
             </div>
         );

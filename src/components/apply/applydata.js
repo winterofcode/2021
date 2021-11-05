@@ -46,6 +46,7 @@ export const UseStyles = makeStyles((theme) => ({
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        margin: "5%",
         // width: "75%",
         // margin: "0 auto"
     }

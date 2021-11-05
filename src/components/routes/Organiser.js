@@ -16,7 +16,7 @@ import shreyabagimage from "../../images/oranisersimg/shreyabag.jpeg";
 import shreyasethimage from "../../images/oranisersimg/shreyaseth.jpeg";
 import sohamimage from "../../images/oranisersimg/soham.jpg";
 import souvikimage from "../../images/oranisersimg/souvik.jpeg";
-import suvadeepimage from "../../images/oranisersimg/suvadeep.jpg";
+import suvadeepimage from "../../images/oranisersimg/suvadeep.png";
 import swetaimage from "../../images/oranisersimg/sweta.jpeg";
 import tanukaimage from "../../images/oranisersimg/tanuka.jpeg";
 import tausifimage from "../../images/oranisersimg/tausif.jpg";
@@ -215,7 +215,7 @@ export default function Organiser() {
                                 <Grid item xs={12} md={4}>
                                     <div className={profileContainer}>
                                         <img src={organiser.userphoto} className={image}></img>
-                                        <p style={{fontSize: "1.5rem"}}>{organiser.username}</p>
+                                        <p style={{fontSize: "1.3rem"}}>{organiser.username}</p>
                                         <div className={iconStyle}>
                                         <ExternalLink href={organiser.GithubLink} >
                                         <Github fill="#211F1F" width={30} height={30} className={profileLink}/>

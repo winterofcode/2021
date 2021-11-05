@@ -60,7 +60,7 @@ export default function Orgs() {
         return (
             <div>
                 <div className={orgsTitle}>
-                    <h1>Organizations</h1>
+                    <h1>Organisations</h1>
                 </div>
                 <div className={ApplyButton}>
                     <Stack spacing={2} direction="row">

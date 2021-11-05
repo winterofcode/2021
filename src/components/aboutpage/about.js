@@ -116,7 +116,7 @@ export default function About() {
                 </Parallax>
                 <Parallax>
                 <div>
-                  <h1 className={sectionHeading}>How the Program Works ?<br /></h1>   
+                  <h1 className={sectionHeading}>How the Program Works?<br /></h1>   
                 </div>
                 </Parallax>
                 <Parallax>
@@ -255,7 +255,7 @@ export default function About() {
                 </Parallax>
                 <Parallax>
                 <div>
-                  <h1 className={sectionHeading}>How the Program Works ?<br /></h1>   
+                  <h1 className={sectionHeading}>How the Program Works?<br /></h1>   
                 </div>
                 </Parallax>
          

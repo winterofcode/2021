@@ -35,13 +35,13 @@ export const UseStyles = makeStyles((theme) => ({
     },
     sectionHeadingMobile: {
         fontFamily: "Open Sans, sans-serif",
-        fontSize: "1rem",
+        fontSize: "0.6rem",
         color: '#000813',
         fontWeight: "bold",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        width: "40%",
+        width: "100%",
         margin: "0 auto"
         // margin: "0 auto",
         // marginLeft: "2%",

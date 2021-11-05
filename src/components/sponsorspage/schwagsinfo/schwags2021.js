@@ -90,7 +90,7 @@ const Schwags2019 = () => {
         </Grid> */}
        
               <div>
-                <h1 style={{display: "flex", justifyContent: "center", alignItems: "center", fontStyle: "1rem"}}>Coming Soon...</h1>
+                <h2 style={{display: "flex", justifyContent: "center", alignItems: "center",}}>To be announced</h2>
               </div>
           </div>
             
@@ -112,7 +112,7 @@ const Schwags2019 = () => {
           </Grid> */}
           <br/><br/>
           <div>
-              <h1 style={{display: "flex", justifyContent: "center", alignItems: "center", fontStyle: "1rem"}}>Coming Soon...</h1>
+              <h3 style={{display: "flex", justifyContent: "center", alignItems: "center",}}>To be announced</h3>
           </div>
         </div>
         )
