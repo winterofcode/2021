@@ -8,7 +8,7 @@ export const UseStyles = makeStyles((theme) => ({
         display: "flex",
         justifyContent: "center",
         // alignItems: "center",
-        paddingBottom: "9%",
+        // paddingBottom: "9%",
     },
     ApplyTitle: {
         fontFamily: "Open Sans, sans-serif",
@@ -49,5 +49,11 @@ export const UseStyles = makeStyles((theme) => ({
         margin: "5%",
         // width: "75%",
         // margin: "0 auto"
-    }
+    },
+    // ApplySection: {
+    //     // display: "flex",
+    //     // justifyContent: "center",
+    //     // alignItems: "center",
+    //     margin: "5%"
+    // }
 }))
