@@ -8,17 +8,19 @@ import { flexbox, width } from '@mui/system';
 import { Github, LinkedIn, Twitter } from '../../icon/icon';
 import { ExternalLink } from 'react-external-link';
 import NavbarRoute from './navbarroute';
+import piyushimage from "../../images/oranisersimg/piyush.jpeg";
 import ayushimage from "../../images/oranisersimg/Ayush.jpg";
 import dipikeshimage from "../../images/oranisersimg/dipikesh.png";
 import shivaniimage from "../../images/oranisersimg/shivani.jpg";
 import shreyabagimage from "../../images/oranisersimg/shreyabag.jpeg";
-import shreyasethimage from "../../images/oranisersimg/shreyaseth.jpg";
+import shreyasethimage from "../../images/oranisersimg/shreyaseth.jpeg";
 import sohamimage from "../../images/oranisersimg/soham.jpg";
-// import souvikimage from "../../images/organisersimg/souvik.jpeg";
-// import suvadeepimage from "../../images/organisersimg/suvadeep.jpg";
-import swetaimage from "../../images/oranisersimg/sweta.jpg";
-import tanukaimage from "../../images/oranisersimg/tanuka.jpg";
+import souvikimage from "../../images/oranisersimg/souvik.jpeg";
+import suvadeepimage from "../../images/oranisersimg/suvadeep.jpg";
+import swetaimage from "../../images/oranisersimg/sweta.jpeg";
+import tanukaimage from "../../images/oranisersimg/tanuka.jpeg";
 import tausifimage from "../../images/oranisersimg/tausif.jpg";
+import sajalimage from "../../images/oranisersimg/sajal.png";
 
 export const UseStyles = makeStyles((theme) => ({
 
@@ -33,9 +35,6 @@ export const UseStyles = makeStyles((theme) => ({
         // margin: "0 auto",
         // minHeight: "100vh",
         // minWidth: "100vh",
-        
-
-
     },
     
     imageContainer:{
@@ -44,20 +43,19 @@ export const UseStyles = makeStyles((theme) => ({
         // margin: "auto",
         // display: "inline"
         // minHeight: "100vh",
-    
     },
 
     image:{
-        width:"45%",
-        height: "45%",
+        width:"50%",
+        height: "50%",
         // justifyContent:"center",
         // alignItems:"center",
         // margin:"0 auto",
         background: "black",
+        borderRadius: "50%"
     },
 
     profileContainer:{
-
         marginBottom:"5%",
         width: "100%",
         height: "100%",
@@ -65,17 +63,120 @@ export const UseStyles = makeStyles((theme) => ({
     },
     profileLink: {
         marginRight: "20px"
+    },
+    iconStyle: {
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+        width: "40%"
     }
-
-
  }))
+
+
+ const OrganisersData = [
+        
+    {
+    username: "Piyush Thakur",
+    userphoto: piyushimage,    
+    LinkedInLink: "https://www.linkedin.com/in/cosmo3769/",
+    TwitterLink: "https://twitter.com/cosmo3769",
+    GithubLink: "https://github.com/cosmo3769",
+    },
+    {
+        username: "Ayush",
+        userphoto: ayushimage,    
+        LinkedInLink: "https://www.linkedin.com/in/ayush-mishra-62586b190/",
+        TwitterLink: "https://twitter.com/supermanaayush",
+        GithubLink: "https://github.com/ayush-ai",
+    },
+    {
+        username: "Souvik Guria",
+        userphoto: souvikimage,    
+        LinkedInLink: "https://www.linkedin.com/in/souvik-guria-/",
+        TwitterLink: "https://twitter.com/orionLeo__",
+        GithubLink: "github.com/devSouvik",
+    },
+    {
+        username: "Sajal Kumar",
+        userphoto: sajalimage,    
+        LinkedInLink: "",
+        TwitterLink: "",
+        GithubLink: "",
+    },
+    {
+        username: "Tanuka Mondal",
+        userphoto: tanukaimage,    
+        LinkedInLink: "https://www.linkedin.com/in/tanuka-mondal-923051199//",
+        TwitterLink: "https://twitter.com/I_am_Tanuka",
+        GithubLink: "https://github.com/Tanuka-Mondal",
+    },
+    {
+        username: "Sweta Seth",
+        userphoto: swetaimage,    
+        LinkedInLink: "https://www.linkedin.com/in/sweta-seth-a11a4a18b",
+        TwitterLink: "https://twitter.com/Sweta49861525?s=08",
+        GithubLink: "https://github.com/Sweta040799",
+    },
+    {
+        username: "Shreya Seth",
+        userphoto: shreyasethimage,    
+        LinkedInLink: "https://www.linkedin.com/in/shreya-seth-194001191",
+        TwitterLink: "https://twitter.com/ShreyaS50175463?s=09",
+        GithubLink: undefined,
+    },
+    {
+        username: "Suvadeep Maity",
+        userphoto: suvadeepimage,    
+        LinkedInLink: "https://www.linkedin.com/in/suvadeep-maity-392a881a7/",
+        TwitterLink: undefined,
+        GithubLink: "https://github.com/suvadeep2001",
+    },
+    {
+        username: "Dipikesh kumar",
+        userphoto: dipikeshimage,    
+        LinkedInLink: "https://www.linkedin.com/in/dipikesh-kumar-465b111b1/",
+        TwitterLink: "https://twitter.com/KumarDipikesh?t=dUkgStdqAguofmNBtU9sFQ&s=08",
+        GithubLink: "https://github.com/Dipikesh",
+    },
+    {
+        username: "Shreya Bag",
+        userphoto: shreyabagimage,    
+        LinkedInLink: "https://www.linkedin.com/in/shreya-bag-278314192",
+        TwitterLink: "https://twitter.com/Shreya61609637?t=X-oJ8DCUjDNJivza9D4Ueg&s=08",
+        GithubLink: "github.com/shreyamaybe",
+    },
+
+    {
+        username: "Md. Tausif Siddqui",
+        userphoto: tausifimage,    
+        LinkedInLink: "https://www.linkedin.com/in/md-tausif-siddiqui-2560b31a6/",
+        TwitterLink: "https://twitter.com/iamtausif9?t=swOKzu7xZdgXHBhGd6P-rg&s=09",
+        GithubLink: "https://github.com/Tausif121",
+    },
+
+    {
+        username: "Soham chakraborty",
+        userphoto: sohamimage,    
+        LinkedInLink: "https://www.linkedin.com/in/soham-chakraborty-69aa70192/",
+        TwitterLink: undefined,
+        GithubLink: "https://github.com/Soham-Official",
+    },
+    {
+        username: "Shivani",
+        userphoto: shivaniimage,    
+        LinkedInLink: "",
+        TwitterLink: "",
+        GithubLink: "",
+    },
+
+]
 
 
 
 export default function Organiser() {
 
 
-    const {container, image, imageContainer, profileLink, profileContainer} = UseStyles()
+    const {container, image, imageContainer, profileLink, profileContainer, iconStyle} = UseStyles()
 
     const [state, setState] = useState({
         mobileView: false,
@@ -99,110 +200,11 @@ export default function Organiser() {
         window.removeEventListener("resize", () => setResponsiveness());
     };
     }, []);
-
-    const OrganisersData = [
-        
-        {
-        username: "Piyush Thakur",
-        // userphoto: require("../Assets/vishwajeet.png"),    
-        LinkedInLink: "https://www.linkedin.com/in/cosmo3769/",
-        TwitterLink: "https://twitter.com/cosmo3769",
-        GithubLink: "https://github.com/cosmo3769",
-        },
-        {
-            username: "Ayush",
-            userphoto: ayushimage,    
-            LinkedInLink: "https://www.linkedin.com/in/ayush-mishra-62586b190/",
-            TwitterLink: "https://twitter.com/supermanaayush",
-            GithubLink: "https://github.com/ayush-ai",
-        },
-        {
-            username: "Souvik Guria",
-            // userphoto: souvikimage,    
-            LinkedInLink: "https://www.linkedin.com/in/souvik-guria-/",
-            TwitterLink: "https://twitter.com/orionLeo__",
-            GithubLink: "github.com/devSouvik",
-        },
-        {
-            username: "Sajal Kumar",
-            // userphoto: require("../Assets/vishwajeet.png"),    
-            LinkedInLink: "",
-            TwitterLink: "",
-            GithubLink: "",
-        },
-        {
-            username: "Tanuka Mondal",
-            userphoto: tanukaimage,    
-            LinkedInLink: "https://www.linkedin.com/in/tanuka-mondal-923051199//",
-            TwitterLink: "https://twitter.com/I_am_Tanuka",
-            GithubLink: "https://github.com/Tanuka-Mondal",
-        },
-        {
-            username: "Sweta Seth",
-            userphoto: swetaimage,    
-            LinkedInLink: "https://www.linkedin.com/in/sweta-seth-a11a4a18b",
-            TwitterLink: "https://twitter.com/Sweta49861525?s=08",
-            GithubLink: "https://github.com/Sweta040799",
-        },
-        {
-            username: "Shreya Seth",
-            userphoto: shreyasethimage,    
-            LinkedInLink: "https://www.linkedin.com/in/shreya-seth-194001191",
-            TwitterLink: "https://twitter.com/ShreyaS50175463?s=09",
-            GithubLink: undefined,
-        },
-        {
-            username: "Suvadeep Maity",
-            // userphoto: suvadeepimage,    
-            LinkedInLink: "https://www.linkedin.com/in/suvadeep-maity-392a881a7/",
-            TwitterLink: undefined,
-            GithubLink: "https://github.com/suvadeep2001",
-        },
-        {
-            username: "Dipikesh kumar",
-            userphoto: dipikeshimage,    
-            LinkedInLink: "https://www.linkedin.com/in/dipikesh-kumar-465b111b1/",
-            TwitterLink: "https://twitter.com/KumarDipikesh?t=dUkgStdqAguofmNBtU9sFQ&s=08",
-            GithubLink: "https://github.com/Dipikesh",
-        },
-        {
-            username: "Shreya Bag",
-            userphoto: shreyabagimage,    
-            LinkedInLink: "https://www.linkedin.com/in/shreya-bag-278314192",
-            TwitterLink: "https://twitter.com/Shreya61609637?t=X-oJ8DCUjDNJivza9D4Ueg&s=08",
-            GithubLink: "github.com/shreyamaybe",
-        },
-
-        {
-            username: "Md. Tausif Siddqui",
-            userphoto: tausifimage,    
-            LinkedInLink: "https://www.linkedin.com/in/md-tausif-siddiqui-2560b31a6/",
-            TwitterLink: "https://twitter.com/iamtausif9?t=swOKzu7xZdgXHBhGd6P-rg&s=09",
-            GithubLink: "https://github.com/Tausif121",
-        },
-
-        {
-            username: "Soham chakraborty",
-            userphoto: sohamimage,    
-            LinkedInLink: "https://www.linkedin.com/in/soham-chakraborty-69aa70192/",
-            TwitterLink: undefined,
-            GithubLink: "https://github.com/Soham-Official",
-        },
-        {
-            username: "Shivani",
-            userphoto: shivaniimage,    
-            LinkedInLink: "",
-            TwitterLink: "",
-            GithubLink: "",
-        },
-
-    ]
-
     
-
     const displayDesktop = () =>{
         return(
             <div>
+                <CssBaseline/>
                 <NavbarRoute style={{position: "absolute"}}/>
                 <div className={container}>
                    <Typography>
@@ -215,6 +217,7 @@ export default function Organiser() {
                                     <div className={profileContainer}>
                                         <img src={organiser.userphoto} className={image}></img>
                                         <p>{organiser.username}</p>
+                                        <div className={iconStyle}>
                                         <ExternalLink href={organiser.GithubLink} >
                                         <Github fill="#211F1F" width={30} height={30} className={profileLink}/>
                                         </ExternalLink >
@@ -224,18 +227,16 @@ export default function Organiser() {
                                         <ExternalLink href={organiser.TwitterLink}>
                                         <Twitter fill="#00acee" width={30} height={30} className={profileLink}/>
                                         </ExternalLink>
+                                        </div>
                                     </div>
                                 </Grid> 
-
                             ))}
                        </Grid> 
                     </div>
                 </div> 
 
-              <Footer />
-
-              
-
+                  <Footer style={{width: "100%", margin: "0 auto"}}/>
+            
             </div>
 
         )
@@ -259,15 +260,17 @@ export default function Organiser() {
                                 <div className={profileContainer}>
                                     <img src={organiser.userphoto} className={image}></img>
                                     <p>{organiser.username}</p>
-                                    <ExternalLink href={organiser.GithubLink} >
-                                    <Github className={profileLink}/>
-                                    </ExternalLink >
-                                    <ExternalLink href={organiser.LinkedInLink}>
-                                    <LinkedIn className={profileLink}/>
-                                    </ExternalLink>
-                                    <ExternalLink href={organiser.TwitterLink}>
-                                    <Twitter className={profileLink}/>
-                                    </ExternalLink>
+                                        <div className={iconStyle}>
+                                        <ExternalLink href={organiser.GithubLink} >
+                                        <Github fill="#211F1F" width={30} height={30} className={profileLink}/>
+                                        </ExternalLink >
+                                        <ExternalLink href={organiser.LinkedInLink}>
+                                        <LinkedIn fill="#0E76A8" width={30} height={30} className={profileLink}/>
+                                        </ExternalLink>
+                                        <ExternalLink href={organiser.TwitterLink}>
+                                        <Twitter fill="#00acee" width={30} height={30} className={profileLink}/>
+                                        </ExternalLink>
+                                        </div>
                                 </div>
                             </Grid> 
 
@@ -275,7 +278,6 @@ export default function Organiser() {
                    </Grid> 
                 </div>
             </div> 
-
           <Footer />
         </div>
         )

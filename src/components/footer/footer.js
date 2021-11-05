@@ -91,7 +91,28 @@ export default function Footer() {
                                 color: "#FFD60A",
                             }} 
                             href="https://winterofcode.com/"
-                            >Previous Version
+                            >2021
+                            </a>
+                            &nbsp;
+                            &nbsp;
+                            <a 
+                            style={{
+                                textDecoration: "none",
+                                color: "#FFD60A",
+                            }} 
+                            href="https://winterofcode.com/"
+                            
+                            >2020
+                            </a>
+                            &nbsp;
+                            &nbsp;
+                            <a 
+                            style={{
+                                textDecoration: "none",
+                                color: "#FFD60A",
+                            }} 
+                            href="https://winterofcode.com/"
+                            >2019
                             </a>
                         </p>
                     </div>
@@ -226,12 +247,35 @@ export default function Footer() {
                     </div>
                     <div className={previousVersionMobile}>
                         <p>
-                            <a 
-                            style={{textDecoration: "none", color:"#FFD60A"}}
-                            href="https://winterofcode.com/">
-                                Previous Version
+                        <a 
+                            style={{
+                                textDecoration: "none",
+                                color: "#FFD60A",
+                            }} 
+                            href="https://winterofcode.com/"
+                            >2021
                             </a>
-
+                            &nbsp;
+                            &nbsp;
+                            <a 
+                            style={{
+                                textDecoration: "none",
+                                color: "#FFD60A",
+                            }} 
+                            href="https://winterofcode.com/"
+                            
+                            >2020
+                            </a>
+                            &nbsp;
+                            &nbsp;
+                            <a 
+                            style={{
+                                textDecoration: "none",
+                                color: "#FFD60A",
+                            }} 
+                            href="https://winterofcode.com/"
+                            >2019
+                            </a>
                         </p>
                     </div>
                     <div className={wocCopyrightMobile}>
