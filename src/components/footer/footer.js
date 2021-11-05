@@ -122,14 +122,14 @@ export default function Footer() {
                     <div className={developer}>
                         <p>Developed by&nbsp;
                             <a 
-                                href="https://github.com/ayush-AI" 
-                                style={{textDecoration: "none", color: "#FFD60A"}}>
-                                    Ayush
-                            </a> &&nbsp; 
-                            <a 
                                 href="https://github.com/cosmo3769" 
                                 style={{textDecoration: "none", color: "#FFD60A"}}>
                                     Piyush
+                            </a> &&nbsp; 
+                            <a 
+                                href="https://github.com/ayush-AI" 
+                                style={{textDecoration: "none", color: "#FFD60A"}}>
+                                    Ayush
                             </a>
                         </p>
                     </div>
@@ -284,14 +284,14 @@ export default function Footer() {
                     <div className={developerMobile}>
                         <p>Developed by&nbsp;
                             <a 
-                                href="https://github.com/ayush-AI" 
-                                style={{textDecoration: "none", color: "#FFD60A"}}>
-                                    Ayush
-                            </a> &&nbsp; 
-                            <a 
                                 href="https://github.com/cosmo3769" 
                                 style={{textDecoration: "none", color: "#FFD60A"}}>
                                     Piyush
+                            </a> &&nbsp; 
+                            <a 
+                                href="https://github.com/ayush-AI" 
+                                style={{textDecoration: "none", color: "#FFD60A"}}>
+                                    Ayush
                             </a>
                         </p>
                     </div>
