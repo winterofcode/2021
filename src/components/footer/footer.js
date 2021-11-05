@@ -34,6 +34,8 @@ export default function Footer() {
         handlesLinkMobile,
         developer,
         developerMobile,
+        previousVersion,
+        previousVersionMobile
     } = UseStyles();
 
     const [state, setState] = useState({
@@ -80,6 +82,18 @@ export default function Footer() {
                     </div>
                     <div className={wocTitle}>
                         <p>The Winter of Code is a program aimed to increase participation for the Google Summer of Code program among students in colleges and universities.</p>
+                    </div>
+                    <div className={previousVersion}>
+                        <p>
+                            <a 
+                            style={{
+                                textDecoration: "none",
+                                color: "#FFD60A",
+                            }} 
+                            href="https://winterofcode.com/"
+                            >Previous Version
+                            </a>
+                        </p>
                     </div>
                     <div className={wocCopyright}>
                         <p>&copy; Winter of Code 2020</p>
@@ -209,6 +223,16 @@ export default function Footer() {
                         <ExternalLink className={handlesLinkMobile} href="https://www.facebook.com/dscnsec/">
                             <p>Facebook</p>
                         </ExternalLink>
+                    </div>
+                    <div className={previousVersionMobile}>
+                        <p>
+                            <a 
+                            style={{textDecoration: "none", color:"#FFD60A"}}
+                            href="https://winterofcode.com/">
+                                Previous Version
+                            </a>
+
+                        </p>
                     </div>
                     <div className={wocCopyrightMobile}>
                         <p>&copy; Winter of Code 2020</p>

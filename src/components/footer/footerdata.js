@@ -138,5 +138,14 @@ export const UseStyles = makeStyles((theme) => ({
         display: "flex",
         justifyContent: "center",
         alignItems: "center",   
+    },
+    previousVersion: {
+        margin: "6px",
+        color: "#fff",
+    },
+    previousVersionMobile: {
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",   
     }
   }))
