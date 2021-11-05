@@ -15,7 +15,7 @@ import { headersData, UseStyles } from "./navbardata";
 
 
 export default function Navbar() {
-  const {appbar, icon, logoTitle, logoimg, toolbarWrapper, menuButton, drawerContainer} = UseStyles();
+  const {appbar, icon, logoTitle, logoimg, toolbarWrapper, menuButton, menuButtonStyle, drawerContainer} = UseStyles();
 
   const [state, setState] = useState({
     mobileView: false,
@@ -54,7 +54,7 @@ export default function Navbar() {
               }}
               href="/">Winter of Code</a>
         </h1>
-        <div>{getMenuButtons()}</div>
+        <div className={menuButtonStyle}>{getMenuButtons()}</div>
       </Toolbar>
     );
   };

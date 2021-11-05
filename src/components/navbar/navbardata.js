@@ -5,10 +5,10 @@ export const headersData = [
       label: "GDSC NSEC",
       href: "https://dscnsec.com/",
     },
-    {
-      label: "About Us",
-      href: "#about",
-    },
+    // {
+    //   label: "About Us",
+    //   href: "#about",
+    // },
     // {
     //   label: "Mentors",
     //   href: "/mentors",
@@ -40,11 +40,21 @@ export const UseStyles = makeStyles((theme) => ({
     toolbarWrapper: {
       width: '80%',
       margin: '0 auto',
+      '@media (max-width: 1024px)': {
+        width: "100%",
+        margin: "0 auto",
+        fontSize: "0.8rem"
+      },
     },
     logoTitle: {
       fontFamily: "Open Sans, sans-serif",
       color: '#fff',
       flexGrow: '1',
+      '@media (max-width: 320px)': {
+        width: "100%",
+        margin: "0 auto",
+        fontSize: "1.3rem"
+      }
     },
     icon: {
       color: '#fff',
@@ -60,6 +70,7 @@ export const UseStyles = makeStyles((theme) => ({
       fontWeight: 700,
       size: "18px",
       marginLeft: "38px",
+      textTransform: "none"
     },
     drawerContainer: {
       padding: "20px 30px",

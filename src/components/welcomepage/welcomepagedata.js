@@ -8,13 +8,19 @@ export const UseStyles = makeStyles((theme) => ({
         height: '100vh',
         width: "80%",
         margin: "0 auto",
-       
+        
     },
     welcomeSection: {
-        marginTop: "10%",
+        marginTop: "15%",
+        '@media (max-width: 1024px)': {
+            marginTop: "30%"
+        },
     },
     welcomeSectionMobile: {
-        marginTop: "30%",
+        marginTop: "40%",
+        '@media (max-width: 320px)': {
+            marginTop: "80%"
+        }
     },
     welcomeTitle: {
         fontFamily: "Open Sans, sans-serif",
