@@ -61,7 +61,7 @@ export const UseStyles = makeStyles((theme) => ({
         marginBottom:"5%",
         width: "100%",
         height: "100%",
-        padding: "2%"
+        // padding: "2%"
     },
     profileLink: {
         marginRight: "20px"
@@ -216,13 +216,13 @@ export default function Organiser() {
                                         <img src={organiser.userphoto} className={image}></img>
                                         <p>{organiser.username}</p>
                                         <ExternalLink href={organiser.GithubLink} >
-                                        <Github className={profileLink}/>
+                                        <Github fill="#211F1F" width={30} height={30} className={profileLink}/>
                                         </ExternalLink >
                                         <ExternalLink href={organiser.LinkedInLink}>
-                                        <LinkedIn className={profileLink}/>
+                                        <LinkedIn fill="#0E76A8" width={30} height={30} className={profileLink}/>
                                         </ExternalLink>
                                         <ExternalLink href={organiser.TwitterLink}>
-                                        <Twitter className={profileLink}/>
+                                        <Twitter fill="#00acee" width={30} height={30} className={profileLink}/>
                                         </ExternalLink>
                                     </div>
                                 </Grid> 
