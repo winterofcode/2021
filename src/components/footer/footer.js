@@ -90,7 +90,7 @@ export default function Footer() {
                                 textDecoration: "none",
                                 color: "#FFD60A",
                             }} 
-                            href="https://winterofcode.com/"
+                            href="https://winterofcode2021.netlify.app/"
                             >2021
                             </a>
                             &nbsp;
@@ -111,13 +111,13 @@ export default function Footer() {
                                 textDecoration: "none",
                                 color: "#FFD60A",
                             }} 
-                            href="https://winterofcode.com/"
+                            href="https://2019.winterofcode.com/"
                             >2019
                             </a>
                         </p>
                     </div>
                     <div className={wocCopyright}>
-                        <p>&copy; Winter of Code 2020</p>
+                        <p>&copy; Winter of Code 2021</p>
                     </div>
                     <div className={developer}>
                         <p>Developed by&nbsp;
@@ -252,7 +252,7 @@ export default function Footer() {
                                 textDecoration: "none",
                                 color: "#FFD60A",
                             }} 
-                            href="https://winterofcode.com/"
+                            href="https://winterofcode2021.netlify.app/"
                             >2021
                             </a>
                             &nbsp;
@@ -273,13 +273,13 @@ export default function Footer() {
                                 textDecoration: "none",
                                 color: "#FFD60A",
                             }} 
-                            href="https://winterofcode.com/"
+                            href="https://2019.winterofcode.com/"
                             >2019
                             </a>
                         </p>
                     </div>
                     <div className={wocCopyrightMobile}>
-                        <p>&copy; Winter of Code 2020</p>
+                        <p>&copy; Winter of Code 2021</p>
                     </div>
                     <div className={developerMobile}>
                         <p>Developed by&nbsp;

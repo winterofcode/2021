@@ -46,8 +46,8 @@ export const UseStyles = makeStyles((theme) => ({
     },
 
     image:{
-        width:"50%",
-        height: "50%",
+        width:"40%",
+        height: "40%",
         // justifyContent:"center",
         // alignItems:"center",
         // margin:"0 auto",
@@ -68,7 +68,7 @@ export const UseStyles = makeStyles((theme) => ({
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
-        width: "40%"
+        width: "35%"
     }
  }))
 
@@ -90,13 +90,6 @@ export const UseStyles = makeStyles((theme) => ({
         GithubLink: "https://github.com/ayush-ai",
     },
     {
-        username: "Souvik Guria",
-        userphoto: souvikimage,    
-        LinkedInLink: "https://www.linkedin.com/in/souvik-guria-/",
-        TwitterLink: "https://twitter.com/orionLeo__",
-        GithubLink: "github.com/devSouvik",
-    },
-    {
         username: "Sajal Kumar",
         userphoto: sajalimage,    
         LinkedInLink: "",
@@ -104,25 +97,11 @@ export const UseStyles = makeStyles((theme) => ({
         GithubLink: "",
     },
     {
-        username: "Tanuka Mondal",
-        userphoto: tanukaimage,    
-        LinkedInLink: "https://www.linkedin.com/in/tanuka-mondal-923051199//",
-        TwitterLink: "https://twitter.com/I_am_Tanuka",
-        GithubLink: "https://github.com/Tanuka-Mondal",
-    },
-    {
-        username: "Sweta Seth",
-        userphoto: swetaimage,    
-        LinkedInLink: "https://www.linkedin.com/in/sweta-seth-a11a4a18b",
-        TwitterLink: "https://twitter.com/Sweta49861525?s=08",
-        GithubLink: "https://github.com/Sweta040799",
-    },
-    {
-        username: "Shreya Seth",
-        userphoto: shreyasethimage,    
-        LinkedInLink: "https://www.linkedin.com/in/shreya-seth-194001191",
-        TwitterLink: "https://twitter.com/ShreyaS50175463?s=09",
-        GithubLink: undefined,
+        username: "Souvik Guria",
+        userphoto: souvikimage,    
+        LinkedInLink: "https://www.linkedin.com/in/souvik-guria-/",
+        TwitterLink: "https://twitter.com/orionLeo__",
+        GithubLink: "github.com/devSouvik",
     },
     {
         username: "Suvadeep Maity",
@@ -139,13 +118,40 @@ export const UseStyles = makeStyles((theme) => ({
         GithubLink: "https://github.com/Dipikesh",
     },
     {
+        username: "Shivani",
+        userphoto: shivaniimage,    
+        LinkedInLink: "",
+        TwitterLink: "",
+        GithubLink: "",
+    },
+    {
+        username: "Tanuka Mondal",
+        userphoto: tanukaimage,    
+        LinkedInLink: "https://www.linkedin.com/in/tanuka-mondal-923051199//",
+        TwitterLink: "https://twitter.com/I_am_Tanuka",
+        GithubLink: "https://github.com/Tanuka-Mondal",
+    },
+    {
+        username: "Shreya Seth",
+        userphoto: shreyasethimage,    
+        LinkedInLink: "https://www.linkedin.com/in/shreya-seth-194001191",
+        TwitterLink: "https://twitter.com/ShreyaS50175463?s=09",
+        GithubLink: undefined,
+    },
+    {
+        username: "Sweta Seth",
+        userphoto: swetaimage,    
+        LinkedInLink: "https://www.linkedin.com/in/sweta-seth-a11a4a18b",
+        TwitterLink: "https://twitter.com/Sweta49861525?s=08",
+        GithubLink: "https://github.com/Sweta040799",
+    },
+    {
         username: "Shreya Bag",
         userphoto: shreyabagimage,    
         LinkedInLink: "https://www.linkedin.com/in/shreya-bag-278314192",
         TwitterLink: "https://twitter.com/Shreya61609637?t=X-oJ8DCUjDNJivza9D4Ueg&s=08",
         GithubLink: "github.com/shreyamaybe",
     },
-
     {
         username: "Md. Tausif Siddqui",
         userphoto: tausifimage,    
@@ -160,13 +166,6 @@ export const UseStyles = makeStyles((theme) => ({
         LinkedInLink: "https://www.linkedin.com/in/soham-chakraborty-69aa70192/",
         TwitterLink: undefined,
         GithubLink: "https://github.com/Soham-Official",
-    },
-    {
-        username: "Shivani",
-        userphoto: shivaniimage,    
-        LinkedInLink: "",
-        TwitterLink: "",
-        GithubLink: "",
     },
 
 ]
@@ -208,7 +207,7 @@ export default function Organiser() {
                 <NavbarRoute style={{position: "absolute"}}/>
                 <div className={container}>
                    <Typography>
-                      <h1 align="center"> Our Organisers </h1>
+                      <h1 style={{fontSize: "3rem"}} align="center"> Our Team </h1>
                     </Typography>
                     <div className={imageContainer}>
                        <Grid container align="center">
@@ -216,7 +215,7 @@ export default function Organiser() {
                                 <Grid item xs={12} md={4}>
                                     <div className={profileContainer}>
                                         <img src={organiser.userphoto} className={image}></img>
-                                        <p>{organiser.username}</p>
+                                        <p style={{fontSize: "1.5rem"}}>{organiser.username}</p>
                                         <div className={iconStyle}>
                                         <ExternalLink href={organiser.GithubLink} >
                                         <Github fill="#211F1F" width={30} height={30} className={profileLink}/>
@@ -251,7 +250,7 @@ export default function Organiser() {
             </div>
             <div className={container} style={{marginTop: "20%"}}>
                <Typography>
-                  <h1 align="center"> Our Organisers </h1>
+                  <h1 align="center"> Our Team </h1>
                 </Typography>
                 <div className={imageContainer}>
                    <Grid container align="center">
