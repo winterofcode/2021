@@ -86,9 +86,109 @@ export default function Organiser() {
     };
     }, []);
 
+    const OrganisersData = [
+        
+        {
+        username: "Piyush Thakur",
+        // userphoto: require("../Assets/vishwajeet.png"),    
+        LinkedInLink: "https://www.linkedin.com/in/cosmo3769/",
+        TwitterLink: "https://twitter.com/cosmo3769",
+        GithubLink: "https://github.com/cosmo3769",
+        },
+        {
+            username: "Ayush",
+            // userphoto: require("../Assets/vishwajeet.png"),    
+            LinkedInLink: "https://www.linkedin.com/in/ayush-mishra-62586b190/",
+            TwitterLink: "https://twitter.com/supermanaayush",
+            GithubLink: "https://github.com/ayush-ai",
+        },
+        {
+            username: "Souvik Guria",
+            // userphoto: require("../Assets/vishwajeet.png"),    
+            LinkedInLink: "https://www.linkedin.com/in/souvik-guria-/",
+            TwitterLink: "https://twitter.com/orionLeo__",
+            GithubLink: "github.com/devSouvik",
+        },
+        {
+            username: "Sajal Kumar",
+            // userphoto: require("../Assets/vishwajeet.png"),    
+            LinkedInLink: "https://www.linkedin.com/in/vishwajeetraj11/",
+            TwitterLink: "https://twitter.com/Vishwajeet323",
+            GithubLink: "https://github.com/vishwajeetraj11",
+        },
+        {
+            username: "Tanuka Mondal",
+            // userphoto: require("../Assets/vishwajeet.png"),    
+            LinkedInLink: "https://www.linkedin.com/in/tanuka-mondal-923051199//",
+            TwitterLink: "https://twitter.com/I_am_Tanuka",
+            GithubLink: "https://github.com/Tanuka-Mondal",
+        },
+        {
+            username: "Sweta Seth",
+            // userphoto: require("../Assets/vishwajeet.png"),    
+            LinkedInLink: "https://www.linkedin.com/in/sweta-seth-a11a4a18b",
+            TwitterLink: "https://twitter.com/Sweta49861525?s=08",
+            GithubLink: "https://github.com/Sweta040799",
+        },
+        {
+            username: "Shreya Seth",
+            // userphoto: require("../Assets/vishwajeet.png"),    
+            LinkedInLink: "https://www.linkedin.com/in/shreya-seth-194001191",
+            TwitterLink: "https://twitter.com/ShreyaS50175463?s=09",
+            GithubLink: "",
+        },
+        {
+            username: "Suvadeep Maity",
+            // userphoto: require("../Assets/vishwajeet.png"),    
+            LinkedInLink: "https://www.linkedin.com/in/suvadeep-maity-392a881a7/",
+            TwitterLink: "",
+            GithubLink: "https://github.com/suvadeep2001",
+        },
+        {
+            username: "Dipikesh kumar",
+            // userphoto: require("../Assets/vishwajeet.png"),    
+            LinkedInLink: "https://www.linkedin.com/in/dipikesh-kumar-465b111b1/",
+            TwitterLink: "",
+            GithubLink: "https://github.com/Dipikesh",
+        },
+        {
+            username: "Shreya Bag",
+            // userphoto: require("../Assets/vishwajeet.png"),    
+            LinkedInLink: "https://www.linkedin.com/in/shreya-bag-278314192",
+            TwitterLink: "https://twitter.com/Shreya61609637?t=X-oJ8DCUjDNJivza9D4Ueg&s=08",
+            GithubLink: "github.com/shreyamaybe",
+        },
+
+        {
+            username: "Md. Tausif Siddqui",
+            // userphoto: require("../Assets/vishwajeet.png"),    
+            LinkedInLink: "https://www.linkedin.com/in/md-tausif-siddiqui-2560b31a6/",
+            TwitterLink: "https://twitter.com/iamtausif9?t=swOKzu7xZdgXHBhGd6P-rg&s=09",
+            GithubLink: "https://github.com/Tausif121",
+        },
+
+        {
+            username: "Soham chakraborty",
+            // userphoto: require("../Assets/vishwajeet.png"),    
+            LinkedInLink: "https://www.linkedin.com/in/soham-chakraborty-69aa70192/",
+            TwitterLink: "",
+            GithubLink: "https://github.com/Soham-Official",
+        },
+        {
+            username: "Shivani",
+            // userphoto: require("../Assets/vishwajeet.png"),    
+            LinkedInLink: "https://www.linkedin.com/in/vishwajeetraj11/",
+            TwitterLink: "https://twitter.com/Vishwajeet323",
+            GithubLink: "https://github.com/vishwajeetraj11",
+        },
+
+
+
+    ]
+
     const OrganizersData = [
         {
-          username: "Vishwajeet Raj",
+          username: "Piyush Thakur",
         //   userphoto: require("../Assets/vishwajeet.png"),
           tags: ["DSC NSEC"],
           description:
