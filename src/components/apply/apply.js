@@ -35,7 +35,7 @@ export default function Apply() {
             <div className={ApplySection}>
             
                 <div className={ApplyTitle}>
-                    <h1>Apply</h1>
+                    <h2>Apply</h2>
                 </div>
                 <div className={ApplyContent}>
                     <p>Start your journey with Winter Of Code & be a part of our Open Source memory.</p>
@@ -56,7 +56,7 @@ export default function Apply() {
         return (
             <div>
          
-                <h1 className={ApplyTitle}>Apply</h1>
+                <h2 className={ApplyTitle}>Apply</h2>
                 <p className={ApplyContentMobile}>Start your journey with Winter Of Code & be a part of our Open Source memory.</p>
                 <br/>
                 <Stack className={ApplyButtonMobile} spacing={2} direction="row">

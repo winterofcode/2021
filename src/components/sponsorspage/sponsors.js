@@ -35,7 +35,7 @@ export default function Sponsors() {
         return (
             <div>
                <div className={sectionHeading}>
-                 <h1>Rewards for Successful Students</h1>
+                 <h2>Rewards for Successful Students</h2>
                </div>
                <Schwags2019/>
             </div>
@@ -48,7 +48,7 @@ export default function Sponsors() {
             <div>
             <Parallax>
             <div className={sectionHeadingMobile}>
-              <h1>Rewards for Successful Students</h1>
+              <h2>Rewards for Successful Students</h2>
             </div>
             <Schwags2019/>
             </Parallax>
