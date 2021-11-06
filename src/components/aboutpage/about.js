@@ -179,7 +179,7 @@ export default function About() {
         return(
         <div>
             <Parallax>
-            <div className={section}>
+            <div style={{padding: "5%"}} className={section}>
                 <div>
                     <h2 className={sectionHeading}>About The Program <br /></h2>
                 </div>
