@@ -60,7 +60,7 @@ export default function Orgs() {
         return (
             <div>
                 <div className={orgsTitle}>
-                    <h1>Organisations</h1>
+                    <h2>Organisations</h2>
                 </div>
                 <div className={ApplyButton}>
                     <Stack spacing={2} direction="row">
@@ -83,7 +83,7 @@ export default function Orgs() {
             <div>
                 <Parallax>
                 <div className={orgsTitle}>
-                    <h1>Organisations</h1>
+                    <h2>Organisations</h2>
                 </div>
                 <div className={ApplyButton}>
                     <Stack spacing={2} direction="row">
