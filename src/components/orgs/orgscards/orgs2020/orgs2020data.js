@@ -13,8 +13,8 @@ import dscnseclogo from '../../../../images/orgimages/dscnsec.png';
 
 export const UseStyles = makeStyles((theme) => ({
     root: {
-      background: "#001D3D",
-      minHeight: "30vh",
+      // background: "#001D3D",
+      // minHeight: "30vh",
   },
    cardSection:{
       display: "grid",

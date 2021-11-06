@@ -64,8 +64,26 @@ export default function Orgs() {
                 </div>
                 <div className={ApplyButton}>
                     <Stack spacing={2} direction="row">
-                        <Button value="2019" onClick={Toggle} style={{borderRadius: '50px'}} variant={isContained2019 ? 'contained' : "outlined"}>2019</Button>
-                        <Button value='2020' onClick={Toggle} style={{borderRadius: '50px'}} variant={isContained2020 ? 'contained' : "outlined"}>2020</Button>
+                        <Button 
+                            value="2019" 
+                            onClick={Toggle} 
+                            style={{borderRadius: '50px'}} variant={isContained2019 ? 'contained' : "outlined"}>
+                                <a 
+                                    style={{textDecoration: "none", color: "#1976d2"}}
+                                    href="https://2019.winterofcode.com/#org">
+                                    2019
+                                </a>
+                        </Button>
+                        <Button 
+                            value='2020' 
+                            onClick={Toggle} 
+                            style={{borderRadius: '50px'}} variant={isContained2020 ? 'contained' : "outlined"}>
+                                <a 
+                                    style={{textDecoration: "none", color: "#1976d2"}}
+                                    href="https://winterofcode.com/#js-organisations">
+                                    2020
+                                </a>
+                        </Button>
                         <Button value='2021' onClick={Toggle} style={{borderRadius: '50px'}} variant={isContained2021 ? 'contained' : "outlined"}>2021</Button>
                     </Stack>
                 </div>
@@ -87,8 +105,27 @@ export default function Orgs() {
                 </div>
                 <div className={ApplyButton}>
                     <Stack spacing={2} direction="row">
-                        <Button value="2019" onClick={Toggle} style={{borderRadius: '50px'}} variant={isContained2019 ? 'contained' : "outlined"}>2019</Button>
-                        <Button value='2020' onClick={Toggle} style={{borderRadius: '50px'}} variant={isContained2020 ? 'contained' : "outlined"}>2020</Button>
+                        <Button 
+                            value="2019" 
+                            onClick={Toggle} 
+                            style={{borderRadius: '50px'}} 
+                            variant={isContained2019 ? 'contained' : "outlined"}>
+                                <a 
+                                    style={{textDecoration: "none", color: "#1976d2"}}
+                                    href="https://2019.winterofcode.com/#org">
+                                    2019
+                                </a>
+                        </Button>
+                        <Button 
+                            value='2020' 
+                            onClick={Toggle} 
+                            style={{borderRadius: '50px'}} variant={isContained2020 ? 'contained' : "outlined"}>
+                                <a 
+                                    style={{textDecoration: "none", color: "#1976d2"}}
+                                    href="https://winterofcode.com/#js-organisations">
+                                    2020
+                                </a>
+                        </Button>
                         <Button value='2021' onClick={Toggle} style={{borderRadius: '50px'}} variant={isContained2021 ? 'contained' : "outlined"}>2021</Button>
                     </Stack>
                 </div>

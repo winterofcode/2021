@@ -72,7 +72,7 @@ export const UseStyles = makeStyles((theme) => ({
       marginLeft: "38px",
       textTransform: "none",
       '&:hover': {
-        backgroundColor: "#003566"
+        backgroundColor: "#1976d2"
       }
     },
     drawerContainer: {

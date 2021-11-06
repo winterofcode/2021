@@ -34,8 +34,7 @@ export default function Orgs2020() {
     const displayDesktop = () => {
         return (
             <div>
-                {/* <div Style={{display: "grid"}} className={cardSection}> */}
-                <Grid container>
+                {/* <Grid container>
                 {Organisations2020.map(orgs => (
                     <Grid item lg={4} md={6} xs={12} style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
                     <Card
@@ -98,7 +97,7 @@ export default function Orgs2020() {
                     </Card>
                     </Grid>
                 ))}
-                </Grid>
+                </Grid> */}
             </div>
         );
       };
@@ -106,7 +105,7 @@ export default function Orgs2020() {
     const displayMobile = () => {
         return (
             <div>
-                <Grid container spacing={12}>
+                {/* <Grid container spacing={12}>
                 {Organisations2020.map(orgs => (
                     <Grid item lg={4} md={6} xs={12} style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
                     <Card
@@ -170,7 +169,7 @@ export default function Orgs2020() {
                     </Card>
                     </Grid>
                 ))}
-                </Grid>
+                </Grid> */}
             </div>
         );
     };
