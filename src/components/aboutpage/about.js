@@ -2,7 +2,7 @@ import * as React from 'react';
 import {useState, useEffect} from 'react';
 import Typography from '@mui/material/Typography';
 import { UseStyles } from '../aboutpage/aboutdata';
-import wocimage from '../../images/WOC.png'
+import wocimage from '../../images/woc.png'
 
 import Parallax from '../../hooks/parallax';
 
