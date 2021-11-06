@@ -58,6 +58,10 @@ export const UseStyles = makeStyles((theme) => ({
       fontWeight: 700,
       size: "18px",
       marginLeft: "38px",
+      textTransform: "none",
+      '&:hover': {
+        backgroundColor: "#1976d2"
+      }
     },
     drawerContainer: {
       padding: "20px 30px",
