@@ -70,9 +70,9 @@ export default function About() {
                         the world of open source and develop more code for the benefit of all.
                     </p>
             </div>
-            </Parallax>
+        
                 <br/>
-            <Parallax>
+        
             <div className={workSection}>
                 <div className={subSection}>
                         <Typography>
@@ -138,8 +138,7 @@ export default function About() {
                    </div>
                 
                 </div>
-                </Parallax>
-                <Parallax>
+            
                 <div className={sectionRow}>
                     <div>
                         <Typography>
