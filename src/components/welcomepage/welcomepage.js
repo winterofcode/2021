@@ -3,7 +3,10 @@ import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import { UseStyles } from '../welcomepage/welcomepagedata';
 
-import wocimage from '../../images/WOC.png';
+// import wocimage from '../../images/WOC.png';
+
+import wocimage from '../../images/woc.png';
+
 import Parallax from '../../hooks/parallax';
 
 export default function WelcomePage() {

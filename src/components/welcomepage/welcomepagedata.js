@@ -11,7 +11,7 @@ export const UseStyles = makeStyles((theme) => ({
         
     },
     welcomeSection: {
-        marginTop: "5%",
+        marginTop: "10%",
         '@media (max-width: 1024px)': {
             marginTop: "30%"
         },
