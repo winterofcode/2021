@@ -42,7 +42,7 @@ export default function About() {
             <Parallax>
             <div className={section}>
                     <div>
-                        <h1 className={sectionHeading}>About The Program <br /></h1>
+                        <h2 className={sectionHeading}>About The Program <br /></h2>
                     </div>
                     <div>
                         <h2 className={titleText}>
@@ -96,7 +96,7 @@ export default function About() {
             </Parallax>
             <Parallax>
             <div>
-               <h1 className={sectionHeading}>Let's Build Something Awesome Together <br /></h1>   
+               <h2 className={sectionHeading}>Let's Build Something Awesome Together <br /></h2>   
             </div>
             </Parallax>
             <div className={sectionTwo}>
@@ -116,7 +116,7 @@ export default function About() {
                 </Parallax>
                 <Parallax>
                 <div>
-                  <h1 className={sectionHeading}>How the Program Works?<br /></h1>   
+                  <h2 className={sectionHeading}>How the Program Works?<br /></h2>   
                 </div>
                 </Parallax>
                 <Parallax>
@@ -128,7 +128,7 @@ export default function About() {
                   </div>
                    <div>
                       <Typography>
-                        <h1 align="center"> Students</h1>
+                        <h2 align="center"> Students</h2>
                         <p className={descriptionText}>Students who are interested can register for the Winter of Code by filling a form.
                          Students who are selected will work with mentors of the organisation that they are accepted for.
                          If accepted, students amalgamate with their organisations prior to the start of coding and learn more
@@ -143,7 +143,7 @@ export default function About() {
                 <div className={sectionRow}>
                     <div>
                         <Typography>
-                            <h1 align="center">Organisations</h1>
+                            <h2 align="center">Organisations</h2>
                             <p className={descriptionText}>
                              Open source organisations can apply to be mentor organisations. Once accepted, organisations
                               discuss possible ideas with students and then decide on the proposals they wish to mentor for the winter. 
@@ -154,7 +154,7 @@ export default function About() {
                     </div>
                     <div>
                         <Typography>
-                          <h1 align="center">Mentors</h1>
+                          <h2 align="center">Mentors</h2>
                           <p className={descriptionText}>
                            Mentors guide the students throughout their projects and review their code samples multiple times. 
                            They provide valuable feedback and suggest possible improvements to the code. 
@@ -182,7 +182,7 @@ export default function About() {
             <Parallax>
             <div className={section}>
                 <div>
-                    <h1 className={sectionHeading}>About The Program <br /></h1>
+                    <h2 className={sectionHeading}>About The Program <br /></h2>
                 </div>
                 <div>
                     <h2 className={titleText}>
@@ -235,7 +235,7 @@ export default function About() {
             </Parallax>
             <Parallax>
             <div>
-               <h1 className={sectionHeading}>Let's Build Something Awesome Together <br /></h1>   
+               <h2 className={sectionHeading}>Let's Build Something Awesome Together <br /></h2>   
             </div>
             </Parallax>
             <div className={sectionTwo}>
@@ -255,7 +255,7 @@ export default function About() {
                 </Parallax>
                 <Parallax>
                 <div>
-                  <h1 className={sectionHeading}>How the Program Works?<br /></h1>   
+                  <h2 className={sectionHeading}>How the Program Works?<br /></h2>   
                 </div>
                 </Parallax>
          
@@ -271,7 +271,7 @@ export default function About() {
                     </Parallax>
                     <Parallax>
                      <Typography>
-                        <h1 align="center"> Students</h1>
+                        <h2 align="center"> Students</h2>
                         <p className={descriptionText}>Students who are interested can register for the Winter of Code by filling a form.
                             Students who are selected will work with mentors of the organisation that they are accepted for.
                             If accepted, students amalgamate with their organisations prior to the start of coding and learn more
@@ -286,7 +286,7 @@ export default function About() {
                     <Parallax>
                     <div>
                         <Typography>
-                            <h1 align="center">Organisations</h1>
+                            <h2 align="center">Organisations</h2>
                             <p className={descriptionText}>
                              Open source organisations can apply to be mentor organisations. Once accepted, organisations
                               discuss possible ideas with students and then decide on the proposals they wish to mentor for the winter. 
@@ -299,7 +299,7 @@ export default function About() {
                     <Parallax>
                     <div>
                         <Typography>
-                          <h1 align="center">Mentors</h1>
+                          <h2 align="center">Mentors</h2>
                           <p className={descriptionText}>
                            Mentors guide the students throughout their projects and review their code samples multiple times. 
                            They provide valuable feedback and suggest possible improvements to the code. 
