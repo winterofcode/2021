@@ -25,7 +25,7 @@ export const UseStyles = makeStyles((theme) => ({
         // width:"100%",
         // borderBottom: "45px solid #000814",
         // borderRight: "45px solid #001D3D",
-        borderRadius: "25px",
+        borderRadius: "50px",
         
     },
 
@@ -93,7 +93,7 @@ export const UseStyles = makeStyles((theme) => ({
         height: "25%",
         padding: "5%",
         margin: "5%",
-        borderRadius: "15px",
+        borderRadius: "50px",
 
         // marginLeft: 
         display: "flex",
@@ -137,7 +137,7 @@ export const UseStyles = makeStyles((theme) => ({
         background: "#001d3d",
         padding: "5%",
         margin: "5%",
-        borderRadius: "5%"
+        borderRadius: "50px"
     },
 
     

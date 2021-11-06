@@ -76,7 +76,7 @@ export default function About() {
             <div className={workSection}>
                 <div className={subSection}>
                         <Typography>
-                        <p align='center' className={statsText}>300+</p>
+                        <p align='center' className={statsText}>400+</p>
                         <p align='center' className={statsText}>Students</p>
                         </Typography>
                 </div>
@@ -214,7 +214,7 @@ export default function About() {
             <div className={workSectionMobile}>
                 <div className={subSectionMobile}>
                     <Typography>
-                      <p align='center' className={statsText}>300+</p>
+                      <p align='center' className={statsText}>400+</p>
                       <p align='center' className={statsText}>Students</p>
                     </Typography>
                 </div>
