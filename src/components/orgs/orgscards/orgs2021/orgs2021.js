@@ -31,7 +31,7 @@ export default function Orgs2021() {
         return (
             <div>
                 <div className={section}>
-                    <h3>To be announced</h3>
+                    <h5>To be announced</h5>
                 </div>
             </div>
         );
