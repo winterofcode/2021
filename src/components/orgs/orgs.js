@@ -70,7 +70,7 @@ export default function Orgs() {
                             style={{borderRadius: '50px'}} variant={isContained2019 ? 'contained' : "outlined"}>
                                 <a 
                                     style={{textDecoration: "none", color: "#1976d2"}}
-                                    href="https://2019.winterofcode.com/#org">
+                                    href="https://winterofcode.com/2019/#org">
                                     2019
                                 </a>
                         </Button>
@@ -80,7 +80,7 @@ export default function Orgs() {
                             style={{borderRadius: '50px'}} variant={isContained2020 ? 'contained' : "outlined"}>
                                 <a 
                                     style={{textDecoration: "none", color: "#1976d2"}}
-                                    href="https://winterofcode.com/#js-organisations">
+                                    href="https://winterofcode.com/2020/#js-organisations">
                                     2020
                                 </a>
                         </Button>

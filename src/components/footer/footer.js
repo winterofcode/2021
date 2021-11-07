@@ -90,7 +90,7 @@ export default function Footer() {
                                 textDecoration: "none",
                                 color: "#FFD60A",
                             }} 
-                            href="https://winterofcode2021.netlify.app/"
+                            href="https://winterofcode.com/"
                             >2021
                             </a>
                             &nbsp;
@@ -100,7 +100,7 @@ export default function Footer() {
                                 textDecoration: "none",
                                 color: "#FFD60A",
                             }} 
-                            href="https://winterofcode.com/"
+                            href="https://winterofcode.com/2020/"
                             
                             >2020
                             </a>
@@ -111,7 +111,7 @@ export default function Footer() {
                                 textDecoration: "none",
                                 color: "#FFD60A",
                             }} 
-                            href="https://2019.winterofcode.com/"
+                            href="https://winterofcode.com/2019/"
                             >2019
                             </a>
                         </p>
