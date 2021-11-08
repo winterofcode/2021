@@ -313,7 +313,7 @@ export default function Timeline() {
     };
 
     return (
-        <div className={root}>
+        <div id="timeline" className={root}>
             {mobileView ? displayMobile() : displayDesktop()}  
         </div>
     )

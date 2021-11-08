@@ -14,7 +14,7 @@ export const headersData = [
     //   href: "/mentors",
     // },
     {
-      label: "Organisers",
+      label: "Team",
       href: "/organisers",
     },
     {

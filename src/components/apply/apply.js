@@ -38,7 +38,13 @@ export default function Apply() {
                     <h2>Apply</h2>
                 </div>
                 <div className={ApplyContent}>
-                    <p>Start your journey with Winter Of Code & be a part of our Open Source memory.</p>
+                    <p>Start your journey with Winter Of Code & be a part of our Open Source community.</p>
+                </div>
+                <div className={ApplyContent}>
+                    <p>Check the <a 
+                        style={{textDecoration: "none",
+                                color: "#FFD60A"}}
+                        href="#timeline">Timeline</a> section. Applications will open on the mentioned date.</p>
                 </div>
                 <div className={ApplyButton}>
                     <Stack spacing={2} direction="row">
@@ -47,7 +53,7 @@ export default function Apply() {
                         <Button style={{borderRadius: '50px'}} variant="outlined">Apply as Student</Button>
                     </Stack>
                 </div>
-         
+                
             </div>
         );
       };
@@ -57,8 +63,14 @@ export default function Apply() {
             <div>
          
                 <h2 className={ApplyTitle}>Apply</h2>
-                <p className={ApplyContentMobile}>Start your journey with Winter Of Code & be a part of our Open Source memory.</p>
+                <p className={ApplyContentMobile}>Start your journey with Winter Of Code & be a part of our Open Source community.</p>
+                <br />
+                <p className={ApplyContentMobile}>Check the&nbsp; <a 
+                        style={{textDecoration: "none",
+                                color: "#FFD60A"}}
+                        href="#timeline"> Timeline&nbsp;</a> section.</p>
                 <br/>
+                <p className={ApplyContentMobile}>Applications will open on the mentioned date.</p>
                 <Stack className={ApplyButtonMobile} spacing={2} direction="row">
                     <Button style={{borderRadius: '50px'}} variant="outlined">Apply as Organisation</Button>
                 </Stack>

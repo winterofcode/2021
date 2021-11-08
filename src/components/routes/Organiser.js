@@ -150,7 +150,7 @@ export const UseStyles = makeStyles((theme) => ({
         userphoto: shreyabagimage,    
         LinkedInLink: "https://www.linkedin.com/in/shreya-bag-278314192",
         TwitterLink: "https://twitter.com/Shreya61609637?t=X-oJ8DCUjDNJivza9D4Ueg&s=08",
-        GithubLink: "github.com/shreyamaybe",
+        GithubLink: "https://github.com/shreyamaybe",
     },
     {
         username: "Md. Tausif Siddqui",

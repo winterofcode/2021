@@ -29,12 +29,17 @@ export const UseStyles = makeStyles((theme) => ({
         color: "#fff"
 
     },
+    ApplyButton: {
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+    },
     ApplyContentMobile: {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
         color: "#fff",
-        width: "75%",
+        width: "80%",
         margin: "0 auto"
     },
     // ApplyButton: {
