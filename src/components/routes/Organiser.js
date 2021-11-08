@@ -65,10 +65,10 @@ export const UseStyles = makeStyles((theme) => ({
         marginRight: "20px"
     },
     iconStyle: {
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-        width: "35%"
+        // display: "flex",
+        // justifyContent: "space-between",
+        // alignItems: "center",
+        // width: "35%"
     }
  }))
 
@@ -92,9 +92,9 @@ export const UseStyles = makeStyles((theme) => ({
     {
         username: "Sajal Kumar",
         userphoto: sajalimage,    
-        LinkedInLink: "",
-        TwitterLink: "",
-        GithubLink: "",
+        LinkedInLink: "https://www.linkedin.com/in/sajalkr",
+        TwitterLink: "https://twitter.com/skT6599?t=CCTAN8sF2pWPEwzLVWzxYg&s=09",
+        GithubLink: "https://github.com/devsk99",
     },
     {
         username: "Souvik Guria",
@@ -120,9 +120,9 @@ export const UseStyles = makeStyles((theme) => ({
     {
         username: "Shivani",
         userphoto: shivaniimage,    
-        LinkedInLink: "",
-        TwitterLink: "",
-        GithubLink: "",
+        LinkedInLink: "https://www.linkedin.com/mwlite/in/shivani-a24484193",
+        TwitterLink: undefined,
+        GithubLink: "https://github.com/shivani8651",
     },
     {
         username: "Tanuka Mondal",
@@ -136,7 +136,7 @@ export const UseStyles = makeStyles((theme) => ({
         userphoto: shreyasethimage,    
         LinkedInLink: "https://www.linkedin.com/in/shreya-seth-194001191",
         TwitterLink: "https://twitter.com/ShreyaS50175463?s=09",
-        GithubLink: undefined,
+        GithubLink: "https://github.com/22shreyA",
     },
     {
         username: "Sweta Seth",
@@ -217,15 +217,15 @@ export default function Organiser() {
                                         <img src={organiser.userphoto} className={image}></img>
                                         <p style={{fontSize: "1.3rem"}}>{organiser.username}</p>
                                         <div className={iconStyle}>
-                                        <ExternalLink href={organiser.GithubLink} >
+                                        {organiser.GithubLink && <ExternalLink style={{marginRight: "2%"}} href={organiser.GithubLink} >
                                         <Github fill="#211F1F" width={30} height={30} className={profileLink}/>
-                                        </ExternalLink >
-                                        <ExternalLink href={organiser.LinkedInLink}>
+                                        </ExternalLink >}
+                                        {organiser.GithubLink && <ExternalLink style={{marginRight: "2%"}} href={organiser.LinkedInLink}>
                                         <LinkedIn fill="#0E76A8" width={30} height={30} className={profileLink}/>
-                                        </ExternalLink>
-                                        <ExternalLink href={organiser.TwitterLink}>
+                                        </ExternalLink>}
+                                        {organiser.TwitterLink && <ExternalLink style={{marginRight: "2%"}} href={organiser.TwitterLink}>
                                         <Twitter fill="#00acee" width={30} height={30} className={profileLink}/>
-                                        </ExternalLink>
+                                        </ExternalLink>}
                                         </div>
                                     </div>
                                 </Grid> 
