@@ -48,9 +48,26 @@ export default function Apply() {
                 </div>
                 <div className={ApplyButton}>
                     <Stack spacing={2} direction="row">
-                        <Button style={{borderRadius: '50px'}} variant="outlined">Apply as Organisation</Button>
-                        <Button style={{borderRadius: '50px'}} variant="outlined">Apply as Mentor</Button>
-                        <Button style={{borderRadius: '50px'}} variant="outlined">Apply as Student</Button>
+                        <Button 
+                            style={{borderRadius: '50px'}} 
+                            variant="contained">
+                                <a 
+                                    style={{textDecoration: "none",
+                                          color: "white"}}
+                                    href="https://forms.gle/m7qx3nCawkH5mg616">
+                                        Apply as Organisation
+                                </a>
+                        </Button>
+                        <Button 
+                            style={{borderRadius: '50px'}} 
+                            variant="outlined">
+                                Apply as Mentor
+                        </Button>
+                        <Button 
+                            style={{borderRadius: '50px'}} 
+                            variant="outlined">
+                                Apply as Student
+                        </Button>
                     </Stack>
                 </div>
                 
