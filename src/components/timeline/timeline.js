@@ -50,7 +50,7 @@ export default function Timeline() {
                 icon={<StarEmpty/>}
             >
                 <h3 className="vertical-timeline-element-title">Project Application Starts</h3>
-                <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4>
+                {/* <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4> */}
                 <p>
                 Within this period various organisations submit their project proposal.
                 </p>
@@ -62,7 +62,7 @@ export default function Timeline() {
                 icon={<StarEmpty/>}
             >
                 <h3 className="vertical-timeline-element-title">Organisations Announced</h3>
-                <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4>
+                {/* <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4> */}
                 <p>
                 The Organisations selected for the event will be announced.
                 </p>
@@ -74,7 +74,7 @@ export default function Timeline() {
                 icon={<StarEmpty/>}
             >
                 <h3 className="vertical-timeline-element-title">Student Application Starts</h3>
-                <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4>
+                {/* <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4> */}
                 <p>
                 Students select their organisations and apply to them during this period.
                 </p>
@@ -86,7 +86,7 @@ export default function Timeline() {
                 icon={<StarEmpty/>}
             >
                 <h3 className="vertical-timeline-element-title">Students announced, projects matched by organisations</h3>
-                <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4>
+                {/* <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4> */}
                 <p>
                 Students receive an email regarding their selection and are assigned projects by their respective organisation.
                 </p>
@@ -98,7 +98,7 @@ export default function Timeline() {
                 icon={<StarEmpty/>}
             >
                 <h3 className="vertical-timeline-element-title">Community Bonding period</h3>
-                <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4>
+                {/* <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4> */}
                 <p>
                 Students come to know of their respective Organisations. Mentors are assigned. Strategies and approaches towards their project are discussed over platforms like slack.
                 </p>
@@ -110,7 +110,7 @@ export default function Timeline() {
                 icon={<StarEmpty/>}
             >
                 <h3 className="vertical-timeline-element-title">Phase 1</h3>
-                <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4>
+                {/* <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4> */}
                 <p>
                 The First round of tasks are handed out regarding the projects.
                 </p>
@@ -122,7 +122,7 @@ export default function Timeline() {
                 icon={<StarEmpty/>}
             >
                 <h3 className="vertical-timeline-element-title">First Evaluation</h3>
-                <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4>
+                {/* <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4> */}
                 <p>
                 The process of students is assessed.
                 </p>
@@ -134,7 +134,7 @@ export default function Timeline() {
                 icon={<StarEmpty/>}
             >
                 <h3 className="vertical-timeline-element-title">Phase 2</h3>
-                <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4>
+                {/* <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4> */}
                 <p>
                 Second round of tasks is assigned.
                 </p>
@@ -146,7 +146,7 @@ export default function Timeline() {
                 icon={<StarEmpty/>}
             >
                 <h3 className="vertical-timeline-element-title">Second Evaluation</h3>
-                <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4>
+                {/* <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4> */}
                 <p>
                 Final evaluation is done based on the outcome of the assigned tasks.
                 </p>
@@ -158,7 +158,7 @@ export default function Timeline() {
                 icon={<StarEmpty/>}
             >
                 <h3 className="vertical-timeline-element-title">Successful Students Announced</h3>
-                <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4>
+                {/* <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4> */}
                 <p>
                 Name of students who have successfully completed the event will be announced.
                 </p>
@@ -190,7 +190,7 @@ export default function Timeline() {
                 icon={<StarEmpty/>}
             >
                 <h3 className="vertical-timeline-element-title">Project Application Starts</h3>
-                <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4>
+                {/* <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4> */}
                 <p>
                 Within this period various organisations submit their project proposal.
                 </p>
@@ -202,7 +202,7 @@ export default function Timeline() {
                 icon={<StarEmpty/>}
             >
                 <h3 className="vertical-timeline-element-title">Organisations Announced</h3>
-                <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4>
+                {/* <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4> */}
                 <p>
                 The Organisations selected for the event will be announced.
                 </p>
@@ -214,7 +214,7 @@ export default function Timeline() {
                 icon={<StarEmpty/>}
             >
                 <h3 className="vertical-timeline-element-title">Student Application Starts</h3>
-                <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4>
+                {/* <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4> */}
                 <p>
                 Students select their organisations and apply to them during this period.
                 </p>
@@ -226,7 +226,7 @@ export default function Timeline() {
                 icon={<StarEmpty/>}
             >
                 <h3 className="vertical-timeline-element-title">Students announced, projects matched by organisations</h3>
-                <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4>
+                {/* <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4> */}
                 <p>
                 Students receive an email regarding their selection and are assigned projects by their respective organisation.
                 </p>
@@ -238,7 +238,7 @@ export default function Timeline() {
                 icon={<StarEmpty/>}
             >
                 <h3 className="vertical-timeline-element-title">Community Bonding period</h3>
-                <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4>
+                {/* <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4> */}
                 <p>
                 Students come to know of their respective Organisations. Mentors are assigned. Strategies and approaches towards their project are discussed over platforms like slack.
                 </p>
@@ -250,7 +250,7 @@ export default function Timeline() {
                 icon={<StarEmpty/>}
             >
                 <h3 className="vertical-timeline-element-title">Phase 1</h3>
-                <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4>
+                {/* <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4> */}
                 <p>
                 The First round of tasks are handed out regarding the projects.
                 </p>
@@ -262,7 +262,7 @@ export default function Timeline() {
                 icon={<StarEmpty/>}
             >
                 <h3 className="vertical-timeline-element-title">First Evaluation</h3>
-                <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4>
+                {/* <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4> */}
                 <p>
                 The process of students is assessed.
                 </p>
@@ -274,7 +274,7 @@ export default function Timeline() {
                 icon={<StarEmpty/>}
             >
                 <h3 className="vertical-timeline-element-title">Phase 2</h3>
-                <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4>
+                {/* <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4> */}
                 <p>
                 Second round of tasks is assigned.
                 </p>
@@ -286,7 +286,7 @@ export default function Timeline() {
                 icon={<StarEmpty/>}
             >
                 <h3 className="vertical-timeline-element-title">Second Evaluation</h3>
-                <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4>
+                {/* <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4> */}
                 <p>
                 Final evaluation is done based on the outcome of the assigned tasks.
                 </p>
@@ -298,7 +298,7 @@ export default function Timeline() {
                 icon={<StarEmpty/>}
             >
                 <h3 className="vertical-timeline-element-title">Successful Students Announced</h3>
-                <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4>
+                {/* <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4> */}
                 <p>
                 Name of students who have successfully completed the event will be announced.
                 </p>

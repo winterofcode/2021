@@ -4,6 +4,8 @@ import logo from "../../images/org-logo.png";
 import {ExternalLink}  from "react-external-link"
 import {Instagram,Facebook,Twitter} from "../../icon/icon"
 
+import Pdf from "./brochure.pdf";
+
 export default function Footer() {
     const {
         root, 
@@ -154,7 +156,9 @@ export default function Footer() {
                         <ExternalLink className={resourceslink} href="https://gcp2021.dscnsec.com/">
                             <p>30 Days of Google Cloud</p>
                         </ExternalLink>
+                        <a style={{display: "none"}} href={Pdf} target="_blank">PDF</a>
                     </div>
+    
                 </div>
                 <div className={footerColumn3}>
                     <div className={DSCNSECTitle}>
@@ -224,6 +228,7 @@ export default function Footer() {
                         <ExternalLink className={resourceslinkMobile} href="https://gcp2021.dscnsec.com/">
                             <p>30 Days of Google Cloud</p>
                         </ExternalLink>
+                        <a style={{display: "none"}} href={Pdf} target="_blank">PDF</a>
                     </div>
                     <div className={DSCNSECTitleMobile}>
                         <p>DSC NSEC Handles</p>

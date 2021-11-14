@@ -101,7 +101,7 @@ export const UseStyles = makeStyles((theme) => ({
         userphoto: souvikimage,    
         LinkedInLink: "https://www.linkedin.com/in/souvik-guria-/",
         TwitterLink: "https://twitter.com/orionLeo__",
-        GithubLink: "github.com/devSouvik",
+        GithubLink: "https://github.com/devSouvik",
     },
     {
         username: "Suvadeep Maity",
@@ -260,15 +260,15 @@ export default function Organiser() {
                                     <img src={organiser.userphoto} className={image}></img>
                                     <p>{organiser.username}</p>
                                         <div className={iconStyle}>
-                                        <ExternalLink href={organiser.GithubLink} >
+                                        {organiser.GithubLink && <ExternalLink style={{marginRight: "2%"}} href={organiser.GithubLink} >
                                         <Github fill="#211F1F" width={30} height={30} className={profileLink}/>
-                                        </ExternalLink >
-                                        <ExternalLink href={organiser.LinkedInLink}>
+                                        </ExternalLink >}
+                                        {organiser.GithubLink && <ExternalLink style={{marginRight: "2%"}} href={organiser.LinkedInLink}>
                                         <LinkedIn fill="#0E76A8" width={30} height={30} className={profileLink}/>
-                                        </ExternalLink>
-                                        <ExternalLink href={organiser.TwitterLink}>
+                                        </ExternalLink>}
+                                        {organiser.TwitterLink && <ExternalLink style={{marginRight: "2%"}} href={organiser.TwitterLink}>
                                         <Twitter fill="#00acee" width={30} height={30} className={profileLink}/>
-                                        </ExternalLink>
+                                        </ExternalLink>}
                                         </div>
                                 </div>
                             </Grid> 
