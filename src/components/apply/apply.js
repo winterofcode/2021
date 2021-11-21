@@ -60,8 +60,13 @@ export default function Apply() {
                         </Button>
                         <Button 
                             style={{borderRadius: '50px'}} 
-                            variant="outlined">
-                                Apply as Mentor
+                            variant="contained">
+                                <a 
+                                    style={{textDecoration: "none",
+                                          color: "white"}}
+                                    href="https://forms.gle/ab4mCgH5ELzp6YQ16">
+                                        Apply as Mentor
+                                </a>
                         </Button>
                         <Button 
                             style={{borderRadius: '50px'}} 
@@ -89,13 +94,35 @@ export default function Apply() {
                 <br/>
                 <p className={ApplyContentMobile}>Applications will open on the mentioned date.</p>
                 <Stack className={ApplyButtonMobile} spacing={2} direction="row">
-                    <Button style={{borderRadius: '50px'}} variant="outlined">Apply as Organisation</Button>
+                    <Button 
+                        style={{borderRadius: '50px'}} 
+                        variant="contained">
+                            <a 
+                                style={{textDecoration: "none",
+                                        color: "white"}}
+                                href="https://forms.gle/m7qx3nCawkH5mg616">
+                                    Apply as Organisation
+                            </a>
+                    </Button>
                 </Stack>
                 <Stack className={ApplyButtonMobile} spacing={2} direction="row">
-                    <Button style={{borderRadius: '50px'}} variant="outlined">Apply as Mentor</Button>
+                    <Button 
+                        style={{borderRadius: '50px'}} 
+                        variant="contained">
+                            <a 
+                                style={{textDecoration: "none",
+                                        color: "white"}}
+                                href="https://forms.gle/ab4mCgH5ELzp6YQ16">
+                                    Apply as Mentor
+                            </a>
+                    </Button>
                 </Stack>
                 <Stack className={ApplyButtonMobile} spacing={2} direction="row">
-                    <Button style={{borderRadius: '50px'}} variant="outlined">Apply as Student</Button>
+                    <Button 
+                        style={{borderRadius: '50px'}} 
+                        variant="outlined">
+                            Apply as Student
+                    </Button>
                 </Stack>
              
             </div>
