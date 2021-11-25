@@ -7,6 +7,7 @@ import dscnseclogo from '../../../../images/orgimages/dscnsec.png';
 import TechNScience from '../../../../images/orgimages/TechNScience.png';
 import theblockchainchief from '../../../../images/orgimages/theblockchainchief.png';
 import codingspace from '../../../../images/orgimages/codingspace.png';
+import eduhub from '../../../../images/orgimages/eduhub.png';
 
 export const UseStyles = makeStyles((theme) => ({
     root: {
@@ -99,7 +100,7 @@ export const Organisations2021 = [
     {
       name: "Eduhub Community",
       class: 'eduhubcommunity',
-      logo: "none",
+      logo: eduhub,
       link: "/organisation/eduhub-community",
       text: "1 Project"
     },

@@ -5,7 +5,7 @@ import { Grid, Button } from '@material-ui/core';
 import { Card } from 'react-bootstrap';
 import Footer from '../footer/footer';
 
-import EduhubCommunitylogo from '../../images/orgimages/canvasbird.png';
+import EduhubCommunitylogo from '../../images/orgimages/eduhub.png';
 import NavbarRoute from './navbarroute';
 
 export const UseStyles = makeStyles((theme) => ({
@@ -132,7 +132,7 @@ export default function EduhubCommunityProject() {
                                                     display: "flex",
                                                     justifyContent: "center",
                                                     alignItems: "center",
-                                                    fontSize: "16px"
+                                                    fontSize: "30px"
                                                         }}>
                                                             {projects.name}
                                             </Card.Title>
@@ -206,7 +206,7 @@ export default function EduhubCommunityProject() {
                                         display: "flex",
                                         justifyContent: "center",
                                         alignItems: "center",
-                                        fontSize: "25px"
+                                        fontSize: "30px"
                                             }}>
                                                 {projects.name}
                                 </Card.Title>
@@ -252,10 +252,10 @@ export default function EduhubCommunityProject() {
 
 const Projects = [
     {
-      name: "Eduhub Community",
+      name: "Eduhub Website",
       logo: EduhubCommunitylogo,
-      tag: "canvasbird",
-      link: "",
+      tag: "Eduhub",
+      link: "https://github.com/Eduhub-Community/eduhub-website",
       btnText: "View Project",
       openInNew: true
     },
