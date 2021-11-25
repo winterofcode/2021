@@ -41,7 +41,7 @@ export const Organisations2021 = [
     {
       name: "Tech N Science",
       logo: TechNScience,
-      link: "/organisation/technscince",
+      link: "https://github.com/Tech-N-Science/FunwithScience/blob/main/ideas.md",
       text: "1 Projects"
     },
    
