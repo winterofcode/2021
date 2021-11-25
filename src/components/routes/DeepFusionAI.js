@@ -132,7 +132,7 @@ export default function DeepFusionAIProject() {
                                                     display: "flex",
                                                     justifyContent: "center",
                                                     alignItems: "center",
-                                                    fontSize: "16px"
+                                                    fontSize: "30px"
                                                         }}>
                                                             {projects.name}
                                             </Card.Title>
@@ -207,7 +207,7 @@ export default function DeepFusionAIProject() {
                                       display: "flex",
                                       justifyContent: "center",
                                       alignItems: "center",
-                                      fontSize: "80px"
+                                      fontSize: "30px"
                                           }}>
                                               {projects.name}
                               </Card.Title>
