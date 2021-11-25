@@ -1,10 +1,11 @@
 import React, {useState, useEffect} from 'react'
 import { CssBaseline, makeStyles } from '@material-ui/core';
+import Navbar from '../navbar/navbar';
 import { Grid, Button } from '@material-ui/core';
 import { Card } from 'react-bootstrap';
 import Footer from '../footer/footer';
 
-import dscnseclogo from '../../images/orgimages/dscnsec.png';
+import HITKCommunitylogo from '../../images/orgimages/canvasbird.png';
 import NavbarRoute from './navbarroute';
 
 export const UseStyles = makeStyles((theme) => ({
@@ -55,14 +56,17 @@ export const UseStyles = makeStyles((theme) => ({
       fontSize: "20px"
   },
   cardStyleMobile: {
-    position: "relative",
+      position: "relative",
       top:"50px",
       left: "0",
       right: "0",
+
+      display: "flex",
+      flexGrow:"1"
   },
   }))
 
-export default function DSCNSECProject() {
+export default function HITKCommunityProject() {
     const {root, projectSection, projectTitle, cardStyle, cardStyleMobile, projectTitleMobile} = UseStyles();
 
     const [state, setState] = useState({
@@ -70,7 +74,7 @@ export default function DSCNSECProject() {
         drawerOpen: false,
       });
     
-    const { mobileView, drawerOpen } = state;
+    const { mobileView } = state;
 
     useEffect(() => {
     const setResponsiveness = () => {
@@ -102,7 +106,7 @@ export default function DSCNSECProject() {
                     <div className={cardStyle}>
                         <Grid container>
                             {Projects.map(projects => (
-                                <Grid item lg={4} md={6} xs={12} style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+                                <Grid item lg={12} md={12} xs={12} style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
                                     <Card
                                         style={
                                             {
@@ -166,76 +170,74 @@ export default function DSCNSECProject() {
         return (
             <div>
                 <div style={{height: "5vh",}}>
-                  <CssBaseline/>
-                  <NavbarRoute/>
+                    <CssBaseline/>
+                    <NavbarRoute/>
                 </div>
-              <div>
                 <div className={projectSection}>
-                  <div className={projectTitleMobile}>
-                      <h1>Projects</h1>
-                  </div>
-                  <div className={cardStyleMobile}>
-                    <Grid container spacing={12}>
-                    {Projects.map(projects => (
-                      <Grid item lg={4} md={6} xs={12} style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
-                      <Card
-                          style={
-                              {
-                                  margin: "56px",
-                                  background: "white",
-                                  width: "70%",
-                                  height: "70%",
-                                  border: "50px"
-                              }}>
-                          <Card.Img
-                              style={
-                                  {
-                                      width: "100px",
-                                      height: "100px",
-                                      objectFit: "cover",
-                                      margin: "10px"
-                                      }}
-                                      variant="top"
-                                      src={projects.logo} />
-                          <Card.Body>
-                              <Card.Title
-                                  style={{
-                                      display: "flex",
-                                      justifyContent: "center",
-                                      alignItems: "center",
-                                      fontSize: "25px"
-                                          }}>
-                                              {projects.name}
-                              </Card.Title>
-                              
-                              <br/><br/><br/>
-                              <Button
-                                  style={{
-                                      background: "#003566",
-                                      marginBottom: "40px",
-                                      color: "white",
-                                      borderRadius: "50px",
-                                      padding: "5%",
-                                      marginLeft: "20%",
-                                      marginRight: "20%",
-                                      width: "60%"
-                                  }}
-                                  ><a 
-                                  style={{
-                                      textDecoration: "none",
-                                      color: "white"
-                                  }} 
-                                  href={projects.link}>View Projects</a></Button>
-                          </Card.Body>
-                      </Card>
-                      </Grid>
-                  ))}
-                  </Grid>
-                  </div>
-              </div>
-              </div>
-              <Footer/>
-          
+                    <div className={projectTitleMobile}>
+                        <h1>Projects</h1>
+                    </div>
+                    <div className={cardStyleMobile}>
+                        <Grid container spacing={12}>
+                        {Projects.map(projects => (
+                        <Grid item lg={12} md={12} xs={12} style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+                        <Card
+                            style={
+                                {
+                                    margin: "56px",
+                                    background: "white",
+                                    width: "70%",
+                                    height: "70%",
+                                    border: "50px"
+                                }}>
+                            <Card.Img
+                                style={
+                                    {
+                                        width: "100px",
+                                        height: "100px",
+                                        objectFit: "cover",
+                                        margin: "10px"
+                                        }}
+                                        variant="top"
+                                        src={projects.logo} />
+                            <Card.Body>
+                                <Card.Title
+                                    style={{
+                                        display: "flex",
+                                        justifyContent: "center",
+                                        alignItems: "center",
+                                        fontSize: "25px"
+                                            }}>
+                                                {projects.name}
+                                </Card.Title>
+                                
+                                <br/><br/><br/>
+                                <Button
+                                    style={{
+                                        background: "#003566",
+                                        marginBottom: "40px",
+                                        color: "white",
+                                        borderRadius: "50px",
+                                        padding: "5%",
+                                        marginLeft: "20%",
+                                        marginRight: "20%",
+                                        width: "60%"
+                                    }}
+                                    ><a 
+                                    style={{
+                                        textDecoration: "none",
+                                        color: "white"
+                                    }} 
+                                    href={projects.link}>View Projects</a></Button>
+                            </Card.Body>
+                        </Card>
+                        </Grid>
+                    ))}
+                    </Grid>
+            
+                    </div>
+                </div>
+                <Footer/>
             </div>
         );
     };
@@ -247,59 +249,14 @@ export default function DSCNSECProject() {
     )
 }
 
+
 const Projects = [
     {
-      name: "Test your Model",
-      logo: dscnseclogo,
-      tag: "dscnsec",
-      class: "dsc-logo",
-      link: "https://github.com/dscnsec/Test-your-model",
+      name: "HITK Tech Community",
+      logo: HITKCommunitylogo,
+      tag: "canvasbird",
+      link: "",
       btnText: "View Project",
       openInNew: true
     },
-    {
-      name: "DSA Magic",
-      logo: dscnseclogo,
-      tag: "dscnsec",
-      class: "dsc-logo",
-      link: "https://github.com/dscnsec/DSA-Magic",
-      btnText: "View Project",
-      openInNew: true
-    },
-    {
-        name: "Logo Generator",
-        logo: dscnseclogo,
-        tag: "dscnsec",
-        class: "dsc-logo",
-        link: "https://github.com/dscnsec/logo-generator",
-        btnText: "View Project",
-        openInNew: true
-      },
-    {
-      name: "Forum",
-      logo: dscnseclogo,
-      tag: "dscnsec",
-      class: "dsc-logo",
-      link: "https://github.com/dscnsec/forum",
-      btnText: "View Project",
-      openInNew: true
-    },
-    {
-      name: "Dev Profile",
-      logo: dscnseclogo,
-      tag: "dscnsec",
-      class: "dsc-logo",
-      link: "https://github.com/dscnsec/devprofile",
-      btnText: "View Project",
-      openInNew: true
-    },
-    {
-        name: "Go Green",
-        logo: dscnseclogo,
-        tag: "dscnsec",
-        class: "dsc-logo",
-        link: "https://github.com/dscnsec/Go-green",
-        btnText: "View Project",
-        openInNew: true
-      },
   ];

@@ -60,7 +60,7 @@ export const UseStyles = makeStyles((theme) => ({
       top:"50px",
       left: "0",
       right: "0",
-
+    
       display: "flex",
       flexGrow: "1"
   },
@@ -207,11 +207,11 @@ export default function DeepFusionAIProject() {
                                       display: "flex",
                                       justifyContent: "center",
                                       alignItems: "center",
-                                      fontSize: "20px"
+                                      fontSize: "80px"
                                           }}>
-                                              {projects.nameMobile}
+                                              {projects.name}
                               </Card.Title>
-                              <Card.Subtitle
+                              {/* <Card.Subtitle
                                 style={{
                                     display: "flex",
                                     justifyContent: "center",
@@ -220,7 +220,7 @@ export default function DeepFusionAIProject() {
                                 }}
                                 className="mb-2 text-muted">
                                 {projects.subNameMobile}
-                            </Card.Subtitle>
+                            </Card.Subtitle> */}
                               <br/><br/><br/>
                               <Button
                                   style={{
@@ -264,12 +264,12 @@ export default function DeepFusionAIProject() {
 
 const Projects = [
     {
-      name: "Real-time Social Distancing Detector",
+      name: "autoIgbm",
       nameMobile: "Real-time Social",
       subNameMobile: "Distancing Detector",
       logo: deepfusionAIlogo,
       tag: "deep-fusion-ai",
-      link: "https://github.com/DeepFusionAI/social-distance-detector",
+      link: "https://github.com/DeepFusionAI/autolgbm",
       btnText: "View Project",
       openInNew: true
     }

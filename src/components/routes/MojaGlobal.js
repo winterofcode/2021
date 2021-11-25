@@ -5,7 +5,7 @@ import { Grid, Button } from '@material-ui/core';
 import { Card } from 'react-bootstrap';
 import Footer from '../footer/footer';
 
-import edualgologo from '../../images/orgimages/eduAlgo.png';
+import MojaGloballogo from '../../images/orgimages/canvasbird.png';
 import NavbarRoute from './navbarroute';
 
 export const UseStyles = makeStyles((theme) => ({
@@ -56,14 +56,17 @@ export const UseStyles = makeStyles((theme) => ({
       fontSize: "20px"
   },
   cardStyleMobile: {
-    position: "relative",
+      position: "relative",
       top:"50px",
       left: "0",
       right: "0",
+
+      display: "flex",
+      flexGrow:"1"
   },
   }))
 
-export default function EduAlgoProject() {
+export default function MojaGlobalProject() {
     const {root, projectSection, projectTitle, cardStyle, cardStyleMobile, projectTitleMobile} = UseStyles();
 
     const [state, setState] = useState({
@@ -71,7 +74,7 @@ export default function EduAlgoProject() {
         drawerOpen: false,
       });
     
-    const { mobileView, drawerOpen } = state;
+    const { mobileView } = state;
 
     useEffect(() => {
     const setResponsiveness = () => {
@@ -103,7 +106,7 @@ export default function EduAlgoProject() {
                     <div className={cardStyle}>
                         <Grid container>
                             {Projects.map(projects => (
-                                <Grid item lg={4} md={6} xs={12} style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+                                <Grid item lg={12} md={12} xs={12} style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
                                     <Card
                                         style={
                                             {
@@ -167,85 +170,74 @@ export default function EduAlgoProject() {
         return (
             <div>
                 <div style={{height: "5vh",}}>
-                  <CssBaseline/>
-                  <NavbarRoute/>
+                    <CssBaseline/>
+                    <NavbarRoute/>
                 </div>
-              <div>
                 <div className={projectSection}>
-                  <div className={projectTitleMobile}>
-                      <h1>Projects</h1>
-                  </div>
-                  <div className={cardStyleMobile}>
-                    <Grid container spacing={12}>
-                    {Projects.map(projects => (
-                      <Grid item lg={4} md={6} xs={12} style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
-                      <Card
-                          style={
-                              {
-                                  margin: "56px",
-                                  background: "white",
-                                  width: "70%",
-                                  height: "70%",
-                                  border: "50px"
-                              }}>
-                          <Card.Img
-                              style={
-                                  {
-                                      width: "100px",
-                                      height: "100px",
-                                      objectFit: "cover",
-                                      margin: "10px"
-                                      }}
-                                      variant="top"
-                                      src={projects.logo} />
-                          <Card.Body>
-                              <Card.Title
-                                  style={{
-                                      display: "flex",
-                                      justifyContent: "center",
-                                      alignItems: "center",
-                                      fontSize: "25px"
-                                          }}>
-                                              {projects.name}
-                              </Card.Title>
-                              <Card.Subtitle
-                                style={{
-                                    display: "flex",
-                                    justifyContent: "center",
-                                    alignItems: "center",
-                                    fontSize: "20px"
-                                }}
-                                className="mb-2 text-muted">
-                                {projects.subName}
-                            </Card.Subtitle>
-                              <br/><br/><br/>
-                              <Button
-                                  style={{
-                                      background: "#003566",
-                                      marginBottom: "40px",
-                                      color: "white",
-                                      borderRadius: "50px",
-                                      padding: "5%",
-                                      marginLeft: "20%",
-                                      marginRight: "20%",
-                                      width: "60%"
-                                  }}
-                                  ><a 
-                                  style={{
-                                      textDecoration: "none",
-                                      color: "white"
-                                  }} 
-                                  href={projects.link}>View Projects</a></Button>
-                          </Card.Body>
-                      </Card>
-                      </Grid>
-                  ))}
-                  </Grid>
-                  </div>
-              </div>
-              </div>
-              <Footer/>
-          
+                    <div className={projectTitleMobile}>
+                        <h1>Projects</h1>
+                    </div>
+                    <div className={cardStyleMobile}>
+                        <Grid container spacing={12}>
+                        {Projects.map(projects => (
+                        <Grid item lg={12} md={12} xs={12} style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+                        <Card
+                            style={
+                                {
+                                    margin: "56px",
+                                    background: "white",
+                                    width: "70%",
+                                    height: "70%",
+                                    border: "50px"
+                                }}>
+                            <Card.Img
+                                style={
+                                    {
+                                        width: "100px",
+                                        height: "100px",
+                                        objectFit: "cover",
+                                        margin: "10px"
+                                        }}
+                                        variant="top"
+                                        src={projects.logo} />
+                            <Card.Body>
+                                <Card.Title
+                                    style={{
+                                        display: "flex",
+                                        justifyContent: "center",
+                                        alignItems: "center",
+                                        fontSize: "25px"
+                                            }}>
+                                                {projects.name}
+                                </Card.Title>
+                                
+                                <br/><br/><br/>
+                                <Button
+                                    style={{
+                                        background: "#003566",
+                                        marginBottom: "40px",
+                                        color: "white",
+                                        borderRadius: "50px",
+                                        padding: "5%",
+                                        marginLeft: "20%",
+                                        marginRight: "20%",
+                                        width: "60%"
+                                    }}
+                                    ><a 
+                                    style={{
+                                        textDecoration: "none",
+                                        color: "white"
+                                    }} 
+                                    href={projects.link}>View Projects</a></Button>
+                            </Card.Body>
+                        </Card>
+                        </Grid>
+                    ))}
+                    </Grid>
+            
+                    </div>
+                </div>
+                <Footer/>
             </div>
         );
     };
@@ -257,31 +249,13 @@ export default function EduAlgoProject() {
     )
 }
 
+
 const Projects = [
     {
-      name: "eduAlgo",
-      subName: "Python Package",
-      logo: edualgologo,
-      tag: "eduAlgo",
-      link: "https://github.com/eduAlgo/eduAlgo",
-      btnText: "View Project",
-      openInNew: true
-    },
-    {
-      name: "eduAlgo",
-      subName: "Documentation Page",
-      logo: edualgologo,
-      tag: "eduAlgo",
-      link: "https://github.com/eduAlgo/documentation",
-      btnText: "View Project",
-      openInNew: true
-    },
-    {
-      name: "eduAlgo",
-      subName: "App",
-      logo: edualgologo,
-      tag: "eduAlgo",
-      link: "https://github.com/eduAlgo/edualgo-app-demo",
+      name: "Moja Global",
+      logo: MojaGloballogo,
+      tag: "canvasbird",
+      link: "",
       btnText: "View Project",
       openInNew: true
     },

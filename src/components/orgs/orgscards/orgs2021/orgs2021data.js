@@ -68,19 +68,19 @@ export const Organisations2021 = [
       name: "HITK Tech Community",
       logo: "none",
       class: "dsc-logo",
-      link: "none",
+      link: "/organisation/hitk-community",
       text: "6 Projects"
     },
     {
       name: "Moja Global",
       logo: "none",
-      link: "none",
+      link: "/organisation/moja-global",
       text: "2 Project"
     },
     {
       name: "Gepton",
       logo: "none",
-      link: "none",
+      link: "/organisation/gepton",
       text: "1 Project"
     },
     {
@@ -91,9 +91,9 @@ export const Organisations2021 = [
     },
     {
       name: "Eduhub Community",
-      class: 'tesseract-logo',
+      class: 'eduhubcommunity',
       logo: "none",
-      link: "none",
+      link: "/organisation/eduhub-community",
       text: "1 Project"
     },
     {

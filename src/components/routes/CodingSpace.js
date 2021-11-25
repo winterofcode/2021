@@ -1,13 +1,11 @@
 import React, {useState, useEffect} from 'react'
 import { CssBaseline, makeStyles } from '@material-ui/core';
-import Navbar from '../navbar/navbar';
 import { Grid, Button } from '@material-ui/core';
 import { Card } from 'react-bootstrap';
 import Footer from '../footer/footer';
 
-import NavbarRoute from './navbarroute'
-
-import dsciemlogo from '../../images/orgimages/dsciem.png';
+import codingspacelogo from '../../images/orgimages/codingspace.png';
+import NavbarRoute from './navbarroute';
 
 export const UseStyles = makeStyles((theme) => ({
     // root: {
@@ -57,14 +55,17 @@ export const UseStyles = makeStyles((theme) => ({
       fontSize: "20px"
   },
   cardStyleMobile: {
-    position: "relative",
+      position: "relative",
       top:"50px",
       left: "0",
       right: "0",
+
+      display: "flex",
+      flexGrow:"1"
   },
   }))
 
-export default function DSCIEMProject() {
+export default function CodingSpaceProject() {
     const {root, projectSection, projectTitle, cardStyle, cardStyleMobile, projectTitleMobile} = UseStyles();
 
     const [state, setState] = useState({
@@ -72,7 +73,7 @@ export default function DSCIEMProject() {
         drawerOpen: false,
       });
     
-    const { mobileView, drawerOpen } = state;
+    const { mobileView } = state;
 
     useEffect(() => {
     const setResponsiveness = () => {
@@ -104,7 +105,7 @@ export default function DSCIEMProject() {
                     <div className={cardStyle}>
                         <Grid container>
                             {Projects.map(projects => (
-                                <Grid item lg={4} md={6} xs={12} style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+                                <Grid item lg={12} md={12} xs={12} style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
                                     <Card
                                         style={
                                             {
@@ -167,77 +168,75 @@ export default function DSCIEMProject() {
     const displayMobile = () => {
         return (
             <div>
-              <div style={{height: "5vh",}}>
-                <CssBaseline/>
-                <NavbarRoute/>
-              </div>
-              <div>
+                <div style={{height: "5vh",}}>
+                    <CssBaseline/>
+                    <NavbarRoute/>
+                </div>
                 <div className={projectSection}>
-                  <div className={projectTitleMobile}>
-                      <h1>Projects</h1>
-                  </div>
-                  <div className={cardStyleMobile}>
-                    <Grid container spacing={12}>
-                    {Projects.map(projects => (
-                      <Grid item lg={4} md={6} xs={12} style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
-                      <Card
-                          style={
-                              {
-                                  margin: "56px",
-                                  background: "white",
-                                  width: "70%",
-                                  height: "70%",
-                                  border: "50px"
-                              }}>
-                          <Card.Img
-                              style={
-                                  {
-                                      width: "100px",
-                                      height: "100px",
-                                      objectFit: "cover",
-                                      margin: "10px"
-                                      }}
-                                      variant="top"
-                                      src={projects.logo} />
-                          <Card.Body>
-                              <Card.Title
-                                  style={{
-                                      display: "flex",
-                                      justifyContent: "center",
-                                      alignItems: "end",
-                                      fontSize: "25px"
-                                          }}>
-                                              {projects.name}
-                              </Card.Title>
-                              
-                              <br/><br/><br/>
-                              <Button
-                                  style={{
-                                      background: "#003566",
-                                      marginBottom: "40px",
-                                      color: "white",
-                                      borderRadius: "50px",
-                                      padding: "5%",
-                                      marginLeft: "20%",
-                                      marginRight: "20%",
-                                      width: "60%"
-                                  }}
-                                  ><a 
-                                  style={{
-                                      textDecoration: "none",
-                                      color: "white"
-                                  }} 
-                                  href={projects.link}>View Projects</a></Button>
-                          </Card.Body>
-                      </Card>
-                      </Grid>
-                  ))}
-                  </Grid>
-                  </div>
-              </div>
-              </div>
-              <Footer/>
-          
+                    <div className={projectTitleMobile}>
+                        <h1>Projects</h1>
+                    </div>
+                    <div className={cardStyleMobile}>
+                        <Grid container spacing={12}>
+                        {Projects.map(projects => (
+                        <Grid item lg={12} md={12} xs={12} style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+                        <Card
+                            style={
+                                {
+                                    margin: "56px",
+                                    background: "white",
+                                    width: "70%",
+                                    height: "70%",
+                                    border: "50px"
+                                }}>
+                            <Card.Img
+                                style={
+                                    {
+                                        width: "100px",
+                                        height: "100px",
+                                        objectFit: "cover",
+                                        margin: "10px"
+                                        }}
+                                        variant="top"
+                                        src={projects.logo} />
+                            <Card.Body>
+                                <Card.Title
+                                    style={{
+                                        display: "flex",
+                                        justifyContent: "center",
+                                        alignItems: "center",
+                                        fontSize: "25px"
+                                            }}>
+                                                {projects.name}
+                                </Card.Title>
+                                
+                                <br/><br/><br/>
+                                <Button
+                                    style={{
+                                        background: "#003566",
+                                        marginBottom: "40px",
+                                        color: "white",
+                                        borderRadius: "50px",
+                                        padding: "5%",
+                                        marginLeft: "20%",
+                                        marginRight: "20%",
+                                        width: "60%"
+                                    }}
+                                    ><a 
+                                    style={{
+                                        textDecoration: "none",
+                                        color: "white"
+                                    }} 
+                                    href={projects.link}>View Projects</a></Button>
+                            </Card.Body>
+                        </Card>
+                        </Grid>
+                    ))}
+                    </Grid>
+            
+                    </div>
+                </div>
+                <Footer/>
             </div>
         );
     };
@@ -252,56 +251,10 @@ export default function DSCIEMProject() {
 
 const Projects = [
     {
-      name: "Ideas List",
-      logo: dsciemlogo,
-      tag: "dsciem",
-      class: "dsc-logo",
-      link: "https://github.com/dsc-iem/WoC-Project-Ideas/blob/main/README.md",
-      btnText: "View Ideas",
-      openInNew: true
-    },
-    {
-      name: "Fake-Stream",
-      logo: dsciemlogo,
-      tag: "dsciem",
-      class: "dsc-logo",
-      link: "https://github.com/Nibba2018/Fake-Stream",
-      btnText: "View Project",
-      openInNew: true
-    },
-    {
-      name: "Python Reverse Shell",
-      logo: dsciemlogo,
-      tag: "dsciem",
-      class: "dsc-logo",
-      link: "https://github.com/whokilleddb/Reverse-Shell",
-      btnText: "View Project",
-      openInNew: true
-    },
-    {
-      name: "DSC-IEM Blogs",
-      logo: dsciemlogo,
-      tag: "dsciem",
-      class: "dsc-logo",
-      link: "https://github.com/dsc-iem/blog",
-      btnText: "View Project",
-      openInNew: true
-    },
-    {
-      name: "rake_new2",
-      logo: dsciemlogo,
-      tag: "dsciem",
-      class: "dsc-logo",
-      link: "https://github.com/BALaka-18/rake_new2",
-      btnText: "View Project",
-      openInNew: true
-    },
-    {
-      name: "TextSentiment Analysis",
-      logo: dsciemlogo,
-      tag: "dsciem",
-      class: "dsc-logo",
-      link: "https://github.com/khanfarhan10/TextSentimentAnalysis",
+      name: "Coding Space",
+      logo: codingspacelogo,
+      tag: "codingspace",
+      link: "",
       btnText: "View Project",
       openInNew: true
     },
