@@ -6,7 +6,7 @@ import CanvasBirdProject from "../routes/CanvasBird";
 import DSCNSECProject from "../routes/DSCNSEC";
 import DSCXProject from "../routes/DscX";
 import DSCNITRourkelaProject from "../routes/NITRourkela";
-import BlockchainChiefProject from "../routes/BlockchainChief";
+// import BlockchainChiefProject from "../routes/BlockchainChief";
 // import TechNScienceProject from "../routes/TechNScience";
 import CodingSpaceProject from "../routes/CodingSpace";
 // import MojaGlobalProject from "../routes/MojaGlobal";
@@ -25,9 +25,12 @@ export default function AppRouter() {
         <Route path="/organisation/dsc-nsec" component={DSCNSECProject} />
         <Route path="/organisation/dsc-x" component={DSCXProject} />
         <Route path="/organisation/dsc-nit-rourkela" component={DSCNITRourkelaProject} />
-        <Route path="/organisation/theblockchainchief" component={BlockchainChiefProject} />
+        {/* <Route path="/organisation/theblockchainchief" component={BlockchainChiefProject} /> */}
         {/* <Route path="/organisation/technscince" component={TechNScienceProject} /> */}
         <Route path="/organisation/codingspace" component={CodingSpaceProject} />
+        {/* <Route path="/organisation/moja-global" component={MojaGlobalProject} /> */}
+        {/* <Route path="/organisation/gepton" component={GeptonProject} /> */}
+        {/* <Route path="/organisation/codingspace" component={CodingSpaceProject} /> */}
         {/* <Route path="/organisation/moja-global" component={MojaGlobalProject} /> */}
         {/* <Route path="/organisation/gepton" component={GeptonProject} /> */}
         <Route path="/organisation/eduhub-community" component={EduhubCommunityProject} />

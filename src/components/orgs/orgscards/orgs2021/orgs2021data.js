@@ -9,6 +9,7 @@ import theblockchainchief from '../../../../images/orgimages/theblockchainchief.
 import codingspace from '../../../../images/orgimages/codingspace.png';
 import mojaglobal from '../../../../images/orgimages/mojaglobal.png';
 import gepton from '../../../../images/orgimages/gepton.png';
+import eduhub from '../../../../images/orgimages/eduhub.png';
 
 export const UseStyles = makeStyles((theme) => ({
     root: {
@@ -62,7 +63,7 @@ export const Organisations2021 = [
     {
       name: "The Blockchain Chief",
       logo: theblockchainchief,
-      link: "/organisation/theblockchainchief",
+      link: "https://adhesive-xylophone-d60.notion.site/The-Blockchain-Chief-ce860387adfa44e1bd2cec78da2e214c",
       text: "5 Projects"
     },
     {
@@ -77,6 +78,19 @@ export const Organisations2021 = [
       link: "https://github.com/GEPTON-INFOTECH/.github/wiki/Idealist-for-Open-Source-Contributors",
       text: "3 Project"
     },
+    {
+        name: "Coding Space",
+        logo: codingspace,
+        link: "https://docs.google.com/document/d/1xytZdoYvKCzKf2ysunf3Zz1nk3mWENKpY2s7C5WDuGo/edit#heading=h.e8rx6cvny3pl",
+        class: "dsc-logo",
+        text: "1 Projects"
+    },
+    // {
+    //   name: "DSC-X",
+    //   logo: dscxlogo,
+    //   link: "/organisation/dsc-x",
+    //   text: "1 Project"
+    // },
     // {
     //   name: "DSC-X",
     //   logo: dscxlogo,
@@ -86,7 +100,7 @@ export const Organisations2021 = [
     {
       name: "Eduhub Community",
       class: 'eduhubcommunity',
-      logo: "none",
+      logo: eduhub,
       link: "/organisation/eduhub-community",
       text: "1 Project"
     },
@@ -97,13 +111,6 @@ export const Organisations2021 = [
       class: "dsc-logo",
       text: "5 Projects"
     },
-    {
-        name: "Coding Space",
-        logo: codingspace,
-        link: "/organisation/codingspace",
-        class: "dsc-logo",
-        text: "1 Projects"
-      },
       // {
       //   name: "HITK Tech Community",
       //   logo: "none",
@@ -111,4 +118,5 @@ export const Organisations2021 = [
       //   link: "/organisation/hitk-community",
       //   text: "6 Projects"
       // },
+   
   ];
