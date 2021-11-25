@@ -54,7 +54,7 @@ export const Organisations2021 = [
     {
       name: "The Blockchain Chief",
       logo: theblockchainchief,
-      link: "/organisation/theblockchainchief",
+      link: "https://adhesive-xylophone-d60.notion.site/The-Blockchain-Chief-ce860387adfa44e1bd2cec78da2e214c",
       text: "5 Projects"
     },
     {
