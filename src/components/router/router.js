@@ -27,7 +27,7 @@ export default function AppRouter() {
         <Route path="/organisation/dsc-nit-rourkela" component={DSCNITRourkelaProject} />
         {/* <Route path="/organisation/theblockchainchief" component={BlockchainChiefProject} /> */}
         {/* <Route path="/organisation/technscince" component={TechNScienceProject} /> */}
-        <Route path="/organisation/codingspace" component={CodingSpaceProject} />
+        {/* <Route path="/organisation/codingspace" component={CodingSpaceProject} /> */}
         <Route path="/organisation/moja-global" component={MojaGlobalProject} />
         <Route path="/organisation/gepton" component={GeptonProject} />
         <Route path="/organisation/eduhub-community" component={EduhubCommunityProject} />

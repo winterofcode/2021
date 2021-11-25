@@ -84,6 +84,13 @@ export const Organisations2021 = [
       text: "1 Project"
     },
     {
+        name: "Coding Space",
+        logo: codingspace,
+        link: "https://docs.google.com/document/d/1xytZdoYvKCzKf2ysunf3Zz1nk3mWENKpY2s7C5WDuGo/edit#heading=h.e8rx6cvny3pl",
+        class: "dsc-logo",
+        text: "1 Projects"
+    },
+    {
       name: "DSC-X",
       logo: dscxlogo,
       link: "/organisation/dsc-x",
@@ -103,11 +110,5 @@ export const Organisations2021 = [
       class: "dsc-logo",
       text: "5 Projects"
     },
-    {
-        name: "Coding Space",
-        logo: codingspace,
-        link: "/organisation/codingspace",
-        class: "dsc-logo",
-        text: "1 Projects"
-      },
+   
   ];
