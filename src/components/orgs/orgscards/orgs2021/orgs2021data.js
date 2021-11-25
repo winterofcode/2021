@@ -109,7 +109,7 @@ export const Organisations2021 = [
       logo: dscnseclogo,
       link: "/organisation/dsc-nsec",
       class: "dsc-logo",
-      text: "5 Projects"
+      text: "6 Projects"
     },
       // {
       //   name: "HITK Tech Community",
