@@ -132,7 +132,7 @@ export default function CanvasBirdProject() {
                                                     display: "flex",
                                                     justifyContent: "center",
                                                     alignItems: "center",
-                                                    fontSize: "16px"
+                                                    fontSize: "30px"
                                                         }}>
                                                             {projects.name}
                                             </Card.Title>
@@ -206,7 +206,7 @@ export default function CanvasBirdProject() {
                                         display: "flex",
                                         justifyContent: "center",
                                         alignItems: "center",
-                                        fontSize: "25px"
+                                        fontSize: "30px"
                                             }}>
                                                 {projects.name}
                                 </Card.Title>
@@ -255,7 +255,7 @@ const Projects = [
       name: "canvasboard",
       logo: canvasbirdlogo,
       tag: "canvasbird",
-      link: "https://github.com/Canvasbird/canvasboard",
+      link: "https://github.com/Canvasbird/canvasboard/issues",
       btnText: "View Project",
       openInNew: true
     },

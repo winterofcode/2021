@@ -7,6 +7,8 @@ import dscnseclogo from '../../../../images/orgimages/dscnsec.png';
 import TechNScience from '../../../../images/orgimages/TechNScience.png';
 import theblockchainchief from '../../../../images/orgimages/theblockchainchief.png';
 import codingspace from '../../../../images/orgimages/codingspace.png';
+import mojaglobal from '../../../../images/orgimages/mojaglobal.png';
+import gepton from '../../../../images/orgimages/gepton.png';
 
 export const UseStyles = makeStyles((theme) => ({
     root: {
@@ -44,7 +46,13 @@ export const Organisations2021 = [
       link: "https://github.com/Tech-N-Science/FunwithScience/blob/main/ideas.md",
       text: "1 Projects"
     },
-   
+    {
+      name: "DSC NIT Rourkela",
+      logo: dscnitrourkelalogo,
+      class: "dsc-logo",
+      link: "/organisation/dsc-nit-rourkela",
+      text: "5 Projects"
+    },
     {
       name: "Canvasbird",
       logo: canvasbirdlogo,
@@ -58,37 +66,23 @@ export const Organisations2021 = [
       text: "5 Projects"
     },
     {
-      name: "DSC NIT Rourkela",
-      logo: dscnitrourkelalogo,
-      class: "dsc-logo",
-      link: "/organisation/dsc-nit-rourkela",
-      text: "5 Projects"
-    },
-    {
-      name: "HITK Tech Community",
-      logo: "none",
-      class: "dsc-logo",
-      link: "/organisation/hitk-community",
-      text: "6 Projects"
-    },
-    {
       name: "Moja Global",
-      logo: "none",
-      link: "/organisation/moja-global",
+      logo: mojaglobal,
+      link: "https://docs.google.com/document/d/1T0U1pKS1-I0CMC478iaZEX871sr86itJz4qsSpBLdfk/edit?usp=sharing",
       text: "2 Project"
     },
     {
       name: "Gepton",
-      logo: "none",
-      link: "/organisation/gepton",
-      text: "1 Project"
+      logo: gepton,
+      link: "https://github.com/GEPTON-INFOTECH/.github/wiki/Idealist-for-Open-Source-Contributors",
+      text: "3 Project"
     },
-    {
-      name: "DSC-X",
-      logo: dscxlogo,
-      link: "/organisation/dsc-x",
-      text: "1 Project"
-    },
+    // {
+    //   name: "DSC-X",
+    //   logo: dscxlogo,
+    //   link: "/organisation/dsc-x",
+    //   text: "1 Project"
+    // },
     {
       name: "Eduhub Community",
       class: 'eduhubcommunity',
@@ -110,4 +104,11 @@ export const Organisations2021 = [
         class: "dsc-logo",
         text: "1 Projects"
       },
+      // {
+      //   name: "HITK Tech Community",
+      //   logo: "none",
+      //   class: "dsc-logo",
+      //   link: "/organisation/hitk-community",
+      //   text: "6 Projects"
+      // },
   ];

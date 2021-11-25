@@ -128,7 +128,7 @@ export default function DSCNSECProject() {
                                                     display: "flex",
                                                     justifyContent: "center",
                                                     alignItems: "center",
-                                                    fontSize: "16px"
+                                                    fontSize: "30px"
                                                         }}>
                                                             {projects.name}
                                             </Card.Title>
@@ -203,7 +203,7 @@ export default function DSCNSECProject() {
                                       display: "flex",
                                       justifyContent: "center",
                                       alignItems: "center",
-                                      fontSize: "25px"
+                                      fontSize: "30px"
                                           }}>
                                               {projects.name}
                               </Card.Title>

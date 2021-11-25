@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react'
 import { CssBaseline, makeStyles } from '@material-ui/core';
-import Navbar from '../navbar/navbar';
 import { Grid, Button } from '@material-ui/core';
 import { Card } from 'react-bootstrap';
 import Footer from '../footer/footer';
@@ -103,7 +102,7 @@ export default function DSCNITRourkelaProject() {
                     <div className={cardStyle}>
                         <Grid container>
                             {Projects.map(projects => (
-                                <Grid item lg={4} md={4} xs={12} style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+                                <Grid item lg={4} md={6} xs={12} style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
                                     <Card
                                         style={
                                             {
@@ -129,7 +128,7 @@ export default function DSCNITRourkelaProject() {
                                                     display: "flex",
                                                     justifyContent: "center",
                                                     alignItems: "center",
-                                                    fontSize: "16px"
+                                                    fontSize: "30px"
                                                         }}>
                                                             {projects.name}
                                             </Card.Title>
@@ -178,7 +177,7 @@ export default function DSCNITRourkelaProject() {
                   <div className={cardStyleMobile}>
                     <Grid container spacing={12}>
                     {Projects.map(projects => (
-                      <Grid item lg={4} md={4} xs={12} style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+                      <Grid item lg={4} md={6} xs={12} style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
                       <Card
                           style={
                               {
@@ -204,7 +203,7 @@ export default function DSCNITRourkelaProject() {
                                       display: "flex",
                                       justifyContent: "center",
                                       alignItems: "center",
-                                      fontSize: "25px"
+                                      fontSize: "30px"
                                           }}>
                                               {projects.name}
                               </Card.Title>
@@ -235,7 +234,7 @@ export default function DSCNITRourkelaProject() {
                   </div>
               </div>
               </div>
-              <Footer/>import fireshortlogo from '../../../../images/orgimages/fireshort.png';
+              <Footer/>
           
             </div>
         );
@@ -252,28 +251,46 @@ const Projects = [
     {
       name: "project-avocado",
       logo: dscnitrourkelalogo,
-      tag: "dsc-nit-rourkela",
-      class: "dsc-logo",
-      link: "https://www.notion.so/project-avocado-4d9173a5a1ee45d7b37910bd3b1abffc",
+      tag: "dscnitrourkela",
+      class: "dscnitrourkela-logo",
+      link: "https://github.com/dscnitrourkela/project-avocado",
       btnText: "View Project",
       openInNew: true
     },
     {
-      name: "project-avocado-web",
+      name: "project-elaichi",
       logo: dscnitrourkelalogo,
-      tag: "dsc-nit-rourkela",
-      class: "dsc-logo",
-      link: "https://github.com/dscnitrourkela/project-avocado-web",
+      tag: "dscnitrourkela",
+      class: "dscnitrourkela-logo",
+      link: "https://github.com/dscnitrourkela/project-elaichi",
       btnText: "View Project",
       openInNew: true
     },
     {
-      name: "project-guava",
+        name: "project-guava",
+        logo: dscnitrourkelalogo,
+        tag: "dscnitrourkela",
+        class: "dscnitrourkela-logo",
+        link: "https://github.com/dscnitrourkela/project-guava",
+        btnText: "View Project",
+        openInNew: true
+      },
+    {
+      name: "project-icecream",
       logo: dscnitrourkelalogo,
-      tag: "dsc-nit-rourkela",
-      class: "dsc-logo",
-      link: "https://github.com/dscnitrourkela/project-guava",
+      tag: "dscnitrourkela",
+      class: "dscnitrourkela-logo",
+      link: "https://github.com/dscnitrourkela/project-icecream",
       btnText: "View Project",
       openInNew: true
-    }
+    },
+    {
+      name: "project-maple",
+      logo: dscnitrourkelalogo,
+      tag: "dscnitrourkela",
+      class: "dscnitrourkela-logo",
+      link: "https://github.com/dscnitrourkela/project-maple",
+      btnText: "View Project",
+      openInNew: true
+    },
   ];
