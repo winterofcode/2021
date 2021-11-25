@@ -70,8 +70,13 @@ export default function Apply() {
                         </Button>
                         <Button 
                             style={{borderRadius: '50px'}} 
-                            variant="outlined">
-                                Apply as Student
+                            variant="contained">
+                                <a 
+                                    style={{textDecoration: "none",
+                                          color: "white"}}
+                                    href="https://forms.gle/Ux6F21CsiQ5vMHv49">
+                                        Apply as Student
+                                </a>
                         </Button>
                     </Stack>
                 </div>
@@ -120,8 +125,13 @@ export default function Apply() {
                 <Stack className={ApplyButtonMobile} spacing={2} direction="row">
                     <Button 
                         style={{borderRadius: '50px'}} 
-                        variant="outlined">
-                            Apply as Student
+                        variant="contained">
+                            <a 
+                                style={{textDecoration: "none",
+                                        color: "white"}}
+                                href="https://forms.gle/Ux6F21CsiQ5vMHv49">
+                                    Apply as Student
+                            </a>
                     </Button>
                 </Stack>
              
