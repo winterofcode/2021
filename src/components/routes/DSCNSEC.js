@@ -258,11 +258,11 @@ const Projects = [
       openInNew: true
     },
     {
-      name: "DSA Magic",
+      name: "Coding-Arts",
       logo: dscnseclogo,
       tag: "dscnsec",
       class: "dsc-logo",
-      link: "https://github.com/dscnsec/DSA-Magic",
+      link: "https://github.com/dscnsec/Coding-Arts",
       btnText: "View Project",
       openInNew: true
     },
