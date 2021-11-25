@@ -8,7 +8,7 @@ export const UseStyles = makeStyles((theme) => ({
         display: "flex",
         justifyContent: "center",
         // alignItems: "center",
-        // paddingBottom: "9%",
+        paddingBottom: "5%",
     },
     ApplyTitle: {
         fontFamily: "Open Sans, sans-serif",
