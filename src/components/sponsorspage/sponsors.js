@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import { UseStyles } from './sponsorsdata';
-import Schwags2019 from './schwagsinfo/schwags2021';
 
 import Parallax from '../../hooks/parallax';
+import Schwags2021 from './schwagsinfo/schwags2021';
 
 export default function Sponsors() {
 
@@ -37,7 +37,7 @@ export default function Sponsors() {
                <div className={sectionHeading}>
                  <h2>Rewards for Successful Students</h2>
                </div>
-               <Schwags2019/>
+               <Schwags2021/>
             </div>
         ) 
     }
@@ -50,7 +50,7 @@ export default function Sponsors() {
             <div className={sectionHeadingMobile}>
               <h2>Rewards for Successful Students</h2>
             </div>
-            <Schwags2019/>
+            <Schwags2021/>
             </Parallax>
            
          </div>

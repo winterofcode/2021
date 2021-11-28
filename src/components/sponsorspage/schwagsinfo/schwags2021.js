@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from "react";
 // import alienbrains from "../../../images/orgimages/Alienbrains.png";
 import { makeStyles, } from '@material-ui/core';
+import googledevelopers from "../../../images/sponsor/Google Developers.svg";
+import { Grid, Typography } from "@material-ui/core";
 
 export const UseStyles = makeStyles((theme) => ({
     root: {
@@ -9,13 +11,17 @@ export const UseStyles = makeStyles((theme) => ({
       alignItems: "center",
     },
     image: {
-        width: "50%",
+        width: "100%",
         display:"flex",
         justifyContent: "center",
         alignItems: "center",
         margin:"0 auto",
     },
-    
+    imgContainer: {
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center"
+    },
     titleText: {
         fontSize: "1.5rem",
         textAlign: "center",
@@ -43,10 +49,10 @@ export const UseStyles = makeStyles((theme) => ({
 
 
 
-const Schwags2019 = () => {
+const Schwags2021 = () => {
 
-    // const { root, imgContainer, image, titleText, imageMobile, titleTextMobile }= UseStyles()
-    const { root }= UseStyles()
+    const { root, imgContainer, image, titleText, imageMobile, titleTextMobile }= UseStyles()
+    // const { root }= UseStyles()
 
 
     const [state, setState] = useState({
@@ -75,23 +81,23 @@ const Schwags2019 = () => {
 
         return(
           <div>
-            {/* <Grid container >
+            <Grid container >
             {SchwagsData.map(schwag =>(
-            <Grid item xs={12} md={4} lg={4} style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+            <Grid item xs={12} md={12} lg={12} style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
             <div className={imgContainer}>
-                <img src={alienbrains} className={image}
+                <img src={schwag.image} className={image}
                   alt={schwag.name}/>
-                <Typography>
+                {/* <Typography>
                 <p className={titleText}>{schwag.name}</p>
-                </Typography>
+                </Typography> */}
             </div>
             </Grid> 
         ))}
-        </Grid> */}
+        </Grid>
        
-              <div>
+              {/* <div>
                 <h2 style={{display: "flex", justifyContent: "center", alignItems: "center",}}>To be announced</h2>
-              </div>
+              </div> */}
           </div>
             
         )
@@ -101,19 +107,19 @@ const Schwags2019 = () => {
 
         return(
           <div>
-              {/* <Grid container>
+              <Grid container>
               {SchwagsData.map(schwag =>(
-              <Grid item xs={12} md={4} lg={4} >
-                  <img src={alienbrains} className={imageMobile}
+              <Grid item xs={12} md={12} lg={12} >
+                  <img src={schwag.image} className={imageMobile}
                     alt={schwag.name}/>
-                  <h1 className={titleTextMobile}>{schwag.name}</h1>
+                  {/* <h1 className={titleTextMobile}>{schwag.name}</h1> */}
               </Grid> 
           ))}
-          </Grid> */}
+          </Grid>
           <br/><br/>
-          <div>
+          {/* <div>
               <h3 style={{display: "flex", justifyContent: "center", alignItems: "center",}}>To be announced</h3>
-          </div>
+          </div> */}
         </div>
         )
     }
@@ -125,39 +131,12 @@ const Schwags2019 = () => {
   );
 };
 
-export default Schwags2019;
+export default Schwags2021;
 
-// const SchwagsData = [
-//   {
-//     name: "Books",
-//     // image: require("../../Assets/Manning.svg"),
-//     classes: "", 
-//   },
-//   {
-//     name: "Exclusive Schwags",
-//     // image: require("../../Assets/Google Developers.svg"),
-//     classes: "", 
-//   },
-//   {
-//     name: "Qwiklabs Credits",
-//     // image: require("../../Assets/Qwiklabs.png"),
-//     classes: "", 
-//   },
-//   {
-//     name: "1 Year KiwisMedia Premium",
-//     // image: require("../../Assets/kiwismedia.png"),
-//     classes: "", 
-//   },
-  
-//    {
-//      name: " T-shirts and 50% off coupon",
-//     //  image: require("../../Assets/Alienbrains.png"),
-//      classes: "", 
-//      linkName: 'ISB 2.0'
-//    },
-//   {
-//     name: "Winter of Code Schwags",
-//     // image: require("../../Assets/swags.png"),
-//     classes: "first-child", 
-//   },
-// ]
+const SchwagsData = [
+  {
+    name: "Google Developers",
+    image: googledevelopers,
+    classes: "", 
+  },
+]
