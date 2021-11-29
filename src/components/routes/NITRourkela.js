@@ -128,7 +128,7 @@ export default function DSCNITRourkelaProject() {
                                                     display: "flex",
                                                     justifyContent: "center",
                                                     alignItems: "center",
-                                                    fontSize: "30px"
+                                                    fontSize: "25px"
                                                         }}>
                                                             {projects.name}
                                             </Card.Title>
@@ -203,7 +203,7 @@ export default function DSCNITRourkelaProject() {
                                       display: "flex",
                                       justifyContent: "center",
                                       alignItems: "center",
-                                      fontSize: "30px"
+                                      fontSize: "25px"
                                           }}>
                                               {projects.name}
                               </Card.Title>
@@ -249,6 +249,15 @@ export default function DSCNITRourkelaProject() {
 
 const Projects = [
     {
+      name: "project-avocado-web",
+      logo: dscnitrourkelalogo,
+      tag: "dscnitrourkela",
+      class: "dscnitrourkela-logo",
+      link: "https://github.com/dscnitrourkela/project-avocado-web",
+      btnText: "View Project",
+      openInNew: true
+    },
+    {
       name: "project-avocado",
       logo: dscnitrourkelalogo,
       tag: "dscnitrourkela",
@@ -258,20 +267,11 @@ const Projects = [
       openInNew: true
     },
     {
-      name: "project-elaichi",
-      logo: dscnitrourkelalogo,
-      tag: "dscnitrourkela",
-      class: "dscnitrourkela-logo",
-      link: "https://github.com/dscnitrourkela/project-elaichi",
-      btnText: "View Project",
-      openInNew: true
-    },
-    {
-        name: "project-guava",
+        name: "project-nutella-web",
         logo: dscnitrourkelalogo,
         tag: "dscnitrourkela",
         class: "dscnitrourkela-logo",
-        link: "https://github.com/dscnitrourkela/project-guava",
+        link: "https://github.com/dscnitrourkela/project-nutella-web",
         btnText: "View Project",
         openInNew: true
       },
