@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 // import alienbrains from "../../../images/orgimages/Alienbrains.png";
 import { makeStyles, } from '@material-ui/core';
 import googledevelopers from "../../../images/sponsor/Google Developers.svg";
+import exclusiveschwags from "../../../images/sponsor/exclusiveschwags.png";
 import { Grid, Typography } from "@material-ui/core";
 
 export const UseStyles = makeStyles((theme) => ({
@@ -20,7 +21,8 @@ export const UseStyles = makeStyles((theme) => ({
     imgContainer: {
       display: "flex",
       justifyContent: "center",
-      alignItems: "center"
+      alignItems: "center",
+      padding: "5%"
     },
     titleText: {
         fontSize: "1.5rem",
@@ -35,6 +37,7 @@ export const UseStyles = makeStyles((theme) => ({
         display:"flex",
         justifyContent: "center",
         alignItems: "center",
+        padding: "5%"
     },
     titleTextMobile: {
         fontSize: "1.5rem",
@@ -83,13 +86,14 @@ const Schwags2021 = () => {
           <div>
             <Grid container >
             {SchwagsData.map(schwag =>(
-            <Grid item xs={12} md={12} lg={12} style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+            <Grid item xs={12} md={6} lg={6} style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
             <div className={imgContainer}>
                 <img src={schwag.image} className={image}
                   alt={schwag.name}/>
                 {/* <Typography>
                 <p className={titleText}>{schwag.name}</p>
                 </Typography> */}
+                
             </div>
             </Grid> 
         ))}
@@ -139,4 +143,9 @@ const SchwagsData = [
     image: googledevelopers,
     classes: "", 
   },
+  {
+    name: "Winter of Code Schwags",
+    image: exclusiveschwags,
+    classes: "",
+  }
 ]
