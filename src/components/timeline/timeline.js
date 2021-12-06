@@ -71,7 +71,7 @@ export default function Timeline() {
             </VerticalTimelineElement>
             <VerticalTimelineElement
                 className="vertical-timeline-element--work"
-                date="25th November - 6th December, 2021"
+                date="25th November - 12th December, 2021"
                 iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                 icon={<StarEmpty/>}
             >
@@ -83,7 +83,7 @@ export default function Timeline() {
             </VerticalTimelineElement>
             <VerticalTimelineElement
                 className="vertical-timeline-element--work"
-                date="8th December, 2021"
+                date="14th December, 2021"
                 iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                 icon={<StarEmpty/>}
             >
@@ -95,7 +95,7 @@ export default function Timeline() {
             </VerticalTimelineElement>
             <VerticalTimelineElement
                 className="vertical-timeline-element--education"
-                date="8th December - 10th December, 2021"
+                date="14th December - 16th December, 2021"
                 iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                 icon={<StarEmpty/>}
             >
@@ -107,7 +107,7 @@ export default function Timeline() {
             </VerticalTimelineElement>
             <VerticalTimelineElement
                 className="vertical-timeline-element--education"
-                date="10th December - 23rd December, 2021"
+                date="16th December - 29th December, 2021"
                 iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                 icon={<StarEmpty/>}
             >
@@ -119,7 +119,7 @@ export default function Timeline() {
             </VerticalTimelineElement>
             <VerticalTimelineElement
                 className="vertical-timeline-element--education"
-                date="24th December - 25th December, 2021"
+                date="30th December - 31st December, 2021"
                 iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                 icon={<StarEmpty/>}
             >
@@ -131,7 +131,7 @@ export default function Timeline() {
             </VerticalTimelineElement>
             <VerticalTimelineElement
                 className="vertical-timeline-element--education"
-                date="26th December - 5 January, 2022"
+                date="1st January - 11th January, 2022"
                 iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                 icon={<StarEmpty/>}
             >
@@ -143,7 +143,7 @@ export default function Timeline() {
             </VerticalTimelineElement>
             <VerticalTimelineElement
                 className="vertical-timeline-element--education"
-                date="6th January - 7th January, 2022"
+                date="12th January - 13th January, 2022"
                 iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                 icon={<StarEmpty/>}
             >
@@ -155,7 +155,7 @@ export default function Timeline() {
             </VerticalTimelineElement>
             <VerticalTimelineElement
                 className="vertical-timeline-element--education"
-                date="12th January"
+                date="20th January"
                 iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                 icon={<StarEmpty/>}
             >
@@ -213,7 +213,7 @@ export default function Timeline() {
             </VerticalTimelineElement>
             <VerticalTimelineElement
                 className="vertical-timeline-element--work"
-                date="25th November - 6th December, 2021"
+                date="25th November - 12th December, 2021"
                 iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                 icon={<StarEmpty/>}
             >
@@ -225,7 +225,7 @@ export default function Timeline() {
             </VerticalTimelineElement>
             <VerticalTimelineElement
                 className="vertical-timeline-element--work"
-                date="8th December, 2021"
+                date="14th December, 2021"
                 iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                 icon={<StarEmpty/>}
             >
@@ -237,7 +237,7 @@ export default function Timeline() {
             </VerticalTimelineElement>
             <VerticalTimelineElement
                 className="vertical-timeline-element--education"
-                date="8th December - 10th December, 2021"
+                date="14th December - 16th December, 2021"
                 iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                 icon={<StarEmpty/>}
             >
@@ -249,7 +249,7 @@ export default function Timeline() {
             </VerticalTimelineElement>
             <VerticalTimelineElement
                 className="vertical-timeline-element--education"
-                date="10th December - 23rd December, 2021"
+                date="16th December - 29th December, 2021"
                 iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                 icon={<StarEmpty/>}
             >
@@ -261,7 +261,7 @@ export default function Timeline() {
             </VerticalTimelineElement>
             <VerticalTimelineElement
                 className="vertical-timeline-element--education"
-                date="24th December - 25th December, 2021"
+                date="30th December - 31st December, 2021"
                 iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                 icon={<StarEmpty/>}
             >
@@ -273,7 +273,7 @@ export default function Timeline() {
             </VerticalTimelineElement>
             <VerticalTimelineElement
                 className="vertical-timeline-element--education"
-                date="26th December - 5 January, 2022"
+                date="1st January - 11th January, 2022"
                 iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                 icon={<StarEmpty/>}
             >
@@ -285,7 +285,7 @@ export default function Timeline() {
             </VerticalTimelineElement>
             <VerticalTimelineElement
                 className="vertical-timeline-element--education"
-                date="6th January - 7th January, 2022"
+                date="12th January - 13th January, 2022"
                 iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                 icon={<StarEmpty/>}
             >
@@ -297,7 +297,7 @@ export default function Timeline() {
             </VerticalTimelineElement>
             <VerticalTimelineElement
                 className="vertical-timeline-element--education"
-                date="12th January"
+                date="20th January"
                 iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                 icon={<StarEmpty/>}
             >
