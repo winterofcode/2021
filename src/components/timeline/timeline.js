@@ -71,9 +71,11 @@ export default function Timeline() {
             </VerticalTimelineElement>
             <VerticalTimelineElement
                 className="vertical-timeline-element--work"
+                contentStyle={{ background: '#FFC300', color: 'black' }}    // dont delete this, will be needed to update.
+                contentArrowStyle={{ borderRight: '7px solid  #FFC300' }}  // dont delete this, will be needed to update.
                 date="25th November - 12th December, 2021"
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                icon={<StarEmpty/>}
+                iconStyle={{ background: '#FFC300', color: '#fff' }}
+                icon={<StarFull/>}
             >
                 <h3 className="vertical-timeline-element-title">Student Application Starts</h3>
                 {/* <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4> */}
@@ -213,9 +215,11 @@ export default function Timeline() {
             </VerticalTimelineElement>
             <VerticalTimelineElement
                 className="vertical-timeline-element--work"
+                contentStyle={{ background: '#FFC300', color: 'black' }}    // dont delete this, will be needed to update.
+                contentArrowStyle={{ borderRight: '7px solid  #FFC300' }}  // dont delete this, will be needed to update.
                 date="25th November - 12th December, 2021"
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                icon={<StarEmpty/>}
+                iconStyle={{ background: '#FFC300', color: '#fff' }}
+                icon={<StarFull/>}
             >
                 <h3 className="vertical-timeline-element-title">Student Application Starts</h3>
                 {/* <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4> */}
