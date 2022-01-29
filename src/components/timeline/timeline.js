@@ -169,9 +169,11 @@ export default function Timeline() {
             </VerticalTimelineElement>
             <VerticalTimelineElement
                 className="vertical-timeline-element--education"
+                contentStyle={{ background: '#FFC300', color: 'black' }}    // dont delete this, will be needed to update.
+                contentArrowStyle={{ borderRight: '7px solid  #FFC300' }}  // dont delete this, will be needed to update.
                 date="20th January"
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                icon={<StarEmpty/>}
+                iconStyle={{ background: '#FFC300', color: '#fff' }}
+                icon={<StarFull/>}
             >
                 <h3 className="vertical-timeline-element-title">Successful Students Announced</h3>
                 {/* <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4> */}
@@ -180,8 +182,8 @@ export default function Timeline() {
                 </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                icon={<StarEmpty/>}
+                iconStyle={{ background: '#FFC300', color: '#fff' }}
+                icon={<CircleStarFull/>}
             />
         </VerticalTimeline>
     </div>
@@ -325,9 +327,11 @@ export default function Timeline() {
             </VerticalTimelineElement>
             <VerticalTimelineElement
                 className="vertical-timeline-element--education"
+                contentStyle={{ background: '#FFC300', color: 'black' }}    // dont delete this, will be needed to update.
+                contentArrowStyle={{ borderRight: '7px solid  #FFC300' }}  // dont delete this, will be needed to update.
                 date="20th January"
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                icon={<StarEmpty/>}
+                iconStyle={{ background: '#FFC300', color: '#fff' }}
+                icon={<StarFull/>}
             >
                 <h3 className="vertical-timeline-element-title">Successful Students Announced</h3>
                 {/* <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4> */}
@@ -336,8 +340,8 @@ export default function Timeline() {
                 </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                icon={<StarEmpty/>}
+                iconStyle={{ background: '#FFC300', color: '#fff' }}
+                icon={<CircleStarFull/>}
             />
         </VerticalTimeline>
     </div>
