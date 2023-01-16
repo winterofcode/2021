@@ -19,23 +19,23 @@ export default function AppRouter() {
   return (
     <Router>
       <Switch>
-        <Route exact={true} path="/" component={Homepage} />
-        <Route path="/organisation/deep-fusion-ai" component={DeepFusionAIProject} />
-        <Route path="/organisation/canvasbird" component={CanvasBirdProject} />
-        <Route path="/organisation/dsc-nsec" component={DSCNSECProject} />
-        <Route path="/organisation/dsc-x" component={DSCXProject} />
-        <Route path="/organisation/dsc-nit-rourkela" component={DSCNITRourkelaProject} />
+        <Route exact={true} path="/2021" component={Homepage} />
+        <Route path="/2021/organisation/deep-fusion-ai" component={DeepFusionAIProject} />
+        <Route path="/2021/organisation/canvasbird" component={CanvasBirdProject} />
+        <Route path="/2021/organisation/dsc-nsec" component={DSCNSECProject} />
+        <Route path="/2021/organisation/dsc-x" component={DSCXProject} />
+        <Route path="/2021/organisation/dsc-nit-rourkela" component={DSCNITRourkelaProject} />
         {/* <Route path="/organisation/theblockchainchief" component={BlockchainChiefProject} /> */}
         {/* <Route path="/organisation/technscince" component={TechNScienceProject} /> */}
-        <Route path="/organisation/codingspace" component={CodingSpaceProject} />
+        <Route path="/2021/organisation/codingspace" component={CodingSpaceProject} />
         {/* <Route path="/organisation/moja-global" component={MojaGlobalProject} /> */}
         {/* <Route path="/organisation/gepton" component={GeptonProject} /> */}
         {/* <Route path="/organisation/codingspace" component={CodingSpaceProject} /> */}
         {/* <Route path="/organisation/moja-global" component={MojaGlobalProject} /> */}
         {/* <Route path="/organisation/gepton" component={GeptonProject} /> */}
-        <Route path="/organisation/eduhub-community" component={EduhubCommunityProject} />
+        <Route path="/2021/organisation/eduhub-community" component={EduhubCommunityProject} />
         {/* <Route path="/organisation/hitk-community" component={HITKCommunityProject} /> */}
-        <Route path="/organisers" component={Organiser} />
+        <Route path="/2021/organisers" component={Organiser} />
       </Switch>
     </Router>
   );
